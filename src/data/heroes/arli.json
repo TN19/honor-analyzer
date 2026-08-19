@@ -1,5 +1,5 @@
 {
-  "id":"arli","name":"Arli","aliases":[],"image":"/heroes/arli.webp","roles":["marksman"],"lanes":["farm"],"primaryLane":"farm",
+  "id":"arli","name":"Arli","aliases":[],"image":"heroes/arli.webp","roles":["marksman"],"lanes":["farm"],"primaryLane":"farm",
   "damage":{"primary":"physical","secondary":null},"tags":["mobility","carry","outplay"],"strengths":[],"weaknesses":[],
   "gamePhases":{"early":"","mid":"","late":""},"skills":{},"archetypes":{},"patch":"unknown","updatedAt":"2026-08-19","sources":[]
 }

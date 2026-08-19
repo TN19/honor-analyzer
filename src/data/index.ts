@@ -14,7 +14,7 @@ const rawHeroes = Object.entries(manualAnalysis.heroes).map(([id, registry]) => 
   id,
   name: registry.name,
   aliases: [],
-  image: `/heroes/${id}.webp`,
+  image: `heroes/${id}.webp`,
   roles: registry.roles,
   lanes: registry.lanes,
   primaryLane: registry.lanes[0] ?? 'unknown',
