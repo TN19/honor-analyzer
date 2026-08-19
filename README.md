@@ -18,6 +18,10 @@ npm run build
 
 O `base: './'` do Vite mantém o build compatível com GitHub Pages. O service worker armazena a aplicação e os dados essenciais após o primeiro acesso.
 
+## Publicação no GitHub Pages
+
+O workflow `.github/workflows/deploy-pages.yml` publica automaticamente a pasta `dist` no GitHub Pages a cada push na branch `main`. A publicação usa exclusivamente GitHub Actions e GitHub Pages, sem servidor ou serviço externo.
+
 ## Dados
 
 Cada campeão ocupa um JSON em `src/data/heroes`. O catálogo inicial contém apenas Arli, usando exclusivamente o exemplo fornecido na especificação. Nenhuma skill, matchup, sinergia ou regra oficial incerta foi inventada.
