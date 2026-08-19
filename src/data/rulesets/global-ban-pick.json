@@ -1,0 +1,1 @@
+{"id":"global-ban-pick","name":"全域禁用選角","banPhase":true,"pickPhase":true,"enforcePickOrder":true,"allowManualSlots":false,"seriesHeroLock":true,"lockScope":"team","patch":"unknown"}

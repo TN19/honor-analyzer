@@ -1,0 +1,40 @@
+# Honor of Kings Draft Intelligence
+
+Aplicação estática e offline-first para análise explicável de drafts. Esta primeira versão implementa o Draft Livre, validação de dados, análise de composição, recomendações, salvamento local e a fundação para Ban & Pick, Global Ban e histórico.
+
+## Desenvolvimento
+
+```bash
+npm install
+npm run dev
+```
+
+Validação completa:
+
+```bash
+npm test
+npm run build
+```
+
+O `base: './'` do Vite mantém o build compatível com GitHub Pages. O service worker armazena a aplicação e os dados essenciais após o primeiro acesso.
+
+## Dados
+
+Cada campeão ocupa um JSON em `src/data/heroes`. O catálogo inicial contém apenas Arli, usando exclusivamente o exemplo fornecido na especificação. Nenhuma skill, matchup, sinergia ou regra oficial incerta foi inventada.
+
+Ao adicionar registros, mantenha patch, confiança e fontes, e valide-os com os schemas em `src/schemas`. Conhecimento teórico, histórico e regras ficam separados.
+
+## Regra obrigatória de idioma do frontend
+
+- Todo conteúdo visível ao usuário final deve ser escrito em mandarim tradicional (`zh-Hant`).
+- Isso inclui navegação, botões, títulos, mensagens, avisos, erros, acessibilidade, metadados, manifest PWA, nomes exibidos de entidades e textos produzidos pelas engines.
+- Português pode ser usado na documentação interna e na comunicação de desenvolvimento, mas nunca deve aparecer na interface publicada.
+- IDs, chaves técnicas e dados canônicos podem permanecer em inglês para preservar estabilidade; a interface deve convertê-los por uma camada de apresentação/localização.
+- Antes de cada entrega, deve ser verificado que nenhum texto em português ou inglês não intencional aparece no frontend.
+
+## Política obrigatória de Git
+
+- Toda alteração futura deve terminar em um commit no repositório Git local.
+- Cada commit deve ter título objetivo e corpo descrevendo as alterações relevantes e as validações executadas.
+- Alterações distintas devem ser separadas em commits quando isso melhorar a rastreabilidade.
+- O estado final entregue ao usuário não deve conter modificações pendentes não documentadas, salvo arquivos locais deliberadamente ignorados.

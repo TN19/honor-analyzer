@@ -1,0 +1,8 @@
+export const lanes = ['clash','jungle','mid','farm','roamer'] as const
+export type Lane = typeof lanes[number]
+export type Team = 'blue' | 'red'
+export type Skill = { id:string; name:string; type:'active'|'passive'; description:string; mechanics:string[]; tags:string[]; targeting:string; damageType:string; crowdControl:string[]; mobility:string[]; defensiveEffects:string[]; offensiveEffects:string[]; resourceEffects:string[]; scalingNotes:string[]; interactionNotes:string[]; patch:string }
+export type Hero = { id:string; name:string; aliases:string[]; image:string; roles:string[]; lanes:Lane[]; primaryLane:Lane|'unknown'; damage:{primary:string;secondary:string|null}; tags:string[]; strengths:string[]; weaknesses:string[]; gamePhases:{early:string;mid:string;late:string}; skills:Record<string,Skill>; archetypes?:Record<string,number>; metaScore?:number; patch:string; updatedAt:string; sources:unknown[] }
+export type DraftPick = { heroId:string; lane:Lane }
+export type DraftState = { blue:Partial<Record<Lane,string>>; red:Partial<Record<Lane,string>> }
+export type Recommendation = {heroId:string;lane:Lane;finalScore:number;confidence:number;breakdown:{synergy:number;matchup:number;compositionNeed:number;archetypeFit:number;meta:number};reasons:string[];warnings:string[]}
