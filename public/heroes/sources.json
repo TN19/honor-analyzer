@@ -34,12 +34,12 @@
   },
   {
     "heroId": "ata",
-    "officialHeroId": 511,
-    "sourcePage": "https://world.honorofkings.com/zlkdatasys/ip/hero/en/511.html",
-    "sourceImage": "https://world.honorofkings.com/zlkdatasys/ip/hero/en//image/20221207/16703990826736.png",
+    "officialHeroId": 556,
+    "sourcePage": "https://world.honorofkings.com/zlkdatasys/ip/hero/en/556.html",
+    "sourceImage": "https://world.honorofkings.com/zlkdatasys/ip/hero/en//image/20230215/16764536508718.png",
     "originalSize": [
-      751,
-      781
+      750,
+      791
     ],
     "output": "/heroes/ata.webp"
   },

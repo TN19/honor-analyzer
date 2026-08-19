@@ -16,7 +16,7 @@ ROOT = Path(__file__).resolve().parents[1]
 OUTPUT = ROOT / "public" / "heroes"
 OFFICIAL_PAGE = "https://world.honorofkings.com/zlkdatasys/ip/hero/en/{hero_id}.html"
 HERO_IDS = {
-    "angela": 142, "ao-yin": 519, "arli": 199, "ata": 511, "augran": 517,
+    "angela": 142, "ao-yin": 519, "arli": 199, "ata": 556, "augran": 517,
     "biron": 503, "cai-yan": 184, "chano": 177, "charlotte": 536,
     "da-qiao": 191, "dolia": 159, "donghuang": 187, "dun": 126,
     "dyadia": 577, "erin": 155, "faith": 128, "feyd": 542,
