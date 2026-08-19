@@ -30,6 +30,7 @@ HERO_IDS = {
 }
 IMAGE_OVERRIDES = {
     "flowborn-marksman": "https://camp.honorofkings.com/manage_material/p/vh61ZIOZ.png",
+    "flowborn-tank": "https://camp.honorofkings.com/manage_material/p/rsvrsIYj.png",
 }
 
 
@@ -76,7 +77,7 @@ def main() -> None:
         original_size = convert_portrait(
             request_bytes(image_url),
             OUTPUT / f"{slug}.webp",
-            circular_crop=slug == "flowborn-marksman",
+            circular_crop=slug in {"flowborn-marksman", "flowborn-tank"},
         )
         manifest.append({
             "heroId": slug,

@@ -201,10 +201,10 @@
     "heroId": "flowborn-tank",
     "officialHeroId": 581,
     "sourcePage": "https://world.honorofkings.com/zlkdatasys/ip/hero/en/581.html",
-    "sourceImage": "https://world.honorofkings.com/zlkdatasys/ip/hero/en//image/20250519/17476507302714.png",
+    "sourceImage": "https://camp.honorofkings.com/manage_material/p/rsvrsIYj.png",
     "originalSize": [
-      756,
-      780
+      1800,
+      2800
     ],
     "output": "/heroes/flowborn-tank.webp"
   },
