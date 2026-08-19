@@ -2,484 +2,484 @@
   {
     "heroId": "angela",
     "officialHeroId": 142,
-    "sourcePage": "https://world.honorofkings.com/zlkdatasys/ip/hero/en/142.html",
-    "sourceImage": "https://world.honorofkings.com/zlkdatasys/ip/hero/en//image/20230217/16766156653545.png",
+    "sourcePage": "https://camp.honorofkings.com/h5/app/index.html#/hero-homepage",
+    "sourceImage": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/wjaExUFU.png",
     "originalSize": [
-      750,
-      791
+      128,
+      128
     ],
     "output": "/heroes/angela.webp"
   },
   {
     "heroId": "ao-yin",
     "officialHeroId": 519,
-    "sourcePage": "https://world.honorofkings.com/zlkdatasys/ip/hero/en/519.html",
-    "sourceImage": "https://world.honorofkings.com/zlkdatasys/ip/hero/en//image/20240701/17198281574105.png",
+    "sourcePage": "https://camp.honorofkings.com/h5/app/index.html#/hero-homepage",
+    "sourceImage": "https://camp.honorofkings.com/camp/admin/hero/head_128-128/OzH2TSZN.jpg",
     "originalSize": [
-      756,
-      797
+      845,
+      845
     ],
     "output": "/heroes/ao-yin.webp"
   },
   {
     "heroId": "arli",
     "officialHeroId": 199,
-    "sourcePage": "https://world.honorofkings.com/zlkdatasys/ip/hero/en/199.html",
-    "sourceImage": "https://world.honorofkings.com/zlkdatasys/ip/hero/en//image/20221207/16703947593223.png",
+    "sourcePage": "https://camp.honorofkings.com/h5/app/index.html#/hero-homepage",
+    "sourceImage": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/hF8AFVqh.png",
     "originalSize": [
-      750,
-      800
+      128,
+      128
     ],
     "output": "/heroes/arli.webp"
   },
   {
     "heroId": "ata",
     "officialHeroId": 556,
-    "sourcePage": "https://world.honorofkings.com/zlkdatasys/ip/hero/en/556.html",
-    "sourceImage": "https://world.honorofkings.com/zlkdatasys/ip/hero/en//image/20230215/16764536508718.png",
+    "sourcePage": "https://camp.honorofkings.com/h5/app/index.html#/hero-homepage",
+    "sourceImage": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/eafz1moy.png",
     "originalSize": [
-      750,
-      791
+      128,
+      128
     ],
     "output": "/heroes/ata.webp"
   },
   {
     "heroId": "augran",
     "officialHeroId": 517,
-    "sourcePage": "https://world.honorofkings.com/zlkdatasys/ip/hero/en/517.html",
-    "sourceImage": "https://world.honorofkings.com/zlkdatasys/ip/hero/en//image/20240710/17206057571001.png",
+    "sourcePage": "https://camp.honorofkings.com/h5/app/index.html#/hero-homepage",
+    "sourceImage": "https://camp.honorofkings.com/camp/admin/hero/head_128-128/ue6KY05b.png",
     "originalSize": [
-      756,
-      797
+      128,
+      128
     ],
     "output": "/heroes/augran.webp"
   },
   {
     "heroId": "biron",
     "officialHeroId": 503,
-    "sourcePage": "https://world.honorofkings.com/zlkdatasys/ip/hero/en/503.html",
-    "sourceImage": "https://world.honorofkings.com/zlkdatasys/ip/hero/en//image/20230530/16854401759481.png",
+    "sourcePage": "https://camp.honorofkings.com/h5/app/index.html#/hero-homepage",
+    "sourceImage": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/F3A0JkoT.png",
     "originalSize": [
-      751,
-      776
+      128,
+      128
     ],
     "output": "/heroes/biron.webp"
   },
   {
     "heroId": "cai-yan",
     "officialHeroId": 184,
-    "sourcePage": "https://world.honorofkings.com/zlkdatasys/ip/hero/en/184.html",
-    "sourceImage": "https://world.honorofkings.com/zlkdatasys/ip/hero/en//image/20221207/16703962217870.png",
+    "sourcePage": "https://camp.honorofkings.com/h5/app/index.html#/hero-homepage",
+    "sourceImage": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/kQXkW7ab.png",
     "originalSize": [
-      750,
-      782
+      128,
+      128
     ],
     "output": "/heroes/cai-yan.webp"
   },
   {
     "heroId": "chano",
     "officialHeroId": 177,
-    "sourcePage": "https://world.honorofkings.com/zlkdatasys/ip/hero/en/177.html",
-    "sourceImage": "https://world.honorofkings.com/zlkdatasys/ip/hero/en//image/20250310/17415993432532.png",
+    "sourcePage": "https://camp.honorofkings.com/h5/app/index.html#/hero-homepage",
+    "sourceImage": "https://camp.honorofkings.com/camp/admin/default/sJURXorM.png",
     "originalSize": [
-      756,
-      797
+      128,
+      128
     ],
     "output": "/heroes/chano.webp"
   },
   {
     "heroId": "charlotte",
     "officialHeroId": 536,
-    "sourcePage": "https://world.honorofkings.com/zlkdatasys/ip/hero/en/536.html",
-    "sourceImage": "https://world.honorofkings.com/zlkdatasys/ip/hero/en//image/20230518/16843952485483.png",
+    "sourcePage": "https://camp.honorofkings.com/h5/app/index.html#/hero-homepage",
+    "sourceImage": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/iIwO0Kwk.png",
     "originalSize": [
-      756,
-      789
+      128,
+      128
     ],
     "output": "/heroes/charlotte.webp"
   },
   {
     "heroId": "da-qiao",
     "officialHeroId": 191,
-    "sourcePage": "https://world.honorofkings.com/zlkdatasys/ip/hero/en/191.html",
-    "sourceImage": "https://world.honorofkings.com/zlkdatasys/ip/hero/en//image/20230525/16850059554993.png",
+    "sourcePage": "https://camp.honorofkings.com/h5/app/index.html#/hero-homepage",
+    "sourceImage": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/IEPtzR5z.png",
     "originalSize": [
-      751,
-      799
+      128,
+      128
     ],
     "output": "/heroes/da-qiao.webp"
   },
   {
     "heroId": "dolia",
     "officialHeroId": 159,
-    "sourcePage": "https://world.honorofkings.com/zlkdatasys/ip/hero/en/159.html",
-    "sourceImage": "https://world.honorofkings.com/zlkdatasys/ip/hero/en//image/20231218/17028710295345.png",
+    "sourcePage": "https://camp.honorofkings.com/h5/app/index.html#/hero-homepage",
+    "sourceImage": "https://camp.honorofkings.com/camp/admin/hero/head_128-128/tfvb3IJf.png",
     "originalSize": [
-      756,
-      780
+      128,
+      128
     ],
     "output": "/heroes/dolia.webp"
   },
   {
     "heroId": "donghuang",
     "officialHeroId": 187,
-    "sourcePage": "https://world.honorofkings.com/zlkdatasys/ip/hero/en/187.html",
-    "sourceImage": "https://world.honorofkings.com/zlkdatasys/ip/hero/en//image/20221207/16703963547457.png",
+    "sourcePage": "https://camp.honorofkings.com/h5/app/index.html#/hero-homepage",
+    "sourceImage": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/PRcq49iS.png",
     "originalSize": [
-      750,
-      775
+      128,
+      128
     ],
     "output": "/heroes/donghuang.webp"
   },
   {
     "heroId": "dun",
     "officialHeroId": 126,
-    "sourcePage": "https://world.honorofkings.com/zlkdatasys/ip/hero/en/126.html",
-    "sourceImage": "https://world.honorofkings.com/zlkdatasys/ip/hero/en//image/20221207/16703975721718.png",
+    "sourcePage": "https://camp.honorofkings.com/h5/app/index.html#/hero-homepage",
+    "sourceImage": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/23rrkYYy.png",
     "originalSize": [
-      750,
-      811
+      128,
+      128
     ],
     "output": "/heroes/dun.webp"
   },
   {
     "heroId": "dyadia",
     "officialHeroId": 577,
-    "sourcePage": "https://world.honorofkings.com/zlkdatasys/ip/hero/en/577.html",
-    "sourceImage": "https://world.honorofkings.com/zlkdatasys/ip/hero/en//image/20240911/17260264816395.png",
+    "sourcePage": "https://camp.honorofkings.com/h5/app/index.html#/hero-homepage",
+    "sourceImage": "https://camp.honorofkings.com/camp/admin/hero/head_128-128/Qdvu6qgO.png",
     "originalSize": [
-      756,
-      797
+      128,
+      128
     ],
     "output": "/heroes/dyadia.webp"
   },
   {
     "heroId": "erin",
     "officialHeroId": 155,
-    "sourcePage": "https://world.honorofkings.com/zlkdatasys/ip/hero/en/155.html",
-    "sourceImage": "https://world.honorofkings.com/zlkdatasys/ip/hero/en//image/20221207/16703960795917.png",
+    "sourcePage": "https://camp.honorofkings.com/h5/app/index.html#/hero-homepage",
+    "sourceImage": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/joVNQWhw.png",
     "originalSize": [
-      750,
-      775
+      128,
+      128
     ],
     "output": "/heroes/erin.webp"
   },
   {
     "heroId": "faith",
     "officialHeroId": 128,
-    "sourcePage": "https://world.honorofkings.com/zlkdatasys/ip/hero/en/128.html",
-    "sourceImage": "https://world.honorofkings.com/zlkdatasys/ip/hero/en//image/20250515/17472947677819.png",
+    "sourcePage": "https://camp.honorofkings.com/h5/app/index.html#/hero-homepage",
+    "sourceImage": "https://camp.honorofkings.com/camp/admin/default/6IY77h7c.png",
     "originalSize": [
-      756,
-      775
+      128,
+      128
     ],
     "output": "/heroes/faith.webp"
   },
   {
     "heroId": "feyd",
     "officialHeroId": 542,
-    "sourcePage": "https://world.honorofkings.com/zlkdatasys/ip/hero/en/542.html",
-    "sourceImage": "https://world.honorofkings.com/zlkdatasys/ip/hero/en//image/20250217/17398008387549.png",
+    "sourcePage": "https://camp.honorofkings.com/h5/app/index.html#/hero-homepage",
+    "sourceImage": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/m8aOqFQE.png",
     "originalSize": [
-      756,
-      775
+      128,
+      128
     ],
     "output": "/heroes/feyd.webp"
   },
   {
     "heroId": "flowborn-marksman",
     "officialHeroId": 584,
-    "sourcePage": "https://world.honorofkings.com/zlkdatasys/ip/hero/en/584.html",
-    "sourceImage": "https://camp.honorofkings.com/manage_material/p/vh61ZIOZ.png",
+    "sourcePage": "https://camp.honorofkings.com/h5/app/index.html#/hero-homepage",
+    "sourceImage": "https://camp.honorofkings.com/camp/admin/hero/head_128-128/WuG07My1.jpeg",
     "originalSize": [
-      1800,
-      2800
+      200,
+      200
     ],
     "output": "/heroes/flowborn-marksman.webp"
   },
   {
     "heroId": "flowborn-tank",
     "officialHeroId": 581,
-    "sourcePage": "https://world.honorofkings.com/zlkdatasys/ip/hero/en/581.html",
-    "sourceImage": "https://camp.honorofkings.com/manage_material/p/rsvrsIYj.png",
+    "sourcePage": "https://camp.honorofkings.com/h5/app/index.html#/hero-homepage",
+    "sourceImage": "https://camp.honorofkings.com/camp/admin/hero/head_128-128/jbrX5mQc.jpeg",
     "originalSize": [
-      1800,
-      2800
+      100,
+      100
     ],
     "output": "/heroes/flowborn-tank.webp"
   },
   {
     "heroId": "fuzi",
     "officialHeroId": 139,
-    "sourcePage": "https://world.honorofkings.com/zlkdatasys/ip/hero/en/139.html",
-    "sourceImage": "https://world.honorofkings.com/zlkdatasys/ip/hero/en//image/20221207/16703947834261.png",
+    "sourcePage": "https://camp.honorofkings.com/h5/app/index.html#/hero-homepage",
+    "sourceImage": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/UhQkVUBi.png",
     "originalSize": [
-      750,
-      781
+      128,
+      128
     ],
     "output": "/heroes/fuzi.webp"
   },
   {
     "heroId": "garuda",
     "officialHeroId": 110,
-    "sourcePage": "https://world.honorofkings.com/zlkdatasys/ip/hero/en/110.html",
-    "sourceImage": "https://world.honorofkings.com/zlkdatasys/ip/hero/en//image/20251009/17599813604282.png",
+    "sourcePage": "https://camp.honorofkings.com/h5/app/index.html#/hero-homepage",
+    "sourceImage": "https://camp.honorofkings.com/camp/admin/default/h6UHy1TN.png",
     "originalSize": [
-      756,
-      775
+      128,
+      128
     ],
     "output": "/heroes/garuda.webp"
   },
   {
     "heroId": "guan-yu",
     "officialHeroId": 140,
-    "sourcePage": "https://world.honorofkings.com/zlkdatasys/ip/hero/en/140.html",
-    "sourceImage": "https://world.honorofkings.com/zlkdatasys/ip/hero/en//image/20230412/16812839061908.png",
+    "sourcePage": "https://camp.honorofkings.com/h5/app/index.html#/hero-homepage",
+    "sourceImage": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/V5e2k18Z.png",
     "originalSize": [
-      756,
-      797
+      128,
+      128
     ],
     "output": "/heroes/guan-yu.webp"
   },
   {
     "heroId": "guiguzi",
     "officialHeroId": 189,
-    "sourcePage": "https://world.honorofkings.com/zlkdatasys/ip/hero/en/189.html",
-    "sourceImage": "https://world.honorofkings.com/zlkdatasys/ip/hero/en//image/20240407/17124615096566.png",
+    "sourcePage": "https://camp.honorofkings.com/h5/app/index.html#/hero-homepage",
+    "sourceImage": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/AXjJlMvi.png",
     "originalSize": [
-      750,
-      775
+      128,
+      128
     ],
     "output": "/heroes/guiguzi.webp"
   },
   {
     "heroId": "haya",
     "officialHeroId": 521,
-    "sourcePage": "https://world.honorofkings.com/zlkdatasys/ip/hero/en/521.html",
-    "sourceImage": "https://world.honorofkings.com/zlkdatasys/ip/hero/en//image/20251128/17643166227055.png",
+    "sourcePage": "https://camp.honorofkings.com/h5/app/index.html#/hero-homepage",
+    "sourceImage": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/iIdXNhQ5.png",
     "originalSize": [
-      756,
-      775
+      128,
+      128
     ],
     "output": "/heroes/haya.webp"
   },
   {
     "heroId": "jing",
     "officialHeroId": 531,
-    "sourcePage": "https://world.honorofkings.com/zlkdatasys/ip/hero/en/531.html",
-    "sourceImage": "https://world.honorofkings.com/zlkdatasys/ip/hero/en//image/20221207/16703964908163.png",
+    "sourcePage": "https://camp.honorofkings.com/h5/app/index.html#/hero-homepage",
+    "sourceImage": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/HVRw4cpB.png",
     "originalSize": [
-      750,
-      775
+      128,
+      128
     ],
     "output": "/heroes/jing.webp"
   },
   {
     "heroId": "kaizer",
     "officialHeroId": 193,
-    "sourcePage": "https://world.honorofkings.com/zlkdatasys/ip/hero/en/193.html",
-    "sourceImage": "https://world.honorofkings.com/zlkdatasys/ip/hero/en//image/20221207/16703940956832.png",
+    "sourcePage": "https://camp.honorofkings.com/h5/app/index.html#/hero-homepage",
+    "sourceImage": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/xUdtJiLO.png",
     "originalSize": [
-      750,
-      775
+      128,
+      128
     ],
     "output": "/heroes/kaizer.webp"
   },
   {
     "heroId": "lady-sun",
     "officialHeroId": 111,
-    "sourcePage": "https://world.honorofkings.com/zlkdatasys/ip/hero/en/111.html",
-    "sourceImage": "https://world.honorofkings.com/zlkdatasys/ip/hero/en//image/20221207/16703958503418.png",
+    "sourcePage": "https://camp.honorofkings.com/h5/app/index.html#/hero-homepage",
+    "sourceImage": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/BmY46Zgb.png",
     "originalSize": [
-      750,
-      788
+      128,
+      128
     ],
     "output": "/heroes/lady-sun.webp"
   },
   {
     "heroId": "lady-zhen",
     "officialHeroId": 127,
-    "sourcePage": "https://world.honorofkings.com/zlkdatasys/ip/hero/en/127.html",
-    "sourceImage": "https://world.honorofkings.com/zlkdatasys/ip/hero/en//image/20230425/16824096787559.png",
+    "sourcePage": "https://camp.honorofkings.com/h5/app/index.html#/hero-homepage",
+    "sourceImage": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/gqPEOybC.png",
     "originalSize": [
-      797,
-      783
+      128,
+      128
     ],
     "output": "/heroes/lady-zhen.webp"
   },
   {
     "heroId": "lapu-lapu",
     "officialHeroId": 168,
-    "sourcePage": "https://world.honorofkings.com/zlkdatasys/ip/hero/en/168.html",
-    "sourceImage": "https://world.honorofkings.com/zlkdatasys/ip/hero/en//image/20251024/17613028059660.png",
+    "sourcePage": "https://camp.honorofkings.com/h5/app/index.html#/hero-homepage",
+    "sourceImage": "https://camp.honorofkings.com/camp/admin/default/AuWJ7G0J.png",
     "originalSize": [
-      756,
-      775
+      128,
+      128
     ],
     "output": "/heroes/lapu-lapu.webp"
   },
   {
     "heroId": "lian-po",
     "officialHeroId": 105,
-    "sourcePage": "https://world.honorofkings.com/zlkdatasys/ip/hero/en/105.html",
-    "sourceImage": "https://world.honorofkings.com/zlkdatasys/ip/hero/en//image/20230228/16775746909781.png",
+    "sourcePage": "https://camp.honorofkings.com/h5/app/index.html#/hero-homepage",
+    "sourceImage": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/csLOp1dL.png",
     "originalSize": [
-      756,
-      797
+      128,
+      128
     ],
     "output": "/heroes/lian-po.webp"
   },
   {
     "heroId": "liang",
     "officialHeroId": 156,
-    "sourcePage": "https://world.honorofkings.com/zlkdatasys/ip/hero/en/156.html",
-    "sourceImage": "https://world.honorofkings.com/zlkdatasys/ip/hero/en//image/20230705/16885457602372.png",
+    "sourcePage": "https://camp.honorofkings.com/h5/app/index.html#/hero-homepage",
+    "sourceImage": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/cNugkXGO.png",
     "originalSize": [
-      750,
-      794
+      128,
+      128
     ],
     "output": "/heroes/liang.webp"
   },
   {
     "heroId": "mai-shiranui",
     "officialHeroId": 157,
-    "sourcePage": "https://world.honorofkings.com/zlkdatasys/ip/hero/en/157.html",
-    "sourceImage": "https://world.honorofkings.com/zlkdatasys/ip/hero/en//image/20230316/16789507955737.png",
+    "sourcePage": "https://camp.honorofkings.com/h5/app/index.html#/hero-homepage",
+    "sourceImage": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/4jaM0F19.png",
     "originalSize": [
-      750,
-      797
+      128,
+      128
     ],
     "output": "/heroes/mai-shiranui.webp"
   },
   {
     "heroId": "menki",
     "officialHeroId": 198,
-    "sourcePage": "https://world.honorofkings.com/zlkdatasys/ip/hero/en/198.html",
-    "sourceImage": "https://world.honorofkings.com/zlkdatasys/ip/hero/en//image/20230404/16805978073985.png",
+    "sourcePage": "https://camp.honorofkings.com/h5/app/index.html#/hero-homepage",
+    "sourceImage": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/Ym7KcrIW.png",
     "originalSize": [
-      756,
-      775
+      128,
+      128
     ],
     "output": "/heroes/menki.webp"
   },
   {
     "heroId": "nakoruru",
     "officialHeroId": 162,
-    "sourcePage": "https://world.honorofkings.com/zlkdatasys/ip/hero/en/162.html",
-    "sourceImage": "https://world.honorofkings.com/zlkdatasys/ip/hero/en//image/20221207/16703944438909.png",
+    "sourcePage": "https://camp.honorofkings.com/h5/app/index.html#/hero-homepage",
+    "sourceImage": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/H9WAmWdN.png",
     "originalSize": [
-      750,
-      791
+      128,
+      128
     ],
     "output": "/heroes/nakoruru.webp"
   },
   {
     "heroId": "nezha",
     "officialHeroId": 180,
-    "sourcePage": "https://world.honorofkings.com/zlkdatasys/ip/hero/en/180.html",
-    "sourceImage": "https://world.honorofkings.com/zlkdatasys/ip/hero/en//image/20221207/16703959482439.png",
+    "sourcePage": "https://camp.honorofkings.com/h5/app/index.html#/hero-homepage",
+    "sourceImage": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/WDh84DWg.png",
     "originalSize": [
-      750,
-      835
+      128,
+      128
     ],
     "output": "/heroes/nezha.webp"
   },
   {
     "heroId": "nuwa",
     "officialHeroId": 179,
-    "sourcePage": "https://world.honorofkings.com/zlkdatasys/ip/hero/en/179.html",
-    "sourceImage": "https://world.honorofkings.com/zlkdatasys/ip/hero/en//image/20221207/16703957777334.png",
+    "sourcePage": "https://camp.honorofkings.com/h5/app/index.html#/hero-homepage",
+    "sourceImage": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/E39kxNsD.png",
     "originalSize": [
-      750,
-      818
+      128,
+      128
     ],
     "output": "/heroes/nuwa.webp"
   },
   {
     "heroId": "pei",
     "officialHeroId": 502,
-    "sourcePage": "https://world.honorofkings.com/zlkdatasys/ip/hero/en/502.html",
-    "sourceImage": "https://world.honorofkings.com/zlkdatasys/ip/hero/en//image/20221207/16703949071563.png",
+    "sourcePage": "https://camp.honorofkings.com/h5/app/index.html#/hero-homepage",
+    "sourceImage": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/XlRczGYM.png",
     "originalSize": [
-      750,
-      795
+      128,
+      128
     ],
     "output": "/heroes/pei.webp"
   },
   {
     "heroId": "shouyue",
     "officialHeroId": 196,
-    "sourcePage": "https://world.honorofkings.com/zlkdatasys/ip/hero/en/196.html",
-    "sourceImage": "https://world.honorofkings.com/zlkdatasys/ip/hero/en//image/20230804/16911406268945.png",
+    "sourcePage": "https://camp.honorofkings.com/h5/app/index.html#/hero-homepage",
+    "sourceImage": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/4bUKKH66.png",
     "originalSize": [
-      750,
-      806
+      128,
+      128
     ],
     "output": "/heroes/shouyue.webp"
   },
   {
     "heroId": "sun-ce",
     "officialHeroId": 510,
-    "sourcePage": "https://world.honorofkings.com/zlkdatasys/ip/hero/en/510.html",
-    "sourceImage": "https://world.honorofkings.com/zlkdatasys/ip/hero/en//image/20221207/16703961321282.png",
+    "sourcePage": "https://camp.honorofkings.com/h5/app/index.html#/hero-homepage",
+    "sourceImage": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/Te1nmDGP.png",
     "originalSize": [
-      750,
-      793
+      128,
+      128
     ],
     "output": "/heroes/sun-ce.webp"
   },
   {
     "heroId": "umbrosa",
     "officialHeroId": 558,
-    "sourcePage": "https://world.honorofkings.com/zlkdatasys/ip/hero/en/558.html",
-    "sourceImage": "https://world.honorofkings.com/zlkdatasys/ip/hero/en//image/20250729/17537556696435.png",
+    "sourcePage": "https://camp.honorofkings.com/h5/app/index.html#/hero-homepage",
+    "sourceImage": "https://camp.honorofkings.com/camp/admin/hero/head_128-128/ioDVAbAf.jpg",
     "originalSize": [
-      756,
-      797
+      150,
+      150
     ],
     "output": "/heroes/umbrosa.webp"
   },
   {
     "heroId": "wang-zhaojun",
     "officialHeroId": 152,
-    "sourcePage": "https://world.honorofkings.com/zlkdatasys/ip/hero/en/152.html",
-    "sourceImage": "https://world.honorofkings.com/zlkdatasys/ip/hero/en//image/20221207/16703956284804.png",
+    "sourcePage": "https://camp.honorofkings.com/h5/app/index.html#/hero-homepage",
+    "sourceImage": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/lhZtGJlg.png",
     "originalSize": [
-      750,
-      783
+      128,
+      128
     ],
     "output": "/heroes/wang-zhaojun.webp"
   },
   {
     "heroId": "yang-jian",
     "officialHeroId": 178,
-    "sourcePage": "https://world.honorofkings.com/zlkdatasys/ip/hero/en/178.html",
-    "sourceImage": "https://world.honorofkings.com/zlkdatasys/ip/hero/en//image/20230105/16729031897438.png",
+    "sourcePage": "https://camp.honorofkings.com/h5/app/index.html#/hero-homepage",
+    "sourceImage": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/LntokS4z.png",
     "originalSize": [
-      750,
-      796
+      128,
+      128
     ],
     "output": "/heroes/yang-jian.webp"
   },
   {
     "heroId": "yuhuan",
     "officialHeroId": 176,
-    "sourcePage": "https://world.honorofkings.com/zlkdatasys/ip/hero/en/176.html",
-    "sourceImage": "https://world.honorofkings.com/zlkdatasys/ip/hero/en//image/20240430/17144390725517.png",
+    "sourcePage": "https://camp.honorofkings.com/h5/app/index.html#/hero-homepage",
+    "sourceImage": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/r97AVgaV.png",
     "originalSize": [
-      750,
-      775
+      128,
+      128
     ],
     "output": "/heroes/yuhuan.webp"
   },
   {
     "heroId": "zhuangzi",
     "officialHeroId": 113,
-    "sourcePage": "https://world.honorofkings.com/zlkdatasys/ip/hero/en/113.html",
-    "sourceImage": "https://world.honorofkings.com/zlkdatasys/ip/hero/en//image/20221207/16703961885765.png",
+    "sourcePage": "https://camp.honorofkings.com/h5/app/index.html#/hero-homepage",
+    "sourceImage": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/UZC54GWu.png",
     "originalSize": [
-      750,
-      783
+      128,
+      128
     ],
     "output": "/heroes/zhuangzi.webp"
   }

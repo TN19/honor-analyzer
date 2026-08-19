@@ -28,7 +28,7 @@ Cada campeão ocupa um JSON em `src/data/heroes`. O catálogo inicial contém ap
 
 Ao adicionar registros, mantenha patch, confiança e fontes, e valide-os com os schemas em `src/schemas`. Conhecimento teórico, histórico e regras ficam separados.
 
-Os retratos ficam em `public/heroes/<hero-id>.webp`. O manifesto `public/heroes/sources.json` registra a página e o asset oficial usados para cada campeão. Para atualizar as imagens de forma reproduzível, execute `scripts/fetch-hero-images.py` com Python e Pillow disponíveis.
+Os retratos ficam em `public/heroes/<hero-id>.webp` e usam os avatares exibidos na lista “Todos os heróis” do HoK Camp. O manifesto `public/heroes/sources.json` registra a página e o asset oficial usados para cada campeão. Para atualizar as imagens de forma reproduzível, execute `scripts/fetch-hero-images.py` com Python e Pillow disponíveis.
 
 A análise manual geral fica em `src/data/knowledge`. Termos qualitativos usam a conversão explícita inicial `bom = 7`, `melhor = 9` e `possível = 6`, sempre com confiança `0.5` e patch `unknown` até que evidências mais precisas sejam fornecidas. Flowborn Tank e Flowborn Marksman são entidades separadas.
 
