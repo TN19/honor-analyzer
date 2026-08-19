@@ -15,4 +15,9 @@ describe('manual draft knowledge',()=>{
   it('keeps Flowborn forms separate',()=>expect(manualAnalysis.heroes['flowborn-tank'].roles).not.toEqual(manualAnalysis.heroes['flowborn-marksman'].roles))
   it('records Pei only against jungle Augran',()=>expect(manualAnalysis.draftRules.find(rule=>rule.id==='counter-enemy-jungle-augran-with-pei')?.conditions).toContain('敵方 Augran 位於打野'))
   it('records Dun as Yang Jian ally',()=>expect(manualAnalysis.draftRules.find(rule=>rule.id==='yang-jian-clash-with-dun-jungle')?.rationale).toContain('這是同隊搭配，不是 counter'))
+  it('keeps multi-lane heroes available in both registered positions',()=>{
+    expect(manualAnalysis.heroes.ata.lanes).toEqual(['clash','jungle'])
+    expect(manualAnalysis.heroes['da-qiao'].lanes).toEqual(['clash','roamer'])
+    expect(manualAnalysis.heroes.umbrosa.lanes).toEqual(['clash','jungle'])
+  })
 })
