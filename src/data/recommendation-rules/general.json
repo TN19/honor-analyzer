@@ -1,0 +1,72 @@
+[
+  {
+    "id":"two-friendly-tanks-enable-garuda",
+    "confidence":0.5,
+    "candidateLane":"mid",
+    "when":{"allyRoleAtLeast":{"role":"tank","count":2}},
+    "recommendHeroIds":["garuda"],
+    "scoreBoost":2,
+    "explanationZhHant":"己方已有至少兩名坦克，可以選擇 Garuda 補足中路輸出。"
+  },
+  {
+    "id":"counter-jungle-augran-with-pei",
+    "confidence":0.5,
+    "candidateLane":"jungle",
+    "when":{"enemySlot":{"lane":"jungle","heroId":"augran"}},
+    "recommendHeroIds":["pei"],
+    "scoreBoost":2,
+    "explanationZhHant":"敵方 Augran 位於打野時，Pei 是已登記的針對選擇。"
+  },
+  {
+    "id":"yang-jian-clash-enables-dun-jungle",
+    "confidence":0.5,
+    "candidateLane":"jungle",
+    "when":{"allySlot":{"lane":"clash","heroId":"yang-jian"}},
+    "recommendHeroIds":["dun"],
+    "scoreBoost":1.5,
+    "explanationZhHant":"己方 Yang Jian 位於對抗路時，可以用 Dun 補上坦克打野。"
+  },
+  {
+    "id":"counter-yang-jian-dolia-core",
+    "confidence":0.5,
+    "when":{"enemyAll":["yang-jian","dolia"]},
+    "recommendHeroIds":["flowborn-tank","dun","kaizer","ata"],
+    "scoreBoost":2,
+    "explanationZhHant":"敵方已形成 Yang Jian＋Dolia 核心；Flowborn Tank、Dun、Kaizer 與 Ata 是已登記的體系回應。"
+  },
+  {
+    "id":"counter-liang-system",
+    "confidence":0.5,
+    "when":{"enemyAll":["liang"]},
+    "recommendHeroIds":["nuwa","guan-yu","faith","sun-ce","lian-po","lapu-lapu","zhuangzi","kaizer","flowborn-tank","dun","menki"],
+    "scoreBoost":1.5,
+    "explanationZhHant":"敵方選擇 Liang；此英雄屬於已登記的 Liang 體系應對選擇。"
+  },
+  {
+    "id":"liang-versus-tank-jungle-mid-response",
+    "confidence":0.5,
+    "candidateLane":"mid",
+    "when":{"allyAll":["liang"],"enemyAny":["flowborn-tank","dun","menki"]},
+    "recommendHeroIds":["wang-zhaojun","angela"],
+    "scoreBoost":1.5,
+    "explanationZhHant":"己方有 Liang 且敵方使用坦克打野時，中路可選 Wang Zhaojun 或 Angela。"
+  },
+  {
+    "id":"liang-versus-tank-jungle-own-jungle-response",
+    "confidence":0.5,
+    "candidateLane":"jungle",
+    "when":{"allyAll":["liang"],"enemyAny":["flowborn-tank","dun","menki"]},
+    "recommendHeroIds":["pei","jing","feyd"],
+    "scoreBoost":1.5,
+    "explanationZhHant":"己方有 Liang 且敵方使用坦克打野時，打野可選 Pei、Jing 或 Feyd。"
+  },
+  {
+    "id":"biron-needs-tank-jungle",
+    "confidence":0.5,
+    "candidateLane":"jungle",
+    "when":{"allyAll":["biron"]},
+    "recommendRoles":["tank"],
+    "scoreBoost":1,
+    "explanationZhHant":"己方選擇 Biron 後，已登記的陣容方向需要坦克打野。"
+  }
+]

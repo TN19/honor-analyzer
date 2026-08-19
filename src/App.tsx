@@ -3,7 +3,7 @@ import { heroes, getHero, getHeroDisplayName, isHeroLaneConfirmed } from './data
 import { analyzeComposition } from './engine/compositionEngine'
 import { recommendPicks } from './engine/recommendationEngine'
 import { applyPick, emptyDraft, loadDraft, removePick, saveDraft } from './store/draftStore'
-import { lanes, type DraftState, type Lane, type Team } from './types'
+import { lanes, type DraftState, type Lane, type RecommendationEvidence, type Team } from './types'
 import version from './data/meta/version.json'
 
 const laneLabels:Record<Lane,string>={clash:'對抗路',jungle:'打野',mid:'中路',farm:'發育路',roamer:'遊走'}
@@ -33,6 +33,12 @@ function Composition({title,ids}:{title:string;ids:string[]}) {
   </section>
 }
 
+function EvidenceButton({tone,label,items}:{tone:'positive'|'negative';label:string;items:RecommendationEvidence[]}) {
+  const [open,setOpen]=useState(false)
+  if(!items.length) return null
+  return <div className={`evidence ${tone}`}><button onClick={()=>setOpen(value=>!value)} aria-expanded={open}>{tone==='positive'?'✓':'!'} {label} · {items.length}</button>{open&&<div className="evidence-popover">{items.map(item=><div key={`${item.heroId}-${item.reason}`}><strong>{displayHeroName(item.heroId,item.heroId)}</strong><span>{item.reason}</span><b>{item.score.toFixed(1)}</b></div>)}</div>}</div>
+}
+
 export default function App(){
   const [draft,setDraft]=useState<DraftState>(()=>loadDraft())
   const [slot,setSlot]=useState<Slot>({team:'blue',lane:'farm'})
@@ -44,7 +50,7 @@ export default function App(){
   const filtered=heroes.filter(h=>isHeroLaneConfirmed(h,slot.lane)&&!used.has(h.id)&&(`${displayHeroName(h.id,h.name)} ${h.name}`.toLowerCase().includes(query.toLowerCase())||h.aliases.some(a=>a.toLowerCase().includes(query.toLowerCase())))).sort((a,b)=>displayHeroName(a.id,a.name).localeCompare(displayHeroName(b.id,b.name),'zh-Hant'))
   const allies=Object.values(draft[slot.team]).map(id=>getHero(id!)).filter(Boolean) as NonNullable<ReturnType<typeof getHero>>[]
   const enemies=Object.values(draft[slot.team==='blue'?'red':'blue']).map(id=>getHero(id!)).filter(Boolean) as NonNullable<ReturnType<typeof getHero>>[]
-  const recommendations=useMemo(()=>recommendPicks(filtered,allies,enemies,slot.lane),[filtered,allies,enemies,slot.lane])
+  const recommendations=useMemo(()=>recommendPicks(filtered,allies,enemies,slot.lane,{draft,team:slot.team}),[filtered,allies,enemies,slot.lane,draft,slot.team])
   const choose=(heroId:string)=>{setDraft(d=>applyPick(d,slot.team,slot.lane,heroId));const laneIndex=lanes.indexOf(slot.lane);if(laneIndex<lanes.length-1)setSlot({...slot,lane:lanes[laneIndex+1]})}
   const save=()=>{saveDraft(draft);setToast('選角已儲存於此裝置。');setTimeout(()=>setToast(''),2200)}
   const reset=()=>{setDraft(emptyDraft());setToast('選角已清除。');setTimeout(()=>setToast(''),1800)}
@@ -65,7 +71,7 @@ export default function App(){
           <div className="hero-list">{filtered.map(h=>{const name=displayHeroName(h.id,h.name),laneConfirmed=isHeroLaneConfirmed(h,slot.lane),laneText=h.lanes.length?h.lanes.map(l=>laneLabels[l]).join('、'):'位置待確認';return <button className={`hero-row ${laneConfirmed?'lane-confirmed':'lane-unconfirmed'}`} key={h.id} onClick={()=>choose(h.id)} title={laneConfirmed?'符合目前位置':'自由選角可手動放入；推薦引擎不會視為此位置候選'}><Mark name={name}/><span><strong>{name} <i>{h.name}</i></strong><small>{h.roles.length?h.roles.map(r=>roleLabels[r]??r).join(' · '):'角色待確認'} · {laneText} · 版本 {displayPatch(h.patch)}</small></span><b>{laneConfirmed?'＋':'○'}</b></button>})}{!filtered.length&&<div className="empty"><strong>沒有可用資料</strong><p>請加入通過驗證的英雄 JSON。系統不會自動捏造英雄資料。</p></div>}</div>
         </aside>
         <section className="recommendations"><div className="section-heading"><div><span className="eyebrow">最佳選擇</span><h3>可解釋推薦</h3></div><span className="formula">30 協同 · 25 對線 · 20 陣容 · 15 體系 · 10 強度</span></div>
-          {recommendations.map((r,i)=>{const h=getHero(r.heroId)!,name=displayHeroName(h.id,h.name);return <article className="rec-card" key={r.heroId}><span className="rank">0{i+1}</span><Mark name={name}/><div className="rec-main"><div><h4>{name}</h4><span className="confidence">信心度 {Math.round(r.confidence*100)}%</span></div><p>{r.reasons[0]}</p><small>⚠ {r.warnings[0]||'目前沒有登記其他風險。'}</small></div><div className="score"><b>{r.finalScore.toFixed(1)}</b><span>/ 10</span></div><button onClick={()=>choose(h.id)}>選擇</button></article>})}
+          {recommendations.map((r,i)=>{const h=getHero(r.heroId)!,name=displayHeroName(h.id,h.name);return <article className={`rec-card ${r.countering.length?'has-counter':''} ${r.counteredBy.length?'has-risk':''}`} key={r.heroId}><span className="rank">0{i+1}</span><Mark name={name}/><div className="rec-main"><div><h4>{name}</h4><span className="confidence">信心度 {Math.round(r.confidence*100)}%</span></div><p>{r.reasons[0]}</p><div className="evidence-actions"><EvidenceButton tone="positive" label="反制敵方" items={r.countering}/><EvidenceButton tone="negative" label="遭到反制" items={r.counteredBy}/>{r.matchedRules.length>0&&<span className="rule-chip">◆ 觸發規則 {r.matchedRules.length}</span>}</div><small>⚠ {r.warnings[0]||'目前沒有登記其他風險。'}</small></div><div className="score"><b>{r.finalScore.toFixed(1)}</b><span>/ 10</span></div><button onClick={()=>choose(h.id)}>選擇</button></article>})}
           {!recommendations.length&&<div className="empty large"><span>◇</span><strong>沒有符合條件的英雄</strong><p>請選擇已有資料的分路，或在英雄目錄中加入新資料。</p></div>}
         </section>
       </section>

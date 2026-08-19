@@ -2,12 +2,35 @@ import { describe,expect,it } from 'vitest'
 import { analyzeComposition } from './compositionEngine'
 import { getGloballyUnavailableHeroes, validateSeriesPick } from './availabilityEngine'
 import { calculateWinRate } from './statisticsEngine'
+import { recommendPicks } from './recommendationEngine'
 import type { Hero } from '../types'
-import { heroes, manualAnalysis, getHeroDisplayName, getHeroesByLane } from '../data'
+import { heroes, manualAnalysis, getHero, getHeroDisplayName, getHeroesByLane } from '../data'
 const hero=(tags:string[]):Hero=>({id:'test',name:'Test',aliases:[],image:'',roles:[],lanes:['farm'],primaryLane:'farm',damage:{primary:'unknown',secondary:null},tags,strengths:[],weaknesses:[],gamePhases:{early:'',mid:'',late:''},skills:{},patch:'unknown',updatedAt:'2026-08-19',sources:[]})
 describe('composition engine',()=>it('derives dimensions from tags',()=>expect(analyzeComposition([hero(['engage'])]).scores.engage).toBe(2.5)))
 describe('team-scoped global ban',()=>it('does not lock the opponent',()=>{const used={a:['arli'],b:[]};expect(getGloballyUnavailableHeroes(used,'a')).toEqual(['arli']);expect(validateSeriesPick('arli','b',used)).toBe(true)}))
 describe('statistics',()=>it('keeps sample size visible',()=>expect(calculateWinRate([{result:'win',teams:{ally:[],enemy:[]}},{result:'loss',teams:{ally:[],enemy:[]}}])).toEqual({value:.5,sampleSize:2})))
+describe('contextual recommendations',()=>{
+  it('ranks Chano as a green counter against enemy Arli',()=>{
+    const enemy=getHero('arli')!, candidates=getHeroesByLane('farm').filter(hero=>['chano','lady-sun'].includes(hero.id))
+    const result=recommendPicks(candidates,[],[enemy],'farm',{team:'blue',draft:{blue:{},red:{farm:'arli'}}})
+    expect(result[0].heroId).toBe('chano')
+    expect(result[0].countering.map(item=>item.heroId)).toContain('arli')
+  })
+  it('marks Arli red when enemy Faith counters her',()=>{
+    const result=recommendPicks([getHero('arli')!],[],[getHero('faith')!],'farm',{team:'blue',draft:{blue:{},red:{jungle:'faith'}}})
+    expect(result[0].counteredBy.map(item=>item.heroId)).toContain('faith')
+    expect(result[0].breakdown.matchup).toBeLessThan(5)
+  })
+  it('triggers Pei specifically against jungle Augran',()=>{
+    const result=recommendPicks(getHeroesByLane('jungle'),[],[getHero('augran')!],'jungle',{team:'blue',draft:{blue:{},red:{jungle:'augran'}}})
+    expect(result.find(item=>item.heroId==='pei')?.matchedRules).toContain('counter-jungle-augran-with-pei')
+  })
+  it('recommends Garuda after two allied tanks',()=>{
+    const allies=[getHero('flowborn-tank')!,getHero('lian-po')!]
+    const result=recommendPicks(getHeroesByLane('mid'),allies,[],'mid',{team:'blue',draft:{blue:{clash:'flowborn-tank',roamer:'lian-po'},red:{}}})
+    expect(result.find(item=>item.heroId==='garuda')?.matchedRules).toContain('two-friendly-tanks-enable-garuda')
+  })
+})
 describe('manual draft knowledge',()=>{
   it('validates every referenced hero',()=>expect(Object.keys(manualAnalysis.heroes).length).toBeGreaterThan(40))
   it('exposes every registered hero to the frontend catalog',()=>expect(heroes.map(hero=>hero.id).sort()).toEqual(Object.keys(manualAnalysis.heroes).sort()))

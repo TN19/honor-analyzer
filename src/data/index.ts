@@ -3,8 +3,11 @@ import { heroSchema } from '../schemas/hero.schema'
 import type { Hero, Lane } from '../types'
 import manualAnalysisRaw from './knowledge/manual-analysis-2026-08-19.json'
 import { manualAnalysisSchema } from '../schemas/manualAnalysis.schema'
+import recommendationRulesRaw from './recommendation-rules/general.json'
+import { recommendationRulesSchema } from '../schemas/recommendationRules.schema'
 
 export const manualAnalysis = manualAnalysisSchema.parse(manualAnalysisRaw)
+export const recommendationRules = recommendationRulesSchema.parse(recommendationRulesRaw)
 
 const canonicalHeroes: Record<string, unknown> = { arli }
 const rawHeroes = Object.entries(manualAnalysis.heroes).map(([id, registry]) => canonicalHeroes[id] ?? {
