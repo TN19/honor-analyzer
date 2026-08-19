@@ -190,10 +190,10 @@
     "heroId": "flowborn-marksman",
     "officialHeroId": 584,
     "sourcePage": "https://world.honorofkings.com/zlkdatasys/ip/hero/en/584.html",
-    "sourceImage": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/584/584.jpg",
+    "sourceImage": "https://camp.honorofkings.com/manage_material/p/vh61ZIOZ.png",
     "originalSize": [
-      200,
-      200
+      1800,
+      2800
     ],
     "output": "/heroes/flowborn-marksman.webp"
   },

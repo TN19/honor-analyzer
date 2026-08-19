@@ -9,7 +9,7 @@ import urllib.parse
 import urllib.request
 from pathlib import Path
 
-from PIL import Image
+from PIL import Image, ImageDraw, ImageOps
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -27,6 +27,9 @@ HERO_IDS = {
     "menki": 198, "nakoruru": 162, "nezha": 180, "nuwa": 179,
     "pei": 502, "shouyue": 196, "sun-ce": 510, "umbrosa": 558,
     "wang-zhaojun": 152, "yang-jian": 178, "yuhuan": 176, "zhuangzi": 113,
+}
+IMAGE_OVERRIDES = {
+    "flowborn-marksman": "https://camp.honorofkings.com/manage_material/p/vh61ZIOZ.png",
 }
 
 
@@ -46,13 +49,19 @@ def find_portrait(page_url: str, html: str, hero_id: int) -> str:
     return urllib.parse.urljoin(page_url, candidates[0])
 
 
-def convert_portrait(data: bytes, destination: Path) -> tuple[int, int]:
+def convert_portrait(data: bytes, destination: Path, circular_crop: bool = False) -> tuple[int, int]:
     with Image.open(io.BytesIO(data)) as source:
         portrait = source.convert("RGBA")
-        scale = min(512 / portrait.width, 512 / portrait.height)
-        portrait = portrait.resize((round(portrait.width * scale), round(portrait.height * scale)), Image.Resampling.LANCZOS)
-        canvas = Image.new("RGBA", (512, 512), (0, 0, 0, 0))
-        canvas.alpha_composite(portrait, ((512 - portrait.width) // 2, (512 - portrait.height) // 2))
+        if circular_crop:
+            canvas = ImageOps.fit(portrait, (512, 512), method=Image.Resampling.LANCZOS, centering=(0.5, 0.32))
+            mask = Image.new("L", (512, 512), 0)
+            ImageDraw.Draw(mask).ellipse((0, 0, 511, 511), fill=255)
+            canvas.putalpha(mask)
+        else:
+            bounds = portrait.getchannel("A").getbbox()
+            if bounds:
+                portrait = portrait.crop(bounds)
+            canvas = portrait.resize((512, 512), Image.Resampling.LANCZOS)
         canvas.save(destination, "WEBP", quality=90, method=6)
         return source.size
 
@@ -63,8 +72,12 @@ def main() -> None:
     for slug, hero_id in HERO_IDS.items():
         page_url = OFFICIAL_PAGE.format(hero_id=hero_id)
         html = request_bytes(page_url).decode("utf-8", errors="replace")
-        image_url = find_portrait(page_url, html, hero_id)
-        original_size = convert_portrait(request_bytes(image_url), OUTPUT / f"{slug}.webp")
+        image_url = IMAGE_OVERRIDES.get(slug) or find_portrait(page_url, html, hero_id)
+        original_size = convert_portrait(
+            request_bytes(image_url),
+            OUTPUT / f"{slug}.webp",
+            circular_crop=slug == "flowborn-marksman",
+        )
         manifest.append({
             "heroId": slug,
             "officialHeroId": hero_id,
