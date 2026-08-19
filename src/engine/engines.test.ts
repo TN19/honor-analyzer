@@ -3,7 +3,7 @@ import { analyzeComposition } from './compositionEngine'
 import { getGloballyUnavailableHeroes, validateSeriesPick } from './availabilityEngine'
 import { calculateWinRate } from './statisticsEngine'
 import type { Hero } from '../types'
-import { heroes, manualAnalysis, getHeroDisplayName } from '../data'
+import { heroes, manualAnalysis, getHeroDisplayName, getHeroesByLane } from '../data'
 const hero=(tags:string[]):Hero=>({id:'test',name:'Test',aliases:[],image:'',roles:[],lanes:['farm'],primaryLane:'farm',damage:{primary:'unknown',secondary:null},tags,strengths:[],weaknesses:[],gamePhases:{early:'',mid:'',late:''},skills:{},patch:'unknown',updatedAt:'2026-08-19',sources:[]})
 describe('composition engine',()=>it('derives dimensions from tags',()=>expect(analyzeComposition([hero(['engage'])]).scores.engage).toBe(2.5)))
 describe('team-scoped global ban',()=>it('does not lock the opponent',()=>{const used={a:['arli'],b:[]};expect(getGloballyUnavailableHeroes(used,'a')).toEqual(['arli']);expect(validateSeriesPick('arli','b',used)).toBe(true)}))
@@ -17,7 +17,17 @@ describe('manual draft knowledge',()=>{
   it('records Dun as Yang Jian ally',()=>expect(manualAnalysis.draftRules.find(rule=>rule.id==='yang-jian-clash-with-dun-jungle')?.rationale).toContain('這是同隊搭配，不是 counter'))
   it('keeps multi-lane heroes available in both registered positions',()=>{
     expect(manualAnalysis.heroes.ata.lanes).toEqual(['clash','jungle'])
-    expect(manualAnalysis.heroes['da-qiao'].lanes).toEqual(['clash','roamer'])
+    expect(manualAnalysis.heroes['da-qiao'].lanes).toEqual(['mid','roamer'])
     expect(manualAnalysis.heroes.umbrosa.lanes).toEqual(['clash','jungle'])
+  })
+  it('uses confirmed Traditional Chinese hero names',()=>{
+    expect(getHeroDisplayName('umbrosa')).toBe('影')
+    expect(getHeroDisplayName('faith')).toBe('曹操')
+  })
+  it('registers Yuhuan for mid and roamer',()=>expect(manualAnalysis.heroes.yuhuan.lanes).toEqual(['mid','roamer']))
+  it('returns only heroes registered for the requested lane',()=>{
+    expect(getHeroesByLane('mid').every(hero=>hero.lanes.includes('mid'))).toBe(true)
+    expect(getHeroesByLane('roamer').some(hero=>hero.id==='yuhuan')).toBe(true)
+    expect(getHeroesByLane('clash').some(hero=>hero.id==='da-qiao')).toBe(false)
   })
 })

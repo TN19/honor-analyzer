@@ -41,7 +41,7 @@ export default function App(){
   const [toast,setToast]=useState('')
   useEffect(()=>{const update=()=>setOnline(navigator.onLine);addEventListener('online',update);addEventListener('offline',update);return()=>{removeEventListener('online',update);removeEventListener('offline',update)}},[])
   const used=new Set([...Object.values(draft.blue),...Object.values(draft.red)])
-  const filtered=heroes.filter(h=>!used.has(h.id)&&(`${displayHeroName(h.id,h.name)} ${h.name}`.toLowerCase().includes(query.toLowerCase())||h.aliases.some(a=>a.toLowerCase().includes(query.toLowerCase())))).sort((a,b)=>Number(isHeroLaneConfirmed(b,slot.lane))-Number(isHeroLaneConfirmed(a,slot.lane))||displayHeroName(a.id,a.name).localeCompare(displayHeroName(b.id,b.name),'zh-Hant'))
+  const filtered=heroes.filter(h=>isHeroLaneConfirmed(h,slot.lane)&&!used.has(h.id)&&(`${displayHeroName(h.id,h.name)} ${h.name}`.toLowerCase().includes(query.toLowerCase())||h.aliases.some(a=>a.toLowerCase().includes(query.toLowerCase())))).sort((a,b)=>displayHeroName(a.id,a.name).localeCompare(displayHeroName(b.id,b.name),'zh-Hant'))
   const allies=Object.values(draft[slot.team]).map(id=>getHero(id!)).filter(Boolean) as NonNullable<ReturnType<typeof getHero>>[]
   const enemies=Object.values(draft[slot.team==='blue'?'red':'blue']).map(id=>getHero(id!)).filter(Boolean) as NonNullable<ReturnType<typeof getHero>>[]
   const recommendations=useMemo(()=>recommendPicks(filtered,allies,enemies,slot.lane),[filtered,allies,enemies,slot.lane])
