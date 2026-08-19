@@ -82,7 +82,7 @@
     {"heroId":"nakoruru","targetId":"flowborn-tank","score":7,"confidence":0.5,"conditions":[],"reasons":["適合處理坦克，但前期強度不足"],"sources":[{"type":"manual-analysis","title":"使用者提供的初版選角分析","dateAccessed":"2026-08-19"}]}
   ],
   "synergies": [
-    {"heroIds":["yang-jian","dolia"],"score":9,"confidence":0.5,"conditions":["紅方時效果更好，但不是必要條件","Dolia 可同時影響兩個目標"],"reasons":[],"sources":[{"type":"manual-analysis","title":"使用者提供的初版選角分析","dateAccessed":"2026-08-19"}]},
+    {"heroIds":["yang-jian","dolia"],"score":9,"confidence":0.5,"conditions":["紅方時更容易取得組合，但不是必要條件"],"reasons":["紅方的選角窗口可以連續取得兩名英雄，降低組合被拆開的風險"],"sources":[{"type":"manual-analysis","title":"使用者提供的初版選角分析","dateAccessed":"2026-08-19"}]},
     {"heroIds":["ao-yin","dyadia"],"score":7,"confidence":0.5,"conditions":[],"reasons":[],"sources":[{"type":"manual-analysis","title":"使用者提供的初版選角分析","dateAccessed":"2026-08-19"}]},
     {"heroIds":["pei","biron"],"score":7,"confidence":0.5,"conditions":[],"reasons":[],"sources":[{"type":"manual-analysis","title":"使用者提供的初版選角分析","dateAccessed":"2026-08-19"}]},
     {"heroIds":["da-qiao","flowborn-tank"],"score":7,"confidence":0.5,"conditions":[],"reasons":[],"sources":[{"type":"manual-analysis","title":"使用者提供的初版選角分析","dateAccessed":"2026-08-19"}]}
