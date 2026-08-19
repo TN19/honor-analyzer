@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState } from 'react'
-import { heroes, getHero } from './data'
+import { heroes, getHero, getHeroDisplayName, isHeroLaneConfirmed } from './data'
 import { analyzeComposition } from './engine/compositionEngine'
 import { recommendPicks } from './engine/recommendationEngine'
 import { applyPick, emptyDraft, loadDraft, removePick, saveDraft } from './store/draftStore'
@@ -7,10 +7,9 @@ import { lanes, type DraftState, type Lane, type Team } from './types'
 import version from './data/meta/version.json'
 
 const laneLabels:Record<Lane,string>={clash:'對抗路',jungle:'打野',mid:'中路',farm:'發育路',roamer:'遊走'}
-const heroNames:Record<string,string>={arli:'公孫離'}
 const roleLabels:Record<string,string>={marksman:'射手',tank:'坦克',mage:'法師',assassin:'刺客',fighter:'戰士',support:'輔助'}
 const dimensionLabels:Record<string,string>={frontline:'前排',engage:'開團',peel:'保護',controle:'控制',mobilidade:'機動性',sustentacao:'續航',poke:'消耗',burst:'爆發',danoContinuo:'持續傷害',mapa:'地圖控制'}
-const displayHeroName=(id:string,name:string)=>heroNames[id]??name
+const displayHeroName=(id:string,_name:string)=>getHeroDisplayName(id)
 const displayPatch=(patch:string)=>patch==='unknown'?'待確認':patch
 type Slot={team:Team;lane:Lane}
 
@@ -42,7 +41,7 @@ export default function App(){
   const [toast,setToast]=useState('')
   useEffect(()=>{const update=()=>setOnline(navigator.onLine);addEventListener('online',update);addEventListener('offline',update);return()=>{removeEventListener('online',update);removeEventListener('offline',update)}},[])
   const used=new Set([...Object.values(draft.blue),...Object.values(draft.red)])
-  const filtered=heroes.filter(h=>h.lanes.includes(slot.lane)&&!used.has(h.id)&&(`${displayHeroName(h.id,h.name)} ${h.name}`.toLowerCase().includes(query.toLowerCase())||h.aliases.some(a=>a.toLowerCase().includes(query.toLowerCase()))))
+  const filtered=heroes.filter(h=>!used.has(h.id)&&(`${displayHeroName(h.id,h.name)} ${h.name}`.toLowerCase().includes(query.toLowerCase())||h.aliases.some(a=>a.toLowerCase().includes(query.toLowerCase())))).sort((a,b)=>Number(isHeroLaneConfirmed(b,slot.lane))-Number(isHeroLaneConfirmed(a,slot.lane))||displayHeroName(a.id,a.name).localeCompare(displayHeroName(b.id,b.name),'zh-Hant'))
   const allies=Object.values(draft[slot.team]).map(id=>getHero(id!)).filter(Boolean) as NonNullable<ReturnType<typeof getHero>>[]
   const enemies=Object.values(draft[slot.team==='blue'?'red':'blue']).map(id=>getHero(id!)).filter(Boolean) as NonNullable<ReturnType<typeof getHero>>[]
   const recommendations=useMemo(()=>recommendPicks(filtered,allies,enemies,slot.lane),[filtered,allies,enemies,slot.lane])
@@ -63,7 +62,7 @@ export default function App(){
       </section>
       <section className="workspace">
         <aside className="picker"><div className="section-heading"><div><span className="eyebrow">填入欄位</span><h3>{slot.team==='blue'?'蒼穹':'暮光'} · {laneLabels[slot.lane]}</h3></div></div><label className="search"><span>⌕</span><input value={query} onChange={e=>setQuery(e.target.value)} placeholder="搜尋英雄或別名…" aria-label="搜尋英雄或別名"/></label><div className="lane-tabs">{lanes.map(l=><button className={slot.lane===l?'active':''} onClick={()=>setSlot({...slot,lane:l})} key={l}>{laneLabels[l]}</button>)}</div>
-          <div className="hero-list">{filtered.map(h=>{const name=displayHeroName(h.id,h.name);return <button className="hero-row" key={h.id} onClick={()=>choose(h.id)}><Mark name={name}/><span><strong>{name}</strong><small>{h.roles.map(r=>roleLabels[r]??r).join(' · ')} · 版本 {displayPatch(h.patch)}</small></span><b>+</b></button>})}{!filtered.length&&<div className="empty"><strong>沒有可用資料</strong><p>請為此分路加入通過驗證的 JSON。系統不會自動捏造英雄資料。</p></div>}</div>
+          <div className="hero-list">{filtered.map(h=>{const name=displayHeroName(h.id,h.name),laneConfirmed=isHeroLaneConfirmed(h,slot.lane),laneText=h.lanes.length?h.lanes.map(l=>laneLabels[l]).join('、'):'位置待確認';return <button className={`hero-row ${laneConfirmed?'lane-confirmed':'lane-unconfirmed'}`} key={h.id} onClick={()=>choose(h.id)} title={laneConfirmed?'符合目前位置':'自由選角可手動放入；推薦引擎不會視為此位置候選'}><Mark name={name}/><span><strong>{name} <i>{h.name}</i></strong><small>{h.roles.length?h.roles.map(r=>roleLabels[r]??r).join(' · '):'角色待確認'} · {laneText} · 版本 {displayPatch(h.patch)}</small></span><b>{laneConfirmed?'＋':'○'}</b></button>})}{!filtered.length&&<div className="empty"><strong>沒有可用資料</strong><p>請加入通過驗證的英雄 JSON。系統不會自動捏造英雄資料。</p></div>}</div>
         </aside>
         <section className="recommendations"><div className="section-heading"><div><span className="eyebrow">最佳選擇</span><h3>可解釋推薦</h3></div><span className="formula">30 協同 · 25 對線 · 20 陣容 · 15 體系 · 10 強度</span></div>
           {recommendations.map((r,i)=>{const h=getHero(r.heroId)!,name=displayHeroName(h.id,h.name);return <article className="rec-card" key={r.heroId}><span className="rank">0{i+1}</span><Mark name={name}/><div className="rec-main"><div><h4>{name}</h4><span className="confidence">信心度 {Math.round(r.confidence*100)}%</span></div><p>{r.reasons[0]}</p><small>⚠ {r.warnings[0]||'目前沒有登記其他風險。'}</small></div><div className="score"><b>{r.finalScore.toFixed(1)}</b><span>/ 10</span></div><button onClick={()=>choose(h.id)}>選擇</button></article>})}
