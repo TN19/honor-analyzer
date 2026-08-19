@@ -49,7 +49,7 @@ export default function App(){
   const save=()=>{saveDraft(draft);setToast('選角已儲存於此裝置。');setTimeout(()=>setToast(''),2200)}
   const reset=()=>{setDraft(emptyDraft());setToast('選角已清除。');setTimeout(()=>setToast(''),1800)}
   return <div className="app-shell">
-    <header><a className="brand" href="#"><span className="brand-glyph">選</span><span><strong>選角智慧</strong><small>《王者榮耀》· 巴西區</small></span></a><nav><a className="active" href="#draft">自由選角</a><a href="#future">禁選模式 <em>即將推出</em></a><a href="#future">系列賽</a><a href="#future">對戰紀錄</a></nav><div className="status"><span className={online?'online':'offline'}/>{online?'已連線':'離線'}<b>版本 {displayPatch(version.currentPatch)}</b></div></header>
+    <header><a className="brand" href="#"><span className="brand-glyph">BP</span><span><strong>BP 分析</strong><small>《王者榮耀》</small></span></a><nav><a className="active" href="#draft">自由選角</a><a href="#future">禁選模式 <em>即將推出</em></a><a href="#future">系列賽</a><a href="#future">對戰紀錄</a></nav><div className="status"><span className={online?'online':'offline'}/>{online?'已連線':'離線'}<b>版本 {displayPatch(version.currentPatch)}</b></div></header>
     <main>
       <div className="hero-heading"><div><span className="eyebrow">陣容實驗室</span><h1>自由選角</h1><p>配置雙方陣容、找出戰術缺口，並取得附帶證據與風險說明的推薦，而不只是一個分數。</p></div><div className="actions"><button className="ghost" onClick={reset}>清除</button><button className="primary" onClick={save}>儲存選角</button></div></div>
       <section className="draft-stage" id="draft">
@@ -71,6 +71,6 @@ export default function App(){
       </section>
       <div className="analysis-grid"><Composition title="蒼穹隊" ids={Object.values(draft.blue) as string[]}/><Composition title="暮光隊" ids={Object.values(draft.red) as string[]}/></div>
     </main>
-    <footer><span>資料集 v{version.datasetVersion} · {version.region} 區</span><span>本機資料 · 首次載入後可離線使用</span></footer>{toast&&<div className="toast">✓ {toast}</div>}
+    <footer><span>資料集 v{version.datasetVersion}</span><span>本機資料 · 首次載入後可離線使用</span></footer>{toast&&<div className="toast">✓ {toast}</div>}
   </div>
 }

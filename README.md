@@ -1,4 +1,4 @@
-# Honor of Kings Draft Intelligence
+# BP 分析
 
 Aplicação estática e offline-first para análise explicável de drafts. Esta primeira versão implementa o Draft Livre, validação de dados, análise de composição, recomendações, salvamento local e a fundação para Ban & Pick, Global Ban e histórico.
 
