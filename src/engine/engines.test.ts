@@ -30,9 +30,23 @@ describe('contextual recommendations',()=>{
     const result=recommendPicks(getHeroesByLane('mid'),allies,[],'mid',{team:'blue',draft:{blue:{clash:'flowborn-tank',roamer:'lian-po'},red:{}}})
     expect(result.find(item=>item.heroId==='garuda')?.matchedRules).toContain('two-friendly-tanks-enable-garuda')
   })
+  it('keeps reasonable matchup evidence yellow instead of green or red',()=>{
+    const result=recommendPicks([getHero('devara')!],[],[getHero('faith')!],'clash',{team:'blue',draft:{blue:{},red:{clash:'faith'}}})
+    expect(result[0].reasonable.map(item=>item.heroId)).toContain('faith')
+    expect(result[0].countering).toHaveLength(0)
+  })
+  it('recommends Lu Bu against two enemy tanks',()=>{
+    const enemies=[getHero('flowborn-tank')!,getHero('bai-qi')!]
+    const result=recommendPicks(getHeroesByLane('clash'),[],enemies,'clash',{team:'blue',draft:{blue:{},red:{clash:'bai-qi',jungle:'flowborn-tank'}}})
+    expect(result.find(item=>item.heroId==='lu-bu')?.ruleRecommendations.length).toBeGreaterThan(0)
+  })
+  it('recommends a carry jungler with allied mid Heino',()=>{
+    const result=recommendPicks(getHeroesByLane('jungle'),[getHero('heino')!],[],'jungle',{team:'blue',draft:{blue:{mid:'heino'},red:{}}})
+    expect(result.find(item=>item.heroId==='jing')?.matchedRules).toContain('heino-mid-enables-carry-jungle')
+  })
 })
 describe('manual draft knowledge',()=>{
-  it('validates every referenced hero',()=>expect(Object.keys(manualAnalysis.heroes).length).toBeGreaterThan(40))
+  it('validates every referenced hero',()=>expect(Object.keys(manualAnalysis.heroes)).toHaveLength(68))
   it('exposes every registered hero to the frontend catalog',()=>expect(heroes.map(hero=>hero.id).sort()).toEqual(Object.keys(manualAnalysis.heroes).sort()))
   it('provides Traditional Chinese display names',()=>expect(getHeroDisplayName('haya')).toBe('海月'))
   it('keeps Flowborn forms separate',()=>expect(manualAnalysis.heroes['flowborn-tank'].roles).not.toEqual(manualAnalysis.heroes['flowborn-marksman'].roles))

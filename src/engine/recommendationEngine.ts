@@ -20,15 +20,19 @@ function conditionMatches(rule:RecommendationRule, context:RecommendationContext
   if(when.allySlot && context.draft[context.team][when.allySlot.lane]!==when.allySlot.heroId) return false
   if(when.enemySlot && context.draft[enemyTeam][when.enemySlot.lane]!==when.enemySlot.heroId) return false
   if(when.allyRoleAtLeast && allies.filter(hero=>hero.roles.includes(when.allyRoleAtLeast!.role)).length<when.allyRoleAtLeast.count) return false
+  if(when.enemyRoleAtLeast && enemies.filter(hero=>hero.roles.includes(when.enemyRoleAtLeast!.role)).length<when.enemyRoleAtLeast.count) return false
+  if(when.enemyRoleAtMost && enemies.filter(hero=>hero.roles.includes(when.enemyRoleAtMost!.role)).length>when.enemyRoleAtMost.count) return false
   return true
 }
 
 function evidenceForCandidate(candidate:Hero, allies:Hero[], enemies:Hero[], lane:Lane) {
   const enemyIds=new Set(enemies.map(hero=>hero.id)), allyIds=new Set(allies.map(hero=>hero.id))
-  const countering:RecommendationEvidence[]=manualAnalysis.matchups.filter(entry=>entry.heroId===candidate.id&&enemyIds.has(entry.targetId)&&(!entry.lane||entry.lane===lane)).map(entry=>({heroId:entry.targetId,score:entry.score,reason:entry.reasons[0]??'已登記為有利對局。'}))
-  const counteredBy:RecommendationEvidence[]=manualAnalysis.matchups.filter(entry=>entry.targetId===candidate.id&&enemyIds.has(entry.heroId)&&(!entry.lane||entry.lane===lane)).map(entry=>({heroId:entry.heroId,score:entry.score,reason:entry.reasons[0]??'敵方英雄已登記為此選擇的反制。'}))
+  const relevant=manualAnalysis.matchups.filter(entry=>entry.heroId===candidate.id&&enemyIds.has(entry.targetId)&&(!entry.lane||entry.lane===lane))
+  const countering:RecommendationEvidence[]=relevant.filter(entry=>entry.score>=7).map(entry=>({heroId:entry.targetId,score:entry.score,reason:entry.reasons[0]??'已登記為有利對局。'}))
+  const reasonable:RecommendationEvidence[]=relevant.filter(entry=>entry.score<7).map(entry=>({heroId:entry.targetId,score:entry.score,reason:entry.reasons[0]??'已登記為合理選擇。'}))
+  const counteredBy:RecommendationEvidence[]=manualAnalysis.matchups.filter(entry=>entry.targetId===candidate.id&&entry.score>=7&&enemyIds.has(entry.heroId)&&(!entry.lane||entry.lane===lane)).map(entry=>({heroId:entry.heroId,score:entry.score,reason:entry.reasons[0]??'敵方英雄已登記為此選擇的反制。'}))
   const synergyWith:RecommendationEvidence[]=manualAnalysis.synergies.filter(entry=>entry.heroIds.includes(candidate.id)&&entry.heroIds.some(id=>id!==candidate.id&&allyIds.has(id))).flatMap(entry=>entry.heroIds.filter(id=>id!==candidate.id&&allyIds.has(id)).map(heroId=>({heroId,score:entry.score,reason:entry.reasons[0]??entry.conditions[0]??'已登記為協同組合。'})))
-  return {countering,counteredBy,synergyWith}
+  return {countering,reasonable,counteredBy,synergyWith}
 }
 
 export function recommendPicks(candidates:Hero[], allies:Hero[], enemies:Hero[], lane:Lane, context?:RecommendationContext):Recommendation[] {
@@ -42,11 +46,15 @@ export function recommendPicks(candidates:Hero[], allies:Hero[], enemies:Hero[],
     const matchupDelta=evidence.countering.reduce((sum,item)=>sum+(item.score-5),0)-evidence.counteredBy.reduce((sum,item)=>sum+(item.score-5),0)
     const matchup=clamp(5+matchupDelta)
     const matchingRules=context?recommendationRules.filter(rule=>rule.candidateLane===undefined||rule.candidateLane===lane).filter(rule=>conditionMatches(rule,context,allies,enemies)).filter(rule=>(rule.recommendHeroIds?.includes(hero.id)??false)||(rule.recommendRoles?.some(role=>hero.roles.includes(role))??false)):[]
+    const goodRules=matchingRules.filter(rule=>rule.tone==='good')
+    const reasonableRules=matchingRules.filter(rule=>rule.tone==='reasonable')
+    const ruleRecommendations:RecommendationEvidence[]=goodRules.map(rule=>({heroId:hero.id,score:7,reason:rule.explanationZhHant}))
+    const reasonable=[...evidence.reasonable,...reasonableRules.map(rule=>({heroId:hero.id,score:6,reason:rule.explanationZhHant}))]
     const ruleBoost=matchingRules.reduce((sum,rule)=>sum+rule.scoreBoost,0)
     const archetypeFit=clamp(5+ruleBoost), meta=hero.metaScore ?? 5
     const baseScore=synergy*.3+matchup*.25+compositionNeed*.2+archetypeFit*.15+meta*.1
     const finalScore=clamp(baseScore+Math.min(1.5,ruleBoost*.35))
-    const reasons=[...matchingRules.map(rule=>rule.explanationZhHant)]
+    const reasons=[...goodRules.map(rule=>rule.explanationZhHant),...reasonableRules.map(rule=>rule.explanationZhHant)]
     if(evidence.countering.length) reasons.push(`可反制 ${evidence.countering.map(item=>manualAnalysis.heroes[item.heroId]?.displayNameZhHant??item.heroId).join('、')}。`)
     if(evidence.synergyWith.length) reasons.push(`可配合 ${evidence.synergyWith.map(item=>manualAnalysis.heroes[item.heroId]?.displayNameZhHant??item.heroId).join('、')}。`)
     if(!reasons.length) reasons.push(covered.length?`補足目前需求：${covered.map(key=>needLabels[key]).join('、')}。`:'符合此分路；目前沒有觸發額外的手動規則。')
@@ -54,7 +62,12 @@ export function recommendPicks(candidates:Hero[], allies:Hero[], enemies:Hero[],
     if(!allies.length) warnings.push('尚未選擇隊友：協同評分暫為中立。')
     if(!enemies.length) warnings.push('尚未選擇敵方英雄：對線評分暫為中立。')
     if(hero.patch==='unknown') warnings.push('資料版本尚未確認。')
-    const evidenceCount=evidence.countering.length+evidence.counteredBy.length+evidence.synergyWith.length+matchingRules.length
-    return {heroId:hero.id,lane,finalScore:+finalScore.toFixed(1),confidence:Math.min(.85,.3+evidenceCount*.08),breakdown:{synergy,matchup,compositionNeed,archetypeFit,meta},reasons,warnings,countering:evidence.countering,counteredBy:evidence.counteredBy,synergyWith:evidence.synergyWith,matchedRules:matchingRules.map(rule=>rule.id)}
-  }).sort((a,b)=>b.finalScore-a.finalScore)
+    const evidenceCount=evidence.countering.length+evidence.counteredBy.length+evidence.synergyWith.length+matchingRules.length+reasonable.length
+    return {heroId:hero.id,lane,finalScore:+finalScore.toFixed(1),confidence:Math.min(.85,.3+evidenceCount*.08),breakdown:{synergy,matchup,compositionNeed,archetypeFit,meta},reasons,warnings,countering:evidence.countering,reasonable,counteredBy:evidence.counteredBy,synergyWith:evidence.synergyWith,ruleRecommendations,matchedRules:matchingRules.map(rule=>rule.id)}
+  }).sort((a,b)=>{
+    const aGreen=a.countering.length+a.synergyWith.length+a.ruleRecommendations.length
+    const bGreen=b.countering.length+b.synergyWith.length+b.ruleRecommendations.length
+    if(Boolean(aGreen)!==Boolean(bGreen)) return bGreen-aGreen
+    return b.finalScore-a.finalScore
+  })
 }

@@ -24,13 +24,15 @@ O workflow `.github/workflows/deploy-pages.yml` publica automaticamente a pasta 
 
 ## Dados
 
-Cada campeão ocupa um JSON em `src/data/heroes`. O catálogo inicial contém apenas Arli, usando exclusivamente o exemplo fornecido na especificação. Nenhuma skill, matchup, sinergia ou regra oficial incerta foi inventada.
+O catálogo atual reúne 68 heróis. O registro canônico de exemplo permanece em `src/data/heroes`, enquanto as notas gerais fornecidas pelo usuário ficam versionadas em `src/data/knowledge`, incluindo o adendo aprovado em 19 de agosto de 2026.
 
 Ao adicionar registros, mantenha patch, confiança e fontes, e valide-os com os schemas em `src/schemas`. Conhecimento teórico, histórico e regras ficam separados.
 
 Os retratos ficam em `public/heroes/<hero-id>.webp` e usam os avatares exibidos na lista “Todos os heróis” do HoK Camp. O manifesto `public/heroes/sources.json` registra a página e o asset oficial usados para cada campeão. Para atualizar as imagens de forma reproduzível, execute `scripts/fetch-hero-images.py` com Python e Pillow disponíveis.
 
 A análise manual geral fica em `src/data/knowledge`. Termos qualitativos usam a conversão explícita inicial `bom = 7`, `melhor = 9` e `possível = 6`, sempre com confiança `0.5` e patch `unknown` até que evidências mais precisas sejam fornecidas. Flowborn Tank e Flowborn Marksman são entidades separadas.
+
+Na interface de recomendações, verde indica uma escolha boa, amarelo indica uma escolha razoável e vermelho indica que o candidato está sendo counterado. Uma recomendação verde tem prioridade sobre a amarela; sinais vermelhos podem aparecer junto dos demais para expor o risco. Quando há vários motivos da mesma categoria, a tag mostra a quantidade e abre a lista completa.
 
 ## Regra obrigatória de idioma do frontend
 

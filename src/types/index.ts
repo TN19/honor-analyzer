@@ -6,4 +6,4 @@ export type Hero = { id:string; name:string; aliases:string[]; image:string; rol
 export type DraftPick = { heroId:string; lane:Lane }
 export type DraftState = { blue:Partial<Record<Lane,string>>; red:Partial<Record<Lane,string>> }
 export type RecommendationEvidence = { heroId:string; score:number; reason:string }
-export type Recommendation = {heroId:string;lane:Lane;finalScore:number;confidence:number;breakdown:{synergy:number;matchup:number;compositionNeed:number;archetypeFit:number;meta:number};reasons:string[];warnings:string[];countering:RecommendationEvidence[];counteredBy:RecommendationEvidence[];synergyWith:RecommendationEvidence[];matchedRules:string[]}
+export type Recommendation = {heroId:string;lane:Lane;finalScore:number;confidence:number;breakdown:{synergy:number;matchup:number;compositionNeed:number;archetypeFit:number;meta:number};reasons:string[];warnings:string[];countering:RecommendationEvidence[];reasonable:RecommendationEvidence[];counteredBy:RecommendationEvidence[];synergyWith:RecommendationEvidence[];ruleRecommendations:RecommendationEvidence[];matchedRules:string[]}

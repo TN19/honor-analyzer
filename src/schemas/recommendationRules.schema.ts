@@ -14,10 +14,13 @@ export const recommendationRulesSchema = z.array(z.object({
     allySlot: slotConditionSchema.optional(),
     enemySlot: slotConditionSchema.optional(),
     allyRoleAtLeast: z.object({ role: z.string(), count: z.number().int().positive() }).optional(),
+    enemyRoleAtLeast: z.object({ role: z.string(), count: z.number().int().nonnegative() }).optional(),
+    enemyRoleAtMost: z.object({ role: z.string(), count: z.number().int().nonnegative() }).optional(),
   }),
   recommendHeroIds: z.array(z.string()).optional(),
   recommendRoles: z.array(z.string()).optional(),
   scoreBoost: z.number().min(0).max(5),
+  tone: z.enum(['good','reasonable']).default('good'),
   explanationZhHant: z.string(),
 }))
 

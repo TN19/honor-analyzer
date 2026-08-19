@@ -33,10 +33,11 @@ function Composition({title,ids}:{title:string;ids:string[]}) {
   </section>
 }
 
-function EvidenceButton({tone,label,items}:{tone:'positive'|'negative';label:string;items:RecommendationEvidence[]}) {
+function EvidenceButton({tone,label,items}:{tone:'positive'|'caution'|'negative';label:string;items:RecommendationEvidence[]}) {
   const [open,setOpen]=useState(false)
   if(!items.length) return null
-  return <div className={`evidence ${tone}`}><button onClick={()=>setOpen(value=>!value)} aria-expanded={open}>{tone==='positive'?'✓':'!'} {label} · {items.length}</button>{open&&<div className="evidence-popover">{items.map(item=><div key={`${item.heroId}-${item.reason}`}><strong>{displayHeroName(item.heroId,item.heroId)}</strong><span>{item.reason}</span><b>{item.score.toFixed(1)}</b></div>)}</div>}</div>
+  const icon=tone==='positive'?'✓':tone==='caution'?'◆':'!'
+  return <div className={`evidence ${tone}`}><button onClick={()=>setOpen(value=>!value)} aria-expanded={open}>{icon} {label} · {items.length}</button>{open&&<div className="evidence-popover">{items.map(item=><div key={`${item.heroId}-${item.reason}`}><strong>{displayHeroName(item.heroId,item.heroId)}</strong><span>{item.reason}</span><b>{item.score.toFixed(1)}</b></div>)}</div>}</div>
 }
 
 export default function App(){
@@ -71,7 +72,7 @@ export default function App(){
           <div className="hero-list">{filtered.map(h=>{const name=displayHeroName(h.id,h.name),laneConfirmed=isHeroLaneConfirmed(h,slot.lane),laneText=h.lanes.length?h.lanes.map(l=>laneLabels[l]).join('、'):'位置待確認';return <button className={`hero-row ${laneConfirmed?'lane-confirmed':'lane-unconfirmed'}`} key={h.id} onClick={()=>choose(h.id)} title={laneConfirmed?'符合目前位置':'自由選角可手動放入；推薦引擎不會視為此位置候選'}><Mark name={name} heroId={h.id}/><span><strong>{name} <i>{h.name}</i></strong><small>{h.roles.length?h.roles.map(r=>roleLabels[r]??r).join(' · '):'角色待確認'} · {laneText} · 版本 {displayPatch(h.patch)}</small></span><b>{laneConfirmed?'＋':'○'}</b></button>})}{!filtered.length&&<div className="empty"><strong>沒有可用資料</strong><p>請加入通過驗證的英雄 JSON。系統不會自動捏造英雄資料。</p></div>}</div>
         </aside>
         <section className="recommendations"><div className="section-heading"><div><span className="eyebrow">最佳選擇</span><h3>可解釋推薦</h3></div><span className="formula">30 協同 · 25 對線 · 20 陣容 · 15 體系 · 10 強度</span></div>
-          {recommendations.map((r,i)=>{const h=getHero(r.heroId)!,name=displayHeroName(h.id,h.name);return <article className={`rec-card ${r.countering.length?'has-counter':''} ${r.counteredBy.length?'has-risk':''}`} key={r.heroId}><span className="rank">0{i+1}</span><Mark name={name} heroId={h.id}/><div className="rec-main"><div><h4>{name}</h4></div><p>{r.reasons[0]}</p><div className="evidence-actions"><EvidenceButton tone="positive" label="反制敵方" items={r.countering}/><EvidenceButton tone="negative" label="遭到反制" items={r.counteredBy}/>{r.matchedRules.length>0&&<span className="rule-chip">◆ 觸發規則 {r.matchedRules.length}</span>}</div><small>⚠ {r.warnings[0]||'目前沒有登記其他風險。'}</small></div><div className="score"><b>{r.finalScore.toFixed(1)}</b><span>/ 10</span></div><button onClick={()=>choose(h.id)}>選擇</button></article>})}
+          {recommendations.map((r,i)=>{const h=getHero(r.heroId)!,name=displayHeroName(h.id,h.name),hasGreen=Boolean(r.countering.length+r.synergyWith.length+r.ruleRecommendations.length),reasonable=hasGreen?[]:r.reasonable;return <article className={`rec-card ${hasGreen?'has-counter':''} ${reasonable.length?'has-caution':''} ${r.counteredBy.length?'has-risk':''}`} key={r.heroId}><span className="rank">0{i+1}</span><Mark name={name} heroId={h.id}/><div className="rec-main"><div><h4>{name}</h4></div><p>{r.reasons[0]}</p><div className="evidence-actions"><EvidenceButton tone="positive" label="反制敵方" items={r.countering}/><EvidenceButton tone="positive" label="配合隊友" items={r.synergyWith}/><EvidenceButton tone="positive" label="陣容推薦" items={r.ruleRecommendations}/><EvidenceButton tone="caution" label="合理選擇" items={reasonable}/><EvidenceButton tone="negative" label="遭到反制" items={r.counteredBy}/></div><small>⚠ {r.warnings[0]||'目前沒有登記其他風險。'}</small></div><div className="score"><b>{r.finalScore.toFixed(1)}</b><span>/ 10</span></div><button onClick={()=>choose(h.id)}>選擇</button></article>})}
           {!recommendations.length&&<div className="empty large"><span>◇</span><strong>沒有符合條件的英雄</strong><p>請選擇已有資料的分路，或在英雄目錄中加入新資料。</p></div>}
         </section>
       </section>

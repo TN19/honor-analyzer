@@ -68,5 +68,52 @@
     "recommendRoles":["tank"],
     "scoreBoost":1,
     "explanationZhHant":"己方選擇 Biron 後，已登記的陣容方向需要坦克打野。"
+  },
+  {
+    "id":"heino-mid-enables-carry-jungle","confidence":0.5,"candidateLane":"jungle",
+    "when":{"allySlot":{"lane":"mid","heroId":"heino"}},
+    "recommendHeroIds":["nakoruru","pei","feyd","jing"],"scoreBoost":2,
+    "explanationZhHant":"己方海諾走中路時，打野可選核心型英雄；海諾負責守塔，其餘位置主動帶動地圖。"
+  },
+  {
+    "id":"lu-bu-versus-multiple-tanks","confidence":0.5,"candidateLane":"clash",
+    "when":{"enemyRoleAtLeast":{"role":"tank","count":2}},
+    "recommendHeroIds":["lu-bu"],"scoreBoost":2,
+    "explanationZhHant":"敵方有至少兩名坦克時，呂布是已登記的優先選擇。"
+  },
+  {
+    "id":"ao-yin-versus-assassin","confidence":0.5,"candidateLane":"farm",
+    "when":{"enemyRoleAtLeast":{"role":"assassin","count":1}},
+    "recommendHeroIds":["ao-yin"],"scoreBoost":1.5,
+    "explanationZhHant":"敵方有刺客型英雄時，敖隱是已登記的應對選擇。"
+  },
+  {
+    "id":"agudo-versus-tank","confidence":0.5,"candidateLane":"jungle",
+    "when":{"enemyRoleAtLeast":{"role":"tank","count":1}},
+    "recommendHeroIds":["agudo"],"scoreBoost":1.5,
+    "explanationZhHant":"敵方有坦克前排時，可選阿古朵並依已登記策略購買 Deepfrost Siege。"
+  },
+  {
+    "id":"one-enemy-front-angela","confidence":0.5,"candidateLane":"mid",
+    "when":{"enemyRoleAtLeast":{"role":"tank","count":1},"enemyRoleAtMost":{"role":"tank","count":1}},
+    "recommendHeroIds":["angela"],"scoreBoost":1.5,
+    "explanationZhHant":"敵方只有一名前排時，安琪拉是已登記的中路選擇。"
+  },
+  {
+    "id":"one-enemy-front-shi","confidence":0.5,"candidateLane":"mid",
+    "when":{"enemyRoleAtLeast":{"role":"tank","count":1},"enemyRoleAtMost":{"role":"tank","count":1}},
+    "recommendHeroIds":["shi"],"scoreBoost":1.5,
+    "explanationZhHant":"敵方只有一名前排時，可以在中路選擇西施。"
+  },
+  {
+    "id":"fragile-carries-enable-dive-jungle","confidence":0.5,"candidateLane":"jungle",
+    "when":{"enemyAny":["di-renjie","consort-yu","hou-yi","lady-sun","arli","erin","chano","ao-yin","flowborn-marksman","shouyue","fang","gan-mo","xiao-qiao","shi","angela","lady-zhen","nuwa"]},
+    "recommendHeroIds":["feyd","jing"],"scoreBoost":1.5,
+    "explanationZhHant":"敵方有脆弱核心時，暃或鏡適合主動威脅後排。"
+  },
+  {
+    "id":"chano-general-safe-pick","confidence":0.5,"candidateLane":"farm",
+    "when":{},"recommendHeroIds":["chano"],"scoreBoost":0.6,"tone":"reasonable",
+    "explanationZhHant":"沒有更高優先級的綠色依據時，蒼是泛用且安全的發育路選擇。"
   }
 ]

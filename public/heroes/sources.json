@@ -482,5 +482,269 @@
       128
     ],
     "output": "/heroes/zhuangzi.webp"
+  },
+  {
+    "heroId": "zhang-fei",
+    "officialHeroId": 171,
+    "sourcePage": "https://camp.honorofkings.com/h5/app/index.html#/hero-homepage",
+    "sourceImage": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/w0QS7N1L.png",
+    "originalSize": [
+      128,
+      128
+    ],
+    "output": "/heroes/zhang-fei.webp"
+  },
+  {
+    "heroId": "di-renjie",
+    "officialHeroId": 133,
+    "sourcePage": "https://camp.honorofkings.com/h5/app/index.html#/hero-homepage",
+    "sourceImage": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/XTSDAJkR.png",
+    "originalSize": [
+      128,
+      128
+    ],
+    "output": "/heroes/di-renjie.webp"
+  },
+  {
+    "heroId": "gan-mo",
+    "officialHeroId": 182,
+    "sourcePage": "https://camp.honorofkings.com/h5/app/index.html#/hero-homepage",
+    "sourceImage": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/ui5UKQex.png",
+    "originalSize": [
+      128,
+      128
+    ],
+    "output": "/heroes/gan-mo.webp"
+  },
+  {
+    "heroId": "lam",
+    "officialHeroId": 528,
+    "sourcePage": "https://camp.honorofkings.com/h5/app/index.html#/hero-homepage",
+    "sourceImage": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/02i6M2YK.png",
+    "originalSize": [
+      128,
+      128
+    ],
+    "output": "/heroes/lam.webp"
+  },
+  {
+    "heroId": "heino",
+    "officialHeroId": 509,
+    "sourcePage": "https://camp.honorofkings.com/h5/app/index.html#/hero-homepage",
+    "sourceImage": "https://camp.honorofkings.com/camp/admin/hero/head_128-128/YO6iwLAg.jpg",
+    "originalSize": [
+      128,
+      128
+    ],
+    "output": "/heroes/heino.webp"
+  },
+  {
+    "heroId": "lu-bu",
+    "officialHeroId": 123,
+    "sourcePage": "https://camp.honorofkings.com/h5/app/index.html#/hero-homepage",
+    "sourceImage": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/dXLF2kE7.png",
+    "originalSize": [
+      128,
+      128
+    ],
+    "output": "/heroes/lu-bu.webp"
+  },
+  {
+    "heroId": "ukyo-tachibana",
+    "officialHeroId": 163,
+    "sourcePage": "https://camp.honorofkings.com/h5/app/index.html#/hero-homepage",
+    "sourceImage": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/8e9WRFgL.png",
+    "originalSize": [
+      128,
+      128
+    ],
+    "output": "/heroes/ukyo-tachibana.webp"
+  },
+  {
+    "heroId": "agudo",
+    "officialHeroId": 533,
+    "sourcePage": "https://camp.honorofkings.com/h5/app/index.html#/hero-homepage",
+    "sourceImage": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/TYN9rh81.png",
+    "originalSize": [
+      128,
+      128
+    ],
+    "output": "/heroes/agudo.webp"
+  },
+  {
+    "heroId": "consort-yu",
+    "officialHeroId": 174,
+    "sourcePage": "https://camp.honorofkings.com/h5/app/index.html#/hero-homepage",
+    "sourceImage": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/Ku5RzFmQ.png",
+    "originalSize": [
+      128,
+      128
+    ],
+    "output": "/heroes/consort-yu.webp"
+  },
+  {
+    "heroId": "shi",
+    "officialHeroId": 523,
+    "sourcePage": "https://camp.honorofkings.com/h5/app/index.html#/hero-homepage",
+    "sourceImage": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/MjBadKpJ.png",
+    "originalSize": [
+      128,
+      128
+    ],
+    "output": "/heroes/shi.webp"
+  },
+  {
+    "heroId": "xiao-qiao",
+    "officialHeroId": 106,
+    "sourcePage": "https://camp.honorofkings.com/h5/app/index.html#/hero-homepage",
+    "sourceImage": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/paTVVlNq.png",
+    "originalSize": [
+      128,
+      128
+    ],
+    "output": "/heroes/xiao-qiao.webp"
+  },
+  {
+    "heroId": "hou-yi",
+    "officialHeroId": 169,
+    "sourcePage": "https://camp.honorofkings.com/h5/app/index.html#/hero-homepage",
+    "sourceImage": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/S5isJokI.png",
+    "originalSize": [
+      128,
+      128
+    ],
+    "output": "/heroes/hou-yi.webp"
+  },
+  {
+    "heroId": "sakeer",
+    "officialHeroId": 534,
+    "sourcePage": "https://camp.honorofkings.com/h5/app/index.html#/hero-homepage",
+    "sourceImage": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/ionwVFtV.png",
+    "originalSize": [
+      128,
+      128
+    ],
+    "output": "/heroes/sakeer.webp"
+  },
+  {
+    "heroId": "devara",
+    "officialHeroId": 537,
+    "sourcePage": "https://camp.honorofkings.com/h5/app/index.html#/hero-homepage",
+    "sourceImage": "https://camp.honorofkings.com/camp/admin/default/MagzAk8i.png",
+    "originalSize": [
+      128,
+      128
+    ],
+    "output": "/heroes/devara.webp"
+  },
+  {
+    "heroId": "bai-qi",
+    "officialHeroId": 120,
+    "sourcePage": "https://camp.honorofkings.com/h5/app/index.html#/hero-homepage",
+    "sourceImage": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/uY7c38Tt.png",
+    "originalSize": [
+      128,
+      128
+    ],
+    "output": "/heroes/bai-qi.webp"
+  },
+  {
+    "heroId": "chicha",
+    "officialHeroId": 172,
+    "sourcePage": "https://camp.honorofkings.com/h5/app/index.html#/hero-homepage",
+    "sourceImage": "https://camp.honorofkings.com/camp/admin/hero/head_128-128/lkU98jAV.png",
+    "originalSize": [
+      128,
+      128
+    ],
+    "output": "/heroes/chicha.webp"
+  },
+  {
+    "heroId": "mi-yue",
+    "officialHeroId": 121,
+    "sourcePage": "https://camp.honorofkings.com/h5/app/index.html#/hero-homepage",
+    "sourceImage": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/eHvcCJb0.png",
+    "originalSize": [
+      128,
+      128
+    ],
+    "output": "/heroes/mi-yue.webp"
+  },
+  {
+    "heroId": "allain",
+    "officialHeroId": 514,
+    "sourcePage": "https://camp.honorofkings.com/h5/app/index.html#/hero-homepage",
+    "sourceImage": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/Ek9OHopQ.png",
+    "originalSize": [
+      128,
+      128
+    ],
+    "output": "/heroes/allain.webp"
+  },
+  {
+    "heroId": "xiang-yu",
+    "officialHeroId": 135,
+    "sourcePage": "https://camp.honorofkings.com/h5/app/index.html#/hero-homepage",
+    "sourceImage": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/FLyy9J46.png",
+    "originalSize": [
+      128,
+      128
+    ],
+    "output": "/heroes/xiang-yu.webp"
+  },
+  {
+    "heroId": "dharma",
+    "officialHeroId": 134,
+    "sourcePage": "https://camp.honorofkings.com/h5/app/index.html#/hero-homepage",
+    "sourceImage": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/9u997w0x.png",
+    "originalSize": [
+      128,
+      128
+    ],
+    "output": "/heroes/dharma.webp"
+  },
+  {
+    "heroId": "fang",
+    "officialHeroId": 173,
+    "sourcePage": "https://camp.honorofkings.com/h5/app/index.html#/hero-homepage",
+    "sourceImage": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/6dGNjKTe.png",
+    "originalSize": [
+      128,
+      128
+    ],
+    "output": "/heroes/fang.webp"
+  },
+  {
+    "heroId": "ying",
+    "officialHeroId": 538,
+    "sourcePage": "https://camp.honorofkings.com/h5/app/index.html#/hero-homepage",
+    "sourceImage": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/diRuUQDV.png",
+    "originalSize": [
+      128,
+      128
+    ],
+    "output": "/heroes/ying.webp"
+  },
+  {
+    "heroId": "zilong",
+    "officialHeroId": 107,
+    "sourcePage": "https://camp.honorofkings.com/h5/app/index.html#/hero-homepage",
+    "sourceImage": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/9xqbsAQC.png",
+    "originalSize": [
+      128,
+      128
+    ],
+    "output": "/heroes/zilong.webp"
+  },
+  {
+    "heroId": "musashi",
+    "officialHeroId": 130,
+    "sourcePage": "https://camp.honorofkings.com/h5/app/index.html#/hero-homepage",
+    "sourceImage": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/jgvSlz3u.png",
+    "originalSize": [
+      128,
+      128
+    ],
+    "output": "/heroes/musashi.webp"
   }
 ]
