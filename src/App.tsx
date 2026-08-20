@@ -2,6 +2,7 @@ import { useEffect, useMemo, useState } from 'react'
 import { heroes, getHero, getHeroDisplayName, isHeroLaneConfirmed } from './data'
 import { analyzeComposition } from './engine/compositionEngine'
 import { recommendAllHeroes, recommendPicks } from './engine/recommendationEngine'
+import { recommendBans, type BanRecommendation } from './engine/banRecommendationEngine'
 import { applyPick, emptyDraft, loadDraft, removePick, saveDraft } from './store/draftStore'
 import { banPickSteps } from './store/banPickSequence'
 import { lanes, type DraftState, type Lane, type Recommendation, type RecommendationEvidence, type Team } from './types'
@@ -49,10 +50,16 @@ function BanPickRecommendationList({title,tone,items,onChoose}:{title:string;ton
   return <section className={`bp-rec-group ${tone}`}><div className="bp-rec-title"><h3>{title}</h3><b>{items.length}</b></div><div className="bp-rec-list">{items.map(item=>{const hero=getHero(item.heroId)!,details=evidence(item);return <article className="bp-rec-row" key={item.heroId}><Mark name={displayHeroName(hero.id,hero.name)} heroId={hero.id}/><div><strong>{displayHeroName(hero.id,hero.name)}</strong><span>{details[0]?.reason}</span></div><em>{details.length}</em><button onClick={()=>onChoose(hero.id)}>選擇</button></article>})}{!items.length&&<p className="bp-none">目前沒有符合此分類的英雄。</p>}</div></section>
 }
 
+function BanSuggestionList({items,onChoose}:{items:BanRecommendation[];onChoose:(id:string)=>void}){
+  const labels={high:'高關聯',medium:'中關聯',low:'低關聯'}
+  return <div className="ban-suggestion-list">{items.map(item=>{const hero=getHero(item.heroId)!;return <article className={`ban-suggestion ${item.relevance}`} key={item.heroId}><Mark name={displayHeroName(hero.id,hero.name)} heroId={hero.id}/><div><strong>{displayHeroName(hero.id,hero.name)}</strong><span>{item.reasons[0]}</span><small>{item.protectsPlannedPick?'保護預定選角 · ':''}歷史禁用權重 {item.historicalWeight.toFixed(1)}</small></div><b>{labels[item.relevance]}<em>{item.score.toFixed(1)}</em></b><button onClick={()=>onChoose(hero.id)}>禁用</button></article>})}</div>
+}
+
 function BanPickMode(){
   const [history,setHistory]=useState<BanPickAction[]>(loadBanPick)
   const [query,setQuery]=useState('')
   const [laneFilter,setLaneFilter]=useState<Lane|'all'>('all')
+  const [plannedPicks,setPlannedPicks]=useState<Partial<Record<Team,string>>>({})
   useEffect(()=>localStorage.setItem('hok-ban-pick-sequence',JSON.stringify(history)),[history])
   const current=banPickSteps[history.length],team=current?.team??'blue',used=new Set(history.map(action=>action.heroId))
   const catalog=heroes.filter(hero=>!used.has(hero.id)&&(laneFilter==='all'||hero.lanes.includes(laneFilter))&&`${displayHeroName(hero.id,hero.name)} ${hero.name}`.toLowerCase().includes(query.toLowerCase())).sort((a,b)=>displayHeroName(a.id,a.name).localeCompare(displayHeroName(b.id,b.name),'zh-Hant'))
@@ -62,12 +69,13 @@ function BanPickMode(){
   const enemyTeam=team==='blue'?'red':'blue',enemies=picks(enemyTeam).map(action=>getHero(action.heroId)).filter(Boolean) as NonNullable<ReturnType<typeof getHero>>[]
   const draft:DraftState={blue:{},red:{}}
   const recommendations=useMemo(()=>recommendAllHeroes(catalog,allies,enemies,{team,draft,action:current?.kind,stepIndex:history.length}),[catalog,allies,enemies,team,current?.kind,history.length])
+  const banSuggestions=useMemo(()=>current?.kind==='ban'?recommendBans(heroes,{team,stepIndex:history.length,plannedPickId:plannedPicks[team],usedHeroIds:used}):[],[current?.kind,team,history.length,plannedPicks,history])
   const green=recommendations.filter(item=>item.countering.length+item.synergyWith.length+item.ruleRecommendations.length>0)
   const yellow=recommendations.filter(item=>item.reasonable.length>0&&item.countering.length+item.synergyWith.length+item.ruleRecommendations.length===0)
   const red=recommendations.filter(item=>item.counteredBy.length>0)
   const choose=(heroId:string)=>{if(current)setHistory(actions=>[...actions,{...current,heroId}])}
   const undo=()=>setHistory(actions=>actions.slice(0,-1))
-  const reset=()=>setHistory([])
+  const reset=()=>{setHistory([]);setPlannedPicks({})}
   const teamName=(side:Team)=>side==='blue'?'蒼穹隊':'暮光隊'
   const actionName=current?.kind==='ban'?'禁用':'選擇'
   const renderPickSlots=(side:Team)=>Array.from({length:5},(_,index)=>{const action=picks(side)[index],hero=action?getHero(action.heroId):undefined,isLast=action===history.at(-1);return <div className={`draft-slot bp-pick-slot ${hero?'filled':''}`} key={index}>{hero?<><Mark name={displayHeroName(hero.id,hero.name)} heroId={hero.id}/><span className="slot-copy"><strong>{displayHeroName(hero.id,hero.name)}</strong></span>{isLast&&<button className="remove" aria-label="撤銷上一步" onClick={undo}>×</button>}</>:<span className="slot-copy"><strong>選擇英雄</strong></span>}</div>})
@@ -76,6 +84,7 @@ function BanPickMode(){
     <div className="hero-heading"><div><span className="eyebrow">完整禁選流程</span><h1>禁選模式</h1><p>系統會依正式順序自動切換藍紅雙方的禁用與選擇；英雄欄位不綁定分路。</p></div><div className="actions"><button className="ghost" onClick={undo} disabled={!history.length}>撤銷上一步</button><button className="ghost" onClick={reset}>全部清除</button></div></div>
     <div className={`bp-turn ${current?.kind??'complete'}`}><span>{current?`第 ${history.length+1}／${banPickSteps.length} 步`:'流程完成'}</span><strong>{current?`${teamName(team)} · ${actionName}英雄`:'雙方選角完成'}</strong><div><i style={{width:`${history.length/banPickSteps.length*100}%`}}/></div></div>
     <section className="draft-stage bp-sequence-board"><div className="team-head blue"><span>01</span><div><small>隊伍 A</small><h2>蒼穹隊</h2></div><b>{picks('blue').length}/5</b></div><div className="versus"><span>禁選</span><small>流程</small></div><div className="team-head red"><b>{picks('red').length}/5</b><div><small>隊伍 B</small><h2>暮光隊</h2></div><span>02</span></div><div className="bp-ban-row blue-bans">{renderBanSlots('blue')}</div><div className="bp-ban-row red-bans">{renderBanSlots('red')}</div><div className="slots blue-slots">{renderPickSlots('blue')}</div><div className="center-rune">◇</div><div className="slots red-slots">{renderPickSlots('red')}</div></section>
+    {current?.kind==='ban'&&<section className="ban-advisor"><div className="section-heading"><div><span className="eyebrow">禁用決策</span><h2>建議禁用英雄</h2><p>綜合職業賽禁用頻率、當前方位與預定選角的威脅關係。</p></div><label><span>預定下一個選角</span><select value={plannedPicks[team]??''} onChange={event=>setPlannedPicks(value=>({...value,[team]:event.target.value||undefined}))}><option value="">尚未指定</option>{heroes.filter(hero=>!used.has(hero.id)).map(hero=><option value={hero.id} key={hero.id}>{displayHeroName(hero.id,hero.name)}</option>)}</select></label></div><BanSuggestionList items={banSuggestions} onChoose={choose}/></section>}
     <section className="bp-picker"><div className="section-heading"><div><span className="eyebrow">{current?`${teamName(team)} · ${actionName}`:'禁選完成'}</span><h3>所有英雄</h3></div></div><label className="search"><span>⌕</span><input value={query} onChange={event=>setQuery(event.target.value)} placeholder="搜尋英雄…" aria-label="搜尋英雄"/></label><div className="lane-tabs bp-lane-filter"><button className={laneFilter==='all'?'active':''} onClick={()=>setLaneFilter('all')}>全部</button>{lanes.map(lane=><button className={laneFilter===lane?'active':''} onClick={()=>setLaneFilter(lane)} key={lane}>{laneLabels[lane]}</button>)}</div><div className="bp-catalog">{catalog.map(hero=><button className="bp-hero" disabled={!current} key={hero.id} onClick={()=>choose(hero.id)}><Mark name={displayHeroName(hero.id,hero.name)} heroId={hero.id}/><strong>{displayHeroName(hero.id,hero.name)}</strong><b>{current?.kind==='ban'?'禁':'＋'}</b></button>)}</div></section>
     <section className="bp-recommendations"><div className="section-heading"><div><span className="eyebrow">全部結果</span><h2>英雄關係推薦</h2></div><span className="formula">綠色優勢 · 黃色合理 · 紅色風險</span></div><div className="bp-rec-grid"><BanPickRecommendationList title="有利選擇" tone="positive" items={green} onChoose={choose}/><BanPickRecommendationList title="合理選擇" tone="caution" items={yellow} onChoose={choose}/><BanPickRecommendationList title="遭到反制" tone="negative" items={red} onChoose={choose}/></div></section>
   </>

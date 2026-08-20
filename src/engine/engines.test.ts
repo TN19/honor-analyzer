@@ -3,6 +3,7 @@ import { analyzeComposition } from './compositionEngine'
 import { getGloballyUnavailableHeroes, validateSeriesPick } from './availabilityEngine'
 import { calculateWinRate } from './statisticsEngine'
 import { recommendAllHeroes, recommendPicks } from './recommendationEngine'
+import { recommendBans } from './banRecommendationEngine'
 import type { Hero } from '../types'
 import { heroes, manualAnalysis, professionalMatches, professionalMatchDatasets, getHero, getHeroDisplayName, getHeroesByLane } from '../data'
 import { banPickSteps } from '../store/banPickSequence'
@@ -135,5 +136,22 @@ describe('professional match history',()=>{
     expect(matches[0].red.picks).toEqual(['ao-yin','zhang-fei','xiao-qiao','charlotte','butterfly'])
     expect(matches[8].red.bans).toEqual(['florentino','pei','mozi','charlotte'])
     expect(matches[8].red.picks).toEqual(['haya','annette','ao-yin','guan-yu','ying'])
+  })
+})
+describe('ban recommendations',()=>{
+  it('ranks historically frequent bans and explains their relevance',()=>{
+    const result=recommendBans(heroes,{team:'red',stepIndex:1,usedHeroIds:new Set()})
+    expect(result[0].historicalWeight).toBeGreaterThan(0)
+    expect(result.some(item=>item.heroId==='pei')).toBe(true)
+    expect(result.every(item=>item.reasons.length>0)).toBe(true)
+  })
+  it('protects a planned Pei first pick from registered counters',()=>{
+    const result=recommendBans(heroes,{team:'blue',stepIndex:0,plannedPickId:'pei',usedHeroIds:new Set()})
+    for(const heroId of ['mai-shiranui','ukyo-tachibana','consort-yu']) expect(result.find(item=>item.heroId===heroId)?.protectsPlannedPick).toBe(true)
+    expect(result.find(item=>item.heroId==='mai-shiranui')?.reasons[0]).toContain('裴擒虎')
+  })
+  it('never recommends an already used hero',()=>{
+    const result=recommendBans(heroes,{team:'blue',stepIndex:0,plannedPickId:'pei',usedHeroIds:new Set(['haya','mai-shiranui'])})
+    expect(result.some(item=>item.heroId==='haya'||item.heroId==='mai-shiranui')).toBe(false)
   })
 })
