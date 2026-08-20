@@ -4,7 +4,7 @@ import { getGloballyUnavailableHeroes, validateSeriesPick } from './availability
 import { calculateWinRate } from './statisticsEngine'
 import { recommendAllHeroes, recommendPicks } from './recommendationEngine'
 import type { Hero } from '../types'
-import { heroes, manualAnalysis, professionalMatches, getHero, getHeroDisplayName, getHeroesByLane } from '../data'
+import { heroes, manualAnalysis, professionalMatches, professionalMatchDatasets, getHero, getHeroDisplayName, getHeroesByLane } from '../data'
 import { banPickSteps } from '../store/banPickSequence'
 const hero=(tags:string[]):Hero=>({id:'test',name:'Test',aliases:[],image:'',roles:[],lanes:['farm'],primaryLane:'farm',damage:{primary:'unknown',secondary:null},tags,strengths:[],weaknesses:[],gamePhases:{early:'',mid:'',late:''},skills:{},patch:'unknown',updatedAt:'2026-08-19',sources:[]})
 describe('composition engine',()=>it('derives dimensions from tags',()=>expect(analyzeComposition([hero(['engage'])]).scores.engage).toBe(2.5)))
@@ -69,7 +69,7 @@ describe('contextual recommendations',()=>{
   })
 })
 describe('manual draft knowledge',()=>{
-  it('validates every referenced hero',()=>expect(Object.keys(manualAnalysis.heroes)).toHaveLength(85))
+  it('validates every referenced hero',()=>expect(Object.keys(manualAnalysis.heroes)).toHaveLength(88))
   it('exposes every registered hero to the frontend catalog',()=>expect(heroes.map(hero=>hero.id).sort()).toEqual(Object.keys(manualAnalysis.heroes).sort()))
   it('provides Traditional Chinese display names',()=>expect(getHeroDisplayName('haya')).toBe('海月'))
   it('keeps Flowborn forms separate',()=>expect(manualAnalysis.heroes['flowborn-tank'].roles).not.toEqual(manualAnalysis.heroes['flowborn-marksman'].roles))
@@ -119,5 +119,21 @@ describe('professional match history',()=>{
     const match=professionalMatches.matches[0]
     expect(match.blue.bans).toEqual(['dyadia','ukyo-tachibana','haya','mai-shiranui'])
     expect(match.red.picks).toEqual(['ying','lapu-lapu','florentino','garuda','erin'])
+  })
+  it('stores the additional nine games as four lower-weight series',()=>{
+    const dataset=professionalMatchDatasets[1]
+    expect(dataset.matches).toHaveLength(9)
+    expect(dataset.evidenceWeight).toBeLessThan(professionalMatches.evidenceWeight)
+    expect(new Set(dataset.matches.map(match=>match.seriesId))).toEqual(new Set(['series-01','series-02','series-03','series-04']))
+    expect(dataset.matches.filter(match=>match.seriesId==='series-04')).toHaveLength(3)
+    expect(dataset.matches.filter(match=>match.seriesId!=='series-04').every(match=>match.seriesScore==='2-0')).toBe(true)
+    expect(dataset.matches.filter(match=>match.seriesId==='series-04').every(match=>match.seriesScore==='2-1')).toBe(true)
+  })
+  it('preserves the exact ordering of the additional first and last games',()=>{
+    const matches=professionalMatchDatasets[1].matches
+    expect(matches[0].blue.bans).toEqual(['haya','mai-shiranui','ukyo-tachibana','guan-yu'])
+    expect(matches[0].red.picks).toEqual(['ao-yin','zhang-fei','xiao-qiao','charlotte','butterfly'])
+    expect(matches[8].red.bans).toEqual(['florentino','pei','mozi','charlotte'])
+    expect(matches[8].red.picks).toEqual(['haya','annette','ao-yin','guan-yu','ying'])
   })
 })

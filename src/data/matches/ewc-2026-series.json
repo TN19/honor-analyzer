@@ -1,0 +1,219 @@
+{
+  "tournament": "Esports World Cup 2026",
+  "stage": "Series before final (exact stage unconfirmed)",
+  "patch": "same-tournament-patch-unknown-id",
+  "source": "user-supplied-professional-records",
+  "evidenceWeight": 0.6,
+  "matches": [
+    {
+      "id": "ewc-2026-series-01-g1",
+      "seriesId": "series-01",
+      "seriesScore": "2-0",
+      "gameInSeries": 1,
+      "winner": "blue",
+      "blue": {
+        "bans": ["haya", "mai-shiranui", "ukyo-tachibana", "guan-yu"],
+        "picks": ["pei", "lorion", "chano", "mi-yue", "lian-po"]
+      },
+      "red": {
+        "bans": ["florentino", "lapu-lapu", "dyadia", "biron"],
+        "picks": ["ao-yin", "zhang-fei", "xiao-qiao", "charlotte", "butterfly"]
+      },
+      "inferences": [
+        {
+          "confidence": 0.3,
+          "analysisZhHant": "藍方先禁海月與不知火舞後首選裴擒虎，可能是在優先建立前期野區節奏；紅方禁用多名對抗路與前排英雄，可能為夏洛特保留側線空間。",
+          "consequenceZhHant": "藍方以裴擒虎帶動節奏，並由洛里昂、蒼與廉頗形成控制和正面支撐後取勝；單局結果不足以證明固定因果。"
+        }
+      ]
+    },
+    {
+      "id": "ewc-2026-series-01-g2",
+      "seriesId": "series-01",
+      "seriesScore": "2-0",
+      "gameInSeries": 2,
+      "winner": "red",
+      "blue": {
+        "bans": ["haya", "ao-yin", "charlotte", "xiao-qiao"],
+        "picks": ["mai-shiranui", "mozi", "augran", "chicha", "biron"]
+      },
+      "red": {
+        "bans": ["pei", "florentino", "chano", "guan-yu"],
+        "picks": ["zhang-fei", "flowborn-marksman", "agudo", "yuhuan", "dharma"]
+      },
+      "inferences": [
+        {
+          "confidence": 0.3,
+          "analysisZhHant": "紅方第一禁裴擒虎並移除弗洛倫、蒼與關羽，可能是降低阿古朵體系面對前期入侵和側翼壓力；首輪張飛則先確保保護與前排。",
+          "consequenceZhHant": "紅方以張飛保護元流之子（射手），阿古朵提供推進，楊玉環與達摩補足續航和開戰後取勝。兩局的勝方分屬不同顏色，是同一支隊伍換邊後完成二比零；因未提供隊名，不推測隊伍身分。"
+        }
+      ]
+    },
+    {
+      "id": "ewc-2026-series-02-g1",
+      "seriesId": "series-02",
+      "seriesScore": "2-0",
+      "gameInSeries": 1,
+      "winner": "blue",
+      "blue": {
+        "bans": ["pei", "chicha", "annette", "haya"],
+        "picks": ["zhang-fei", "lorion", "guan-yu", "jing", "chano"]
+      },
+      "red": {
+        "bans": ["mai-shiranui", "ao-yin", "di-renjie", "arli"],
+        "picks": [
+          "biron",
+          "flowborn-marksman",
+          "lapu-lapu",
+          "lady-zhen",
+          "agudo"
+        ]
+      },
+      "inferences": [
+        {
+          "confidence": 0.3,
+          "analysisZhHant": "藍方首選張飛先固定前排與保護，後續以鏡和關羽建立雙側威脅；紅方第二輪禁用狄仁傑與公孫離，可能是在保護元流之子（射手）的對線。",
+          "consequenceZhHant": "藍方的關羽與鏡能從不同角度施壓，洛里昂和蒼承接團戰輸出，最終獲勝；這仍是陣容層面的保守推論。"
+        }
+      ]
+    },
+    {
+      "id": "ewc-2026-series-02-g2",
+      "seriesId": "series-02",
+      "seriesScore": "2-0",
+      "gameInSeries": 2,
+      "winner": "red",
+      "blue": {
+        "bans": ["mai-shiranui", "haya", "kaizer", "musashi"],
+        "picks": ["chicha", "zhang-fei", "xiang-yu", "ziya", "di-renjie"]
+      },
+      "red": {
+        "bans": ["ao-yin", "pei", "lady-sun", "lorion"],
+        "picks": ["lapu-lapu", "dharma", "erin", "ukyo-tachibana", "nuwa"]
+      },
+      "inferences": [
+        {
+          "confidence": 0.3,
+          "analysisZhHant": "紅方先禁敖隱與裴擒虎，降低高優先射手與前期打野選項，再以拉普拉普、達摩和橘右京構成多點進場。",
+          "consequenceZhHant": "紅方前排與進場點較多，女媧和艾琳獲得輸出空間並取勝。兩局的勝方顏色不同但系列比分為二比零，表示獲勝隊伍曾換邊；不據此提升為一般反制規則。"
+        }
+      ]
+    },
+    {
+      "id": "ewc-2026-series-03-g1",
+      "seriesId": "series-03",
+      "seriesScore": "2-0",
+      "gameInSeries": 1,
+      "winner": "blue",
+      "blue": {
+        "bans": ["pei", "ao-yin", "bai-qi", "biron"],
+        "picks": ["mai-shiranui", "zhang-fei", "erin", "umbrosa", "ying"]
+      },
+      "red": {
+        "bans": ["haya", "florentino", "dharma", "ata"],
+        "picks": ["lorion", "dyadia", "arli", "guan-yu", "kaizer"]
+      },
+      "inferences": [
+        {
+          "confidence": 0.3,
+          "analysisZhHant": "藍方先禁裴擒虎與敖隱，再移除白起與狂鐵，可能是為影的側線與雲纓的進場減少厚實前排；紅方則移除多名對抗路英雄。",
+          "consequenceZhHant": "藍方張飛保護艾琳，不知火舞、影與雲纓提供機動威脅後取勝；禁用與勝負的連結僅屬低可信度解讀。"
+        }
+      ]
+    },
+    {
+      "id": "ewc-2026-series-03-g2",
+      "seriesId": "series-03",
+      "seriesScore": "2-0",
+      "gameInSeries": 2,
+      "winner": "red",
+      "blue": {
+        "bans": ["lorion", "liang", "luna", "dolia"],
+        "picks": [
+          "florentino",
+          "agudo",
+          "lapu-lapu",
+          "flowborn-marksman",
+          "xiao-qiao"
+        ]
+      },
+      "red": {
+        "bans": ["ao-yin", "pei", "erin", "di-renjie"],
+        "picks": ["devara", "haya", "chicha", "dyadia", "ata"]
+      },
+      "inferences": [
+        {
+          "confidence": 0.3,
+          "analysisZhHant": "紅方四個禁用集中在高優先射手與裴擒虎，可能是在為叱吒取得較安全的射手環境；海月和少司緣則提供抓取與續戰。",
+          "consequenceZhHant": "紅方由阿塔承擔正面，司空震與海月施加中近距離壓力，最終取勝。系列比分為二比零而勝方顏色不同，反映隊伍換邊；此結果仍不視為強證據。"
+        }
+      ]
+    },
+    {
+      "id": "ewc-2026-series-04-g1",
+      "seriesId": "series-04",
+      "seriesScore": "2-1",
+      "gameInSeries": 1,
+      "winner": "red",
+      "blue": {
+        "bans": ["florentino", "mai-shiranui", "guan-yu", "charlotte"],
+        "picks": ["pei", "lapu-lapu", "xiao-qiao", "biron", "flowborn-marksman"]
+      },
+      "red": {
+        "bans": ["yuan-ge", "lorion", "chano", "di-renjie"],
+        "picks": ["ukyo-tachibana", "zhang-fei", "ao-yin", "dharma", "angela"]
+      },
+      "inferences": [
+        {
+          "confidence": 0.28,
+          "analysisZhHant": "藍方第一階段大量禁用對抗路與側翼英雄後首選裴擒虎；紅方則禁元歌與洛里昂，可能是在降低達摩和敖隱面對側翼及控制的壓力。",
+          "consequenceZhHant": "紅方以張飛保護敖隱，達摩與橘右京負責進場，安琪拉補足爆發後先下一局。此系列樣本權重低於決賽。"
+        }
+      ]
+    },
+    {
+      "id": "ewc-2026-series-04-g2",
+      "seriesId": "series-04",
+      "seriesScore": "2-1",
+      "gameInSeries": 2,
+      "winner": "red",
+      "blue": {
+        "bans": ["yuan-ge", "ukyo-tachibana", "musashi", "nezha"],
+        "picks": ["lorion", "lapu-lapu", "chano", "devara", "flowborn-tank"]
+      },
+      "red": {
+        "bans": ["florentino", "pei", "charlotte", "augran"],
+        "picks": ["chicha", "zhang-fei", "mai-shiranui", "jing", "alessio"]
+      },
+      "inferences": [
+        {
+          "confidence": 0.28,
+          "analysisZhHant": "紅方先禁弗洛倫與裴擒虎，再移除夏洛特與大司命，可能是為鏡保留進場環境；張飛同時能保護叱吒與萊西奧兩個遠程輸出點。",
+          "consequenceZhHant": "紅方以鏡和不知火舞製造機動壓力，張飛承接保護並取得第二勝。雙射手的實際分路未由記錄確認，不據此建立分路規則。"
+        }
+      ]
+    },
+    {
+      "id": "ewc-2026-series-04-g3",
+      "seriesId": "series-04",
+      "seriesScore": "2-1",
+      "gameInSeries": 3,
+      "winner": "red",
+      "blue": {
+        "bans": ["ukyo-tachibana", "yuan-ge", "musashi", "dharma"],
+        "picks": ["arli", "agudo", "nuwa", "ata", "dyadia"]
+      },
+      "red": {
+        "bans": ["florentino", "pei", "mozi", "charlotte"],
+        "picks": ["haya", "annette", "ao-yin", "guan-yu", "ying"]
+      },
+      "inferences": [
+        {
+          "confidence": 0.32,
+          "analysisZhHant": "決勝局紅方再次第一階段禁弗洛倫與裴擒虎，並在第二階段移除墨子與夏洛特；這可能為海月、敖隱和關羽的多點進場及輸出結構減少限制。",
+          "consequenceZhHant": "紅方以海月抓取、關羽側翼和雲纓進場，安奈特保護敖隱後完成二比一。系列內連續調整具有觀察價值，但因不是決賽仍採較低權重。"
+        }
+      ]
+    }
+  ]
+}

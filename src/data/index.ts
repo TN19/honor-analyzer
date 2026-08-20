@@ -8,6 +8,7 @@ import { manualAnalysisSchema } from '../schemas/manualAnalysis.schema'
 import recommendationRulesRaw from './recommendation-rules/general.json'
 import { recommendationRulesSchema } from '../schemas/recommendationRules.schema'
 import professionalMatchesRaw from './matches/ewc-2026-final.json'
+import professionalSeriesRaw from './matches/ewc-2026-series.json'
 import { professionalMatchesSchema } from '../schemas/professionalMatches.schema'
 
 const normalizeAddendum = (raw:typeof addendumRaw|typeof secondAddendumRaw,dateAccessed:string) => {
@@ -31,7 +32,8 @@ export const manualAnalysis = manualAnalysisSchema.parse({
 })
 export const recommendationRules = recommendationRulesSchema.parse(recommendationRulesRaw)
 export const professionalMatches = professionalMatchesSchema.parse(professionalMatchesRaw)
-professionalMatches.matches.forEach(match=>[...match.blue.bans,...match.blue.picks,...match.red.bans,...match.red.picks].forEach(heroId=>{if(!manualAnalysis.heroes[heroId])throw new Error(`Professional match references unknown hero: ${heroId}`)}))
+export const professionalMatchDatasets = [professionalMatches,professionalMatchesSchema.parse(professionalSeriesRaw)]
+professionalMatchDatasets.flatMap(dataset=>dataset.matches).forEach(match=>[...match.blue.bans,...match.blue.picks,...match.red.bans,...match.red.picks].forEach(heroId=>{if(!manualAnalysis.heroes[heroId])throw new Error(`Professional match references unknown hero: ${heroId}`)}))
 
 const canonicalHeroes: Record<string, unknown> = { arli }
 const rawHeroes = Object.entries(manualAnalysis.heroes).map(([id, registry]) => canonicalHeroes[id] ?? {

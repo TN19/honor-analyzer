@@ -6,6 +6,8 @@ O modo `禁選模式` conduz automaticamente a sequência competitiva de 18 aç�
 
 Partidas profissionais fornecidas pelo usuário ficam preservadas em `src/data/matches`, separadas das regras gerais. Fatos observados (ordem, lado, picks, bans e vencedor) não são misturados com interpretações estratégicas. Padrões com amostra pequena entram no motor somente como recomendações amarelas de baixo peso, com torneio, tamanho da amostra e incerteza explícitos.
 
+Os lotes profissionais também registram a série e o jogo dentro da série. O conjunto adicional de nove partidas do EWC 2026 está agrupado em três séries de duas partidas e uma série de três partidas; seu peso histórico é `0.6`, inferior ao conjunto da final, e suas tendências recebem bônus menores no motor.
+
 ## Desenvolvimento
 
 ```bash
