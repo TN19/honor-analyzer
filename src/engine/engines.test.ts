@@ -87,6 +87,7 @@ describe('manual draft knowledge',()=>{
   })
   it('registers Yuhuan for mid and roamer',()=>expect(manualAnalysis.heroes.yuhuan.lanes).toEqual(['mid','roamer']))
   it('uses the confirmed Traditional Chinese name for Devara',()=>expect(getHeroDisplayName('devara')).toBe('司空震'))
+  it('uses the confirmed Traditional Chinese name for Butterfly',()=>expect(getHeroDisplayName('butterfly')).toBe('刀鋒寶貝'))
   it('registers Bai Qi and Fuzi as situational farm-lane choices',()=>{
     expect(manualAnalysis.heroes['bai-qi'].lanes).toContain('farm')
     expect(manualAnalysis.heroes.fuzi.lanes).toContain('farm')

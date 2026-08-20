@@ -19,7 +19,7 @@
     ,"lorion":{"name":"Lorion","displayNameZhHant":"洛里昂","displayNameStatus":"confirmed","lanes":["mid"],"roles":["mage"]}
     ,"annette":{"name":"Annette","displayNameZhHant":"安奈特","displayNameStatus":"confirmed","lanes":["roamer"],"roles":["support"]}
     ,"kui":{"name":"Kui","displayNameZhHant":"鍾馗","displayNameStatus":"confirmed","lanes":["roamer"],"roles":["support","tank"]}
-    ,"butterfly":{"name":"Butterfly","displayNameZhHant":"蝴蝶","displayNameStatus":"confirmed","lanes":["jungle"],"roles":["assassin","fighter"]}
+    ,"butterfly":{"name":"Butterfly","displayNameZhHant":"刀鋒寶貝","displayNameStatus":"confirmed","lanes":["jungle"],"roles":["assassin","fighter"]}
     ,"yuan-ge":{"name":"Yuan Ge","displayNameZhHant":"元歌","displayNameStatus":"confirmed","lanes":["clash"],"roles":["assassin","fighter"]}
     ,"alessio":{"name":"Alessio","displayNameZhHant":"萊西奧","displayNameStatus":"confirmed","lanes":["farm"],"roles":["marksman"]}
   },
