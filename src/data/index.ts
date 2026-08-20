@@ -3,22 +3,29 @@ import { heroSchema } from '../schemas/hero.schema'
 import type { Hero, Lane } from '../types'
 import manualAnalysisRaw from './knowledge/manual-analysis-2026-08-19.json'
 import addendumRaw from './knowledge/manual-analysis-2026-08-19-addendum.json'
+import secondAddendumRaw from './knowledge/manual-analysis-2026-08-20-addendum.json'
 import { manualAnalysisSchema } from '../schemas/manualAnalysis.schema'
 import recommendationRulesRaw from './recommendation-rules/general.json'
 import { recommendationRulesSchema } from '../schemas/recommendationRules.schema'
 
-const source = [{ type: 'manual-analysis' as const, title: 'User supplied approved draft analysis addendum', dateAccessed: '2026-08-19' }]
-const addendumMatchups = addendumRaw.matchups.map(([heroId,targetId,score,reason]) => ({ heroId:String(heroId), targetId:String(targetId), score:Number(score), confidence:.5, conditions:[], reasons:[String(reason)], sources:source }))
-const addendumSynergies = addendumRaw.synergies.map(([heroIds,score,reason]) => ({ heroIds:heroIds as string[], score:Number(score), confidence:.5, conditions:[], reasons:[String(reason)], sources:source }))
-const addendumDraftRules = addendumRaw.draftRules.map(([id,conditions,recommendations,rationale]) => ({ id:id as string, confidence:.5, conditions:conditions as string[], recommendations:recommendations as string[], rationale:rationale as string[], sources:source }))
+const normalizeAddendum = (raw:typeof addendumRaw|typeof secondAddendumRaw,dateAccessed:string) => {
+  const sources=[{ type:'manual-analysis' as const,title:'User supplied approved draft analysis addendum',dateAccessed }]
+  return {
+    matchups:raw.matchups.map(([heroId,targetId,score,reason])=>({heroId:String(heroId),targetId:String(targetId),score:Number(score),confidence:.5,conditions:[],reasons:[String(reason)],sources})),
+    synergies:raw.synergies.map(([heroIds,score,reason])=>({heroIds:heroIds as string[],score:Number(score),confidence:.5,conditions:[],reasons:[String(reason)],sources})),
+    draftRules:raw.draftRules.map(([id,conditions,recommendations,rationale])=>({id:id as string,confidence:.5,conditions:conditions as string[],recommendations:recommendations as string[],rationale:rationale as string[],sources})),
+  }
+}
+const addendum=normalizeAddendum(addendumRaw,'2026-08-19')
+const secondAddendum=normalizeAddendum(secondAddendumRaw,'2026-08-20')
 const dedupe = <T>(items:T[], key:(item:T)=>string) => [...new Map(items.map(item=>[key(item),item])).values()]
 export const manualAnalysis = manualAnalysisSchema.parse({
   ...manualAnalysisRaw,
-  updatedAt:'2026-08-19',
-  heroes:{...manualAnalysisRaw.heroes,...addendumRaw.heroes},
-  matchups:dedupe([...manualAnalysisRaw.matchups,...addendumMatchups], item=>`${item.heroId}:${item.targetId}`),
-  synergies:dedupe([...manualAnalysisRaw.synergies,...addendumSynergies], item=>[...item.heroIds].sort().join(':')),
-  draftRules:dedupe([...manualAnalysisRaw.draftRules,...addendumDraftRules], item=>item.id),
+  updatedAt:'2026-08-20',
+  heroes:{...manualAnalysisRaw.heroes,...addendumRaw.heroes,...secondAddendumRaw.heroes},
+  matchups:dedupe([...manualAnalysisRaw.matchups,...addendum.matchups,...secondAddendum.matchups], item=>`${item.heroId}:${item.targetId}`),
+  synergies:dedupe([...manualAnalysisRaw.synergies,...addendum.synergies,...secondAddendum.synergies], item=>[...item.heroIds].sort().join(':')),
+  draftRules:dedupe([...manualAnalysisRaw.draftRules,...addendum.draftRules,...secondAddendum.draftRules], item=>item.id),
 })
 export const recommendationRules = recommendationRulesSchema.parse(recommendationRulesRaw)
 

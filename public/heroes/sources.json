@@ -746,5 +746,137 @@
       128
     ],
     "output": "/heroes/musashi.webp"
+  },
+  {
+    "heroId": "sun-bin",
+    "officialHeroId": 118,
+    "sourcePage": "https://camp.honorofkings.com/h5/app/index.html#/hero-homepage",
+    "sourceImage": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/1zkBQ1l1.png",
+    "originalSize": [
+      128,
+      128
+    ],
+    "output": "/heroes/sun-bin.webp"
+  },
+  {
+    "heroId": "garo",
+    "officialHeroId": 508,
+    "sourcePage": "https://camp.honorofkings.com/h5/app/index.html#/hero-homepage",
+    "sourceImage": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/g0jHNDf6.png",
+    "originalSize": [
+      128,
+      128
+    ],
+    "output": "/heroes/garo.webp"
+  },
+  {
+    "heroId": "mozi",
+    "officialHeroId": 108,
+    "sourcePage": "https://camp.honorofkings.com/h5/app/index.html#/hero-homepage",
+    "sourceImage": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/Za4OlJ6t.png",
+    "originalSize": [
+      128,
+      128
+    ],
+    "output": "/heroes/mozi.webp"
+  },
+  {
+    "heroId": "ji-xiaoman",
+    "officialHeroId": 507,
+    "sourcePage": "https://camp.honorofkings.com/h5/app/index.html#/hero-homepage",
+    "sourceImage": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/FsGXCnH1.png",
+    "originalSize": [
+      128,
+      128
+    ],
+    "output": "/heroes/ji-xiaoman.webp"
+  },
+  {
+    "heroId": "meng-ya",
+    "officialHeroId": 524,
+    "sourcePage": "https://camp.honorofkings.com/h5/app/index.html#/hero-homepage",
+    "sourceImage": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/vhBTA9jh.png",
+    "originalSize": [
+      128,
+      128
+    ],
+    "output": "/heroes/meng-ya.webp"
+  },
+  {
+    "heroId": "milady",
+    "officialHeroId": 504,
+    "sourcePage": "https://camp.honorofkings.com/h5/app/index.html#/hero-homepage",
+    "sourceImage": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/orlOit3f.png",
+    "originalSize": [
+      128,
+      128
+    ],
+    "output": "/heroes/milady.webp"
+  },
+  {
+    "heroId": "zhou-yu",
+    "officialHeroId": 124,
+    "sourcePage": "https://camp.honorofkings.com/h5/app/index.html#/hero-homepage",
+    "sourceImage": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/kqkpA18w.png",
+    "originalSize": [
+      128,
+      128
+    ],
+    "output": "/heroes/zhou-yu.webp"
+  },
+  {
+    "heroId": "dr-bian",
+    "officialHeroId": 119,
+    "sourcePage": "https://camp.honorofkings.com/h5/app/index.html#/hero-homepage",
+    "sourceImage": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/YmpeG9H2.png",
+    "originalSize": [
+      128,
+      128
+    ],
+    "output": "/heroes/dr-bian.webp"
+  },
+  {
+    "heroId": "dian-wei",
+    "officialHeroId": 129,
+    "sourcePage": "https://camp.honorofkings.com/h5/app/index.html#/hero-homepage",
+    "sourceImage": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/y6IMFSlI.png",
+    "originalSize": [
+      128,
+      128
+    ],
+    "output": "/heroes/dian-wei.webp"
+  },
+  {
+    "heroId": "luna",
+    "officialHeroId": 146,
+    "sourcePage": "https://camp.honorofkings.com/h5/app/index.html#/hero-homepage",
+    "sourceImage": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/hz3BqNue.png",
+    "originalSize": [
+      128,
+      128
+    ],
+    "output": "/heroes/luna.webp"
+  },
+  {
+    "heroId": "han-xin",
+    "officialHeroId": 150,
+    "sourcePage": "https://camp.honorofkings.com/h5/app/index.html#/hero-homepage",
+    "sourceImage": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/QTcSGEgM.png",
+    "originalSize": [
+      128,
+      128
+    ],
+    "output": "/heroes/han-xin.webp"
+  },
+  {
+    "heroId": "prince-of-lanling",
+    "officialHeroId": 153,
+    "sourcePage": "https://camp.honorofkings.com/h5/app/index.html#/hero-homepage",
+    "sourceImage": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/hwk1ad6d.png",
+    "originalSize": [
+      128,
+      128
+    ],
+    "output": "/heroes/prince-of-lanling.webp"
   }
 ]

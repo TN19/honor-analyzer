@@ -31,6 +31,9 @@ HERO_IDS = {
     "sakeer": 534, "devara": 537, "bai-qi": 120, "chicha": 172,
     "mi-yue": 121, "allain": 514, "xiang-yu": 135, "dharma": 134,
     "fang": 173, "ying": 538, "zilong": 107, "musashi": 130,
+    "sun-bin": 118, "garo": 508, "mozi": 108, "ji-xiaoman": 507,
+    "meng-ya": 524, "milady": 504, "zhou-yu": 124, "dr-bian": 119,
+    "dian-wei": 129, "luna": 146, "han-xin": 150, "prince-of-lanling": 153,
 }
 CAMP_IMAGES = {
     "angela": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/wjaExUFU.png",
@@ -101,6 +104,18 @@ CAMP_IMAGES = {
     "ying": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/diRuUQDV.png",
     "zilong": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/9xqbsAQC.png",
     "musashi": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/jgvSlz3u.png",
+    "sun-bin": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/1zkBQ1l1.png",
+    "garo": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/g0jHNDf6.png",
+    "mozi": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/Za4OlJ6t.png",
+    "ji-xiaoman": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/FsGXCnH1.png",
+    "meng-ya": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/vhBTA9jh.png",
+    "milady": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/orlOit3f.png",
+    "zhou-yu": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/kqkpA18w.png",
+    "dr-bian": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/YmpeG9H2.png",
+    "dian-wei": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/y6IMFSlI.png",
+    "luna": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/hz3BqNue.png",
+    "han-xin": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/QTcSGEgM.png",
+    "prince-of-lanling": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/hwk1ad6d.png",
 }
 
 

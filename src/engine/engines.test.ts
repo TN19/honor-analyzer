@@ -44,9 +44,22 @@ describe('contextual recommendations',()=>{
     const result=recommendPicks(getHeroesByLane('jungle'),[getHero('heino')!],[],'jungle',{team:'blue',draft:{blue:{mid:'heino'},red:{}}})
     expect(result.find(item=>item.heroId==='jing')?.matchedRules).toContain('heino-mid-enables-carry-jungle')
   })
+  it('marks Shi as a reasonable answer to enemy Liang',()=>{
+    const result=recommendPicks([getHero('shi')!],[],[getHero('liang')!],'mid',{team:'blue',draft:{blue:{},red:{roamer:'liang'}}})
+    expect(result[0].reasonable.map(item=>item.heroId)).toContain('liang')
+    expect(result[0].countering).toHaveLength(0)
+  })
+  it('applies blue-side first-pick priority to Dharma',()=>{
+    const result=recommendPicks(getHeroesByLane('clash'),[],[],'clash',{team:'blue',draft:{blue:{},red:{}}})
+    expect(result.find(item=>item.heroId==='dharma')?.matchedRules).toContain('blue-first-pick-dharma')
+  })
+  it('recommends Agudo reasonably against jungle Pei',()=>{
+    const result=recommendPicks(getHeroesByLane('jungle'),[],[getHero('pei')!],'jungle',{team:'blue',draft:{blue:{},red:{jungle:'pei'}}})
+    expect(result.find(item=>item.heroId==='agudo')?.reasonable.length).toBeGreaterThan(0)
+  })
 })
 describe('manual draft knowledge',()=>{
-  it('validates every referenced hero',()=>expect(Object.keys(manualAnalysis.heroes)).toHaveLength(68))
+  it('validates every referenced hero',()=>expect(Object.keys(manualAnalysis.heroes)).toHaveLength(80))
   it('exposes every registered hero to the frontend catalog',()=>expect(heroes.map(hero=>hero.id).sort()).toEqual(Object.keys(manualAnalysis.heroes).sort()))
   it('provides Traditional Chinese display names',()=>expect(getHeroDisplayName('haya')).toBe('海月'))
   it('keeps Flowborn forms separate',()=>expect(manualAnalysis.heroes['flowborn-tank'].roles).not.toEqual(manualAnalysis.heroes['flowborn-marksman'].roles))
@@ -62,6 +75,11 @@ describe('manual draft knowledge',()=>{
     expect(getHeroDisplayName('faith')).toBe('曹操')
   })
   it('registers Yuhuan for mid and roamer',()=>expect(manualAnalysis.heroes.yuhuan.lanes).toEqual(['mid','roamer']))
+  it('uses the confirmed Traditional Chinese name for Devara',()=>expect(getHeroDisplayName('devara')).toBe('司空震'))
+  it('registers Bai Qi and Fuzi as situational farm-lane choices',()=>{
+    expect(manualAnalysis.heroes['bai-qi'].lanes).toContain('farm')
+    expect(manualAnalysis.heroes.fuzi.lanes).toContain('farm')
+  })
   it('keeps corrected heroes exclusively in their registered lanes',()=>{
     expect(manualAnalysis.heroes.chicha.lanes).toEqual(['farm'])
     expect(getHeroDisplayName('chicha')).toBe('叱吒')

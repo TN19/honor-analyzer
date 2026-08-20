@@ -19,6 +19,9 @@ function conditionMatches(rule:RecommendationRule, context:RecommendationContext
   if(when.enemyAny && !when.enemyAny.some(id=>enemyIds.has(id))) return false
   if(when.allySlot && context.draft[context.team][when.allySlot.lane]!==when.allySlot.heroId) return false
   if(when.enemySlot && context.draft[enemyTeam][when.enemySlot.lane]!==when.enemySlot.heroId) return false
+  if(when.ownSide && context.team!==when.ownSide) return false
+  if(when.allyPickCountAtMost!==undefined && allies.length>when.allyPickCountAtMost) return false
+  if(when.enemySlotRole){const id=context.draft[enemyTeam][when.enemySlotRole.lane],target=id?enemies.find(hero=>hero.id===id):undefined;if(!target?.roles.includes(when.enemySlotRole.role)) return false}
   if(when.allyRoleAtLeast && allies.filter(hero=>hero.roles.includes(when.allyRoleAtLeast!.role)).length<when.allyRoleAtLeast.count) return false
   if(when.enemyRoleAtLeast && enemies.filter(hero=>hero.roles.includes(when.enemyRoleAtLeast!.role)).length<when.enemyRoleAtLeast.count) return false
   if(when.enemyRoleAtMost && enemies.filter(hero=>hero.roles.includes(when.enemyRoleAtMost!.role)).length>when.enemyRoleAtMost.count) return false

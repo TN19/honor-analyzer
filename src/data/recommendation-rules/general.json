@@ -77,9 +77,9 @@
   },
   {
     "id":"lu-bu-versus-multiple-tanks","confidence":0.5,"candidateLane":"clash",
-    "when":{"enemyRoleAtLeast":{"role":"tank","count":2}},
+    "when":{"enemyRoleAtLeast":{"role":"tank","count":1}},
     "recommendHeroIds":["lu-bu"],"scoreBoost":2,
-    "explanationZhHant":"敵方有至少兩名坦克時，呂布是已登記的優先選擇。"
+    "explanationZhHant":"敵方至少有一名坦克時可選呂布；坦克越多，呂布的價值越高。"
   },
   {
     "id":"ao-yin-versus-assassin","confidence":0.5,"candidateLane":"farm",
@@ -115,5 +115,80 @@
     "id":"chano-general-safe-pick","confidence":0.5,"candidateLane":"farm",
     "when":{},"recommendHeroIds":["chano"],"scoreBoost":0.6,"tone":"reasonable",
     "explanationZhHant":"沒有更高優先級的綠色依據時，蒼是泛用且安全的發育路選擇。"
+  },
+  {
+    "id":"first-pick-ao-yin-t0","confidence":0.5,"candidateLane":"farm",
+    "when":{"allyPickCountAtMost":0},"recommendHeroIds":["ao-yin"],"scoreBoost":2.5,
+    "explanationZhHant":"敖隱屬於 T0，沒有己方選角時可作為優先首選。"
+  },
+  {
+    "id":"first-pick-arli","confidence":0.5,"candidateLane":"farm",
+    "when":{"allyPickCountAtMost":0},"recommendHeroIds":["arli"],"scoreBoost":2,
+    "explanationZhHant":"公孫離是已登記的首選英雄。"
+  },
+  {
+    "id":"first-pick-liang","confidence":0.5,"candidateLane":"roamer",
+    "when":{"allyPickCountAtMost":0},"recommendHeroIds":["liang"],"scoreBoost":2,
+    "explanationZhHant":"張良是已登記的首選英雄；選下後應考慮禁用關羽與敖隱。"
+  },
+  {
+    "id":"blue-first-pick-dharma","confidence":0.5,"candidateLane":"clash",
+    "when":{"ownSide":"blue","allyPickCountAtMost":0},"recommendHeroIds":["dharma"],"scoreBoost":2.4,
+    "explanationZhHant":"藍方對抗路首選順序中，達摩優先級最高。"
+  },
+  {
+    "id":"blue-first-pick-faith","confidence":0.5,"candidateLane":"clash",
+    "when":{"ownSide":"blue","allyPickCountAtMost":0},"recommendHeroIds":["faith"],"scoreBoost":2.1,
+    "explanationZhHant":"藍方對抗路首選順序中，曹操位於達摩之後。"
+  },
+  {
+    "id":"blue-first-pick-ji-xiaoman","confidence":0.5,"candidateLane":"clash",
+    "when":{"ownSide":"blue","allyPickCountAtMost":0},"recommendHeroIds":["ji-xiaoman"],"scoreBoost":1.8,
+    "explanationZhHant":"藍方對抗路首選順序中，姬小滿是第三順位。"
+  },
+  {
+    "id":"red-side-clash-preference","confidence":0.5,"candidateLane":"clash",
+    "when":{"ownSide":"red"},"recommendHeroIds":["sun-ce","biron","charlotte"],"scoreBoost":1.2,
+    "explanationZhHant":"紅方對抗路可優先考慮孫策、狂鐵或夏洛特。"
+  },
+  {
+    "id":"gan-mo-versus-tank-jungle","confidence":0.5,"candidateLane":"mid",
+    "when":{"enemySlotRole":{"lane":"jungle","role":"tank"}},"recommendHeroIds":["gan-mo"],"scoreBoost":1.7,
+    "explanationZhHant":"敵方使用坦克打野時，干將莫邪是已登記的應對選擇。"
+  },
+  {
+    "id":"agudo-versus-dun-jungle","confidence":0.5,"candidateLane":"jungle",
+    "when":{"enemySlot":{"lane":"jungle","heroId":"dun"}},"recommendHeroIds":["agudo"],"scoreBoost":1.7,
+    "explanationZhHant":"敵方夏侯惇打野時，阿古朵是已登記的應對選擇。"
+  },
+  {
+    "id":"heino-nuwa-versus-agudo-jungle","confidence":0.5,"candidateLane":"mid",
+    "when":{"enemySlot":{"lane":"jungle","heroId":"agudo"}},"recommendHeroIds":["heino","nuwa"],"scoreBoost":1.7,
+    "explanationZhHant":"敵方阿古朵打野時，海諾或女媧適合應對。"
+  },
+  {
+    "id":"shi-wang-versus-menki-jungle","confidence":0.5,"candidateLane":"mid",
+    "when":{"enemySlot":{"lane":"jungle","heroId":"menki"}},"recommendHeroIds":["shi","wang-zhaojun"],"scoreBoost":1.7,
+    "explanationZhHant":"敵方夢奇打野時，西施或王昭君適合應對。"
+  },
+  {
+    "id":"angela-xiaoqiao-versus-kaizer-jungle","confidence":0.5,"candidateLane":"mid",
+    "when":{"enemySlot":{"lane":"jungle","heroId":"kaizer"}},"recommendHeroIds":["angela","xiao-qiao"],"scoreBoost":1.7,
+    "explanationZhHant":"敵方鎧打野時，安琪拉或小喬適合應對。"
+  },
+  {
+    "id":"agudo-reasonable-versus-pei","confidence":0.5,"candidateLane":"jungle",
+    "when":{"enemySlot":{"lane":"jungle","heroId":"pei"}},"recommendHeroIds":["agudo"],"scoreBoost":0.8,"tone":"reasonable",
+    "explanationZhHant":"阿古朵是應對裴擒虎的合理選擇，兩者清野速度較為接近。"
+  },
+  {
+    "id":"dun-dolia-versus-faith-dun","confidence":0.5,"candidateLane":"jungle",
+    "when":{"allyAll":["dolia"],"enemyAll":["faith"]},"recommendHeroIds":["dun"],"scoreBoost":1.8,
+    "explanationZhHant":"己方已有朵莉亞且敵方有曹操時，夏侯惇可完成已登記的應對組合。"
+  },
+  {
+    "id":"dun-dolia-versus-faith-dolia","confidence":0.5,"candidateLane":"roamer",
+    "when":{"allyAll":["dun"],"enemyAll":["faith"]},"recommendHeroIds":["dolia"],"scoreBoost":1.8,
+    "explanationZhHant":"己方已有夏侯惇且敵方有曹操時，朵莉亞可完成已登記的應對組合。"
   }
 ]

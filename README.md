@@ -24,7 +24,7 @@ O workflow `.github/workflows/deploy-pages.yml` publica automaticamente a pasta 
 
 ## Dados
 
-O catálogo atual reúne 68 heróis. O registro canônico de exemplo permanece em `src/data/heroes`, enquanto as notas gerais fornecidas pelo usuário ficam versionadas em `src/data/knowledge`, incluindo o adendo aprovado em 19 de agosto de 2026.
+O catálogo atual reúne 80 heróis. O registro canônico de exemplo permanece em `src/data/heroes`, enquanto as notas gerais fornecidas pelo usuário ficam versionadas em `src/data/knowledge`, incluindo os adendos aprovados em 19 e 20 de agosto de 2026.
 
 Ao adicionar registros, mantenha patch, confiança e fontes, e valide-os com os schemas em `src/schemas`. Conhecimento teórico, histórico e regras ficam separados.
 
