@@ -14,6 +14,11 @@
     "prince-of-lanling":{"name":"Prince of Lanling","displayNameZhHant":"蘭陵王","displayNameStatus":"confirmed","lanes":["jungle"],"roles":["assassin"]},
     "bai-qi":{"name":"Bai Qi","displayNameZhHant":"白起","displayNameStatus":"confirmed","lanes":["clash","farm"],"roles":["tank"]},
     "fuzi":{"name":"Fuzi","displayNameZhHant":"老夫子","displayNameStatus":"confirmed","lanes":["clash","farm"],"roles":["fighter"]}
+    ,"florentino":{"name":"Florentino","displayNameZhHant":"弗洛倫","displayNameStatus":"confirmed","lanes":["clash"],"roles":["fighter"]}
+    ,"ziya":{"name":"Ziya","displayNameZhHant":"姜子牙","displayNameStatus":"confirmed","lanes":["mid"],"roles":["mage"]}
+    ,"lorion":{"name":"Lorion","displayNameZhHant":"洛里昂","displayNameStatus":"confirmed","lanes":["mid"],"roles":["mage"]}
+    ,"annette":{"name":"Annette","displayNameZhHant":"安奈特","displayNameStatus":"confirmed","lanes":["roamer"],"roles":["support"]}
+    ,"kui":{"name":"Kui","displayNameZhHant":"鍾馗","displayNameStatus":"confirmed","lanes":["roamer"],"roles":["support","tank"]}
   },
   "matchups": [
     ["yuhuan","ao-yin",7,"楊玉環適合應對敖隱；前期不強，但射手換到中路後能平穩度過對線。"],

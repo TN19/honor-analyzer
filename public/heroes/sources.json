@@ -878,5 +878,60 @@
       128
     ],
     "output": "/heroes/prince-of-lanling.webp"
+  },
+  {
+    "heroId": "florentino",
+    "officialHeroId": 631,
+    "sourcePage": "https://camp.honorofkings.com/h5/app/index.html#/hero-homepage",
+    "sourceImage": "https://camp.honorofkings.com/camp/admin/hero/head_128-128/skJXGWLF.png",
+    "originalSize": [
+      128,
+      128
+    ],
+    "output": "/heroes/florentino.webp"
+  },
+  {
+    "heroId": "ziya",
+    "officialHeroId": 148,
+    "sourcePage": "https://camp.honorofkings.com/h5/app/index.html#/hero-homepage",
+    "sourceImage": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/km2HzQ71.png",
+    "originalSize": [
+      128,
+      128
+    ],
+    "output": "/heroes/ziya.webp"
+  },
+  {
+    "heroId": "lorion",
+    "officialHeroId": 635,
+    "sourcePage": "https://camp.honorofkings.com/h5/app/index.html#/hero-homepage",
+    "sourceImage": "https://camp.honorofkings.com/camp/admin/hero/head_128-128/UDiFFfId.png",
+    "originalSize": [
+      128,
+      128
+    ],
+    "output": "/heroes/lorion.webp"
+  },
+  {
+    "heroId": "annette",
+    "officialHeroId": 640,
+    "sourcePage": "https://camp.honorofkings.com/h5/app/index.html#/hero-homepage",
+    "sourceImage": "https://camp.honorofkings.com/camp/admin/hero/head_128-128/49o0xBua.png",
+    "originalSize": [
+      128,
+      128
+    ],
+    "output": "/heroes/annette.webp"
+  },
+  {
+    "heroId": "kui",
+    "officialHeroId": 175,
+    "sourcePage": "https://camp.honorofkings.com/h5/app/index.html#/hero-homepage",
+    "sourceImage": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/wRGzV266.png",
+    "originalSize": [
+      128,
+      128
+    ],
+    "output": "/heroes/kui.webp"
   }
 ]

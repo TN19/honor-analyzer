@@ -34,6 +34,7 @@ HERO_IDS = {
     "sun-bin": 118, "garo": 508, "mozi": 108, "ji-xiaoman": 507,
     "meng-ya": 524, "milady": 504, "zhou-yu": 124, "dr-bian": 119,
     "dian-wei": 129, "luna": 146, "han-xin": 150, "prince-of-lanling": 153,
+    "florentino": 631, "ziya": 148, "lorion": 635, "annette": 640, "kui": 175,
 }
 CAMP_IMAGES = {
     "angela": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/wjaExUFU.png",
@@ -116,6 +117,11 @@ CAMP_IMAGES = {
     "luna": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/hz3BqNue.png",
     "han-xin": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/QTcSGEgM.png",
     "prince-of-lanling": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/hwk1ad6d.png",
+    "florentino": "https://camp.honorofkings.com/camp/admin/hero/head_128-128/skJXGWLF.png",
+    "ziya": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/km2HzQ71.png",
+    "lorion": "https://camp.honorofkings.com/camp/admin/hero/head_128-128/UDiFFfId.png",
+    "annette": "https://camp.honorofkings.com/camp/admin/hero/head_128-128/49o0xBua.png",
+    "kui": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/wRGzV266.png",
 }
 
 

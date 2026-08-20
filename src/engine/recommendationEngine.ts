@@ -8,12 +8,15 @@ const tagNeed:Record<string,string[]> = {frontline:['tank','frontline'],engage:[
 const needLabels:Record<string,string> = {frontline:'前排',engage:'開團',peel:'保護',controle:'控制',mobilidade:'機動性',sustentacao:'續航',poke:'消耗',burst:'爆發',danoContinuo:'持續傷害',mapa:'地圖控制'}
 const clamp=(value:number)=>Math.max(0,Math.min(10,value))
 
-export type RecommendationContext = { draft:DraftState; team:Team }
+export type RecommendationContext = { draft:DraftState; team:Team; action?:'pick'|'ban'; stepIndex?:number }
 
 function conditionMatches(rule:RecommendationRule, context:RecommendationContext, allies:Hero[], enemies:Hero[]) {
   const when=rule.when
   const allyIds=new Set(allies.map(hero=>hero.id)), enemyIds=new Set(enemies.map(hero=>hero.id))
   const enemyTeam=context.team==='blue'?'red':'blue'
+  if(context.action==='ban'&&when.action!=='ban') return false
+  if(when.action&&context.action!==when.action) return false
+  if(when.stepIndex!==undefined&&context.stepIndex!==when.stepIndex) return false
   if(when.allyAll && !when.allyAll.every(id=>allyIds.has(id))) return false
   if(when.enemyAll && !when.enemyAll.every(id=>enemyIds.has(id))) return false
   if(when.enemyAny && !when.enemyAny.some(id=>enemyIds.has(id))) return false

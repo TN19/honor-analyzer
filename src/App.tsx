@@ -61,7 +61,7 @@ function BanPickMode(){
   const allies=picks(team).map(action=>getHero(action.heroId)).filter(Boolean) as NonNullable<ReturnType<typeof getHero>>[]
   const enemyTeam=team==='blue'?'red':'blue',enemies=picks(enemyTeam).map(action=>getHero(action.heroId)).filter(Boolean) as NonNullable<ReturnType<typeof getHero>>[]
   const draft:DraftState={blue:{},red:{}}
-  const recommendations=useMemo(()=>recommendAllHeroes(catalog,allies,enemies,{team,draft}),[catalog,allies,enemies,team])
+  const recommendations=useMemo(()=>recommendAllHeroes(catalog,allies,enemies,{team,draft,action:current?.kind,stepIndex:history.length}),[catalog,allies,enemies,team,current?.kind,history.length])
   const green=recommendations.filter(item=>item.countering.length+item.synergyWith.length+item.ruleRecommendations.length>0)
   const yellow=recommendations.filter(item=>item.reasonable.length>0&&item.countering.length+item.synergyWith.length+item.ruleRecommendations.length===0)
   const red=recommendations.filter(item=>item.counteredBy.length>0)

@@ -4,7 +4,7 @@ import { getGloballyUnavailableHeroes, validateSeriesPick } from './availability
 import { calculateWinRate } from './statisticsEngine'
 import { recommendAllHeroes, recommendPicks } from './recommendationEngine'
 import type { Hero } from '../types'
-import { heroes, manualAnalysis, getHero, getHeroDisplayName, getHeroesByLane } from '../data'
+import { heroes, manualAnalysis, professionalMatches, getHero, getHeroDisplayName, getHeroesByLane } from '../data'
 import { banPickSteps } from '../store/banPickSequence'
 const hero=(tags:string[]):Hero=>({id:'test',name:'Test',aliases:[],image:'',roles:[],lanes:['farm'],primaryLane:'farm',damage:{primary:'unknown',secondary:null},tags,strengths:[],weaknesses:[],gamePhases:{early:'',mid:'',late:''},skills:{},patch:'unknown',updatedAt:'2026-08-19',sources:[]})
 describe('composition engine',()=>it('derives dimensions from tags',()=>expect(analyzeComposition([hero(['engage'])]).scores.engage).toBe(2.5)))
@@ -62,9 +62,14 @@ describe('contextual recommendations',()=>{
     const result=recommendAllHeroes(heroes,[],[getHero('hou-yi')!],{team:'blue',draft:{blue:{},red:{}}})
     expect(result.find(item=>item.heroId==='arli')?.countering.map(item=>item.heroId)).toContain('hou-yi')
   })
+  it('uses EWC first-ban history conservatively and excludes pick-only rules',()=>{
+    const result=recommendAllHeroes(heroes,[],[],{team:'blue',draft:{blue:{},red:{}},action:'ban',stepIndex:0})
+    expect(result.find(item=>item.heroId==='haya')?.reasonable.length).toBeGreaterThan(0)
+    expect(result.find(item=>item.heroId==='ao-yin')?.ruleRecommendations).toHaveLength(0)
+  })
 })
 describe('manual draft knowledge',()=>{
-  it('validates every referenced hero',()=>expect(Object.keys(manualAnalysis.heroes)).toHaveLength(80))
+  it('validates every referenced hero',()=>expect(Object.keys(manualAnalysis.heroes)).toHaveLength(85))
   it('exposes every registered hero to the frontend catalog',()=>expect(heroes.map(hero=>hero.id).sort()).toEqual(Object.keys(manualAnalysis.heroes).sort()))
   it('provides Traditional Chinese display names',()=>expect(getHeroDisplayName('haya')).toBe('海月'))
   it('keeps Flowborn forms separate',()=>expect(manualAnalysis.heroes['flowborn-tank'].roles).not.toEqual(manualAnalysis.heroes['flowborn-marksman'].roles))
@@ -102,5 +107,17 @@ describe('ban-pick sequence',()=>{
     expect(banPickSteps.map(step=>`${step.team[0]}-${step.kind[0]}`).join(' ')).toBe('b-b r-b b-b r-b b-p r-p r-p b-p b-p r-p b-b r-b b-b r-b r-p b-p b-p r-p')
     expect(banPickSteps.filter(step=>step.team==='blue'&&step.kind==='pick')).toHaveLength(5)
     expect(banPickSteps.filter(step=>step.team==='red'&&step.kind==='ban')).toHaveLength(4)
+  })
+})
+describe('professional match history',()=>{
+  it('preserves all six EWC 2026 final records',()=>{
+    expect(professionalMatches.matches).toHaveLength(6)
+    expect(professionalMatches.matches.filter(match=>match.winner==='red')).toHaveLength(5)
+    expect(professionalMatches.matches.every(match=>match.blue.bans.length===4&&match.red.picks.length===5)).toBe(true)
+  })
+  it('preserves the exact first game ordering supplied by the user',()=>{
+    const match=professionalMatches.matches[0]
+    expect(match.blue.bans).toEqual(['dyadia','ukyo-tachibana','haya','mai-shiranui'])
+    expect(match.red.picks).toEqual(['ying','lapu-lapu','florentino','garuda','erin'])
   })
 })

@@ -190,5 +190,35 @@
     "id":"dun-dolia-versus-faith-dolia","confidence":0.5,"candidateLane":"roamer",
     "when":{"allyAll":["dun"],"enemyAll":["faith"]},"recommendHeroIds":["dolia"],"scoreBoost":1.8,
     "explanationZhHant":"己方已有夏侯惇且敵方有曹操時，朵莉亞可完成已登記的應對組合。"
+  },
+  {
+    "id":"ewc-2026-blue-first-ban-haya","confidence":0.4,
+    "when":{"ownSide":"blue","action":"ban","stepIndex":0},"recommendHeroIds":["haya"],"scoreBoost":0.7,"tone":"reasonable",
+    "explanationZhHant":"EWC 2026 決賽六局中，藍方有四局禁用海月；這是保守的歷史趨勢，不代表固定必禁。"
+  },
+  {
+    "id":"ewc-2026-red-first-ban-pei","confidence":0.4,
+    "when":{"ownSide":"red","action":"ban","stepIndex":1},"recommendHeroIds":["pei"],"scoreBoost":0.7,"tone":"reasonable",
+    "explanationZhHant":"EWC 2026 決賽六局中，紅方有四局第一禁用裴擒虎；這是保守的歷史趨勢。"
+  },
+  {
+    "id":"ewc-2026-blue-ban-pool","confidence":0.35,
+    "when":{"ownSide":"blue","action":"ban"},"recommendHeroIds":["haya","chano","garuda","devara"],"scoreBoost":0.35,"tone":"reasonable",
+    "explanationZhHant":"此英雄在 EWC 2026 決賽的藍方禁用池中重複出現，僅作低權重參考。"
+  },
+  {
+    "id":"ewc-2026-red-ban-pool","confidence":0.35,
+    "when":{"ownSide":"red","action":"ban"},"recommendHeroIds":["pei","liang","ao-yin","jing"],"scoreBoost":0.35,"tone":"reasonable",
+    "explanationZhHant":"此英雄在 EWC 2026 決賽的紅方禁用池中重複出現，僅作低權重參考。"
+  },
+  {
+    "id":"ewc-2026-blue-pick-pool","confidence":0.3,
+    "when":{"ownSide":"blue","action":"pick"},"recommendHeroIds":["ao-yin","dyadia","charlotte","yuhuan"],"scoreBoost":0.25,"tone":"reasonable",
+    "explanationZhHant":"此英雄在 EWC 2026 決賽的藍方選擇中出現兩次，樣本有限，僅作低權重參考。"
+  },
+  {
+    "id":"ewc-2026-red-pick-pool","confidence":0.3,
+    "when":{"ownSide":"red","action":"pick"},"recommendHeroIds":["arli","zhang-fei","biron","haya","erin"],"scoreBoost":0.25,"tone":"reasonable",
+    "explanationZhHant":"此英雄在 EWC 2026 決賽的紅方選擇中出現兩次，樣本有限，僅作低權重參考。"
   }
 ]

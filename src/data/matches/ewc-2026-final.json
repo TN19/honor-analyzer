@@ -1,0 +1,23 @@
+{
+  "tournament":"Esports World Cup 2026","stage":"Final","patch":"same-tournament-patch-unknown-id","source":"user-supplied-professional-records",
+  "matches":[
+    {"id":"ewc-2026-final-01","winner":"red","blue":{"bans":["dyadia","ukyo-tachibana","haya","mai-shiranui"],"picks":["pei","charlotte","zhuangzi","consort-yu","yuhuan"]},"red":{"bans":["liang","zhang-fei","arli","chano"],"picks":["ying","lapu-lapu","florentino","garuda","erin"]},"inferences":[
+      {"confidence":0.4,"analysisZhHant":"藍方先禁少司緣與橘右京後首選裴擒虎，可能是在清除妨礙前期野區節奏的英雄。紅方先禁張良與張飛，可能是在削弱控制與保護後再建立雲纓、拉普拉普的前排。","consequenceZhHant":"紅方以拉普拉普、弗洛倫承接正面，讓迦樓羅與艾琳獲得輸出空間；比賽由紅方獲勝，但不能單獨證明此陣容必然優勢。"}
+    ]},
+    {"id":"ewc-2026-final-02","winner":"red","blue":{"bans":["haya","liang","kaizer","lorion"],"picks":["dyadia","guan-yu","augran","chano","angela"]},"red":{"bans":["pei","ao-yin","consort-yu","mai-shiranui"],"picks":["arli","zhang-fei","dharma","nuwa","musashi"]},"inferences":[
+      {"confidence":0.45,"analysisZhHant":"紅方第一禁裴擒虎並禁敖隱，可能是為公孫離首輪選擇降低前期野區與射手壓力。張飛隨後提供保護，達摩與宮本武藏補足進場。","consequenceZhHant":"紅方形成保護公孫離、同時由達摩與宮本武藏切入的雙向結構並取勝；藍方先選少司緣後的陣容仍需要處理紅方多點進場。"}
+    ]},
+    {"id":"ewc-2026-final-03","winner":"red","blue":{"bans":["pei","nuwa","devara","charlotte"],"picks":["ao-yin","faith","dyadia","ziya","menki"]},"red":{"bans":["chano","liang","lorion","flowborn-tank"],"picks":["zhang-fei","arli","haya","biron","luna"]},"inferences":[
+      {"confidence":0.45,"analysisZhHant":"藍方首選敖隱後，紅方用張飛與公孫離建立保護型射手核心，並補上海月、狂鐵與露娜的高機動威脅。紅方禁蒼與張良，可能是減少藍方穩定射手與強制控制。","consequenceZhHant":"紅方多點機動陣容可能限制敖隱與姜子牙的輸出位置，最終由紅方取勝。這是對局推論，不等同固定反制關係。"}
+    ]},
+    {"id":"ewc-2026-final-04","winner":"red","blue":{"bans":["haya","jing","augran","yang-jian"],"picks":["chicha","mozi","dharma","yuhuan","agudo"]},"red":{"bans":["pei","ao-yin","nezha","nuwa"],"picks":["flowborn-marksman","annette","mai-shiranui","umbrosa","kaizer"]},"inferences":[
+      {"confidence":0.4,"analysisZhHant":"藍方集中禁用海月、鏡與大司命，顯示可能準備以阿古朵作為後續打野方向。紅方先禁裴擒虎與敖隱，降低前期入侵與高優先射手選項。","consequenceZhHant":"紅方以元流之子（射手）配合安奈特，並由不知火舞、影與鎧提供進場，最終取得勝利；藍方的推進組合未能轉化為勝果。"}
+    ]},
+    {"id":"ewc-2026-final-05","winner":"red","blue":{"bans":["chano","garuda","haya","nezha"],"picks":["lorion","devara","lian-po","flowborn-marksman","yang-jian"]},"red":{"bans":["pei","jing","musashi","ukyo-tachibana"],"picks":["mozi","shouyue","mi-yue","dun","gan-mo"]},"inferences":[
+      {"confidence":0.5,"analysisZhHant":"紅方四個禁用集中於裴擒虎、鏡、宮本武藏與橘右京等打野或切入英雄，可能是在保護百里守約與干將莫邪的遠程消耗體系。","consequenceZhHant":"紅方以墨子、百里守約與干將莫邪形成長距離消耗，羋月與夏侯惇補足前排及側翼，最終獲勝。禁用集中保護後排的解釋具有中等可信度。"}
+    ]},
+    {"id":"ewc-2026-final-06","winner":"blue","blue":{"bans":["guan-yu","chano","garuda","devara"],"picks":["ao-yin","nuwa","kaizer","kui","charlotte"]},"red":{"bans":["pei","jing","annette","faith"],"picks":["yang-jian","dolia","erin","haya","biron"]},"inferences":[
+      {"confidence":0.45,"analysisZhHant":"藍方禁關羽、蒼、迦樓羅與司空震，可能是在降低敖隱及女媧面對側翼突進與遠程射手的壓力。紅方先禁裴擒虎與鏡，延續限制高節奏打野的策略。","consequenceZhHant":"藍方以鎧與鍾馗提供前排及抓取，夏洛特承擔側線，讓敖隱與女媧輸出並取得系列中唯一的藍方勝利。"}
+    ]}
+  ]
+}

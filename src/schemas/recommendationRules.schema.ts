@@ -16,6 +16,8 @@ export const recommendationRulesSchema = z.array(z.object({
     ownSide: z.enum(['blue','red']).optional(),
     allyPickCountAtMost: z.number().int().nonnegative().optional(),
     enemySlotRole: z.object({ lane: laneSchema, role: z.string() }).optional(),
+    action: z.enum(['pick','ban']).optional(),
+    stepIndex: z.number().int().nonnegative().optional(),
     allyRoleAtLeast: z.object({ role: z.string(), count: z.number().int().positive() }).optional(),
     enemyRoleAtLeast: z.object({ role: z.string(), count: z.number().int().nonnegative() }).optional(),
     enemyRoleAtMost: z.object({ role: z.string(), count: z.number().int().nonnegative() }).optional(),
