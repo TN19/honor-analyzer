@@ -3,6 +3,7 @@ import { heroes, getHero, getHeroDisplayName, isHeroLaneConfirmed } from './data
 import { analyzeComposition } from './engine/compositionEngine'
 import { recommendAllHeroes, recommendPicks } from './engine/recommendationEngine'
 import { recommendBans, type BanRecommendation } from './engine/banRecommendationEngine'
+import { professionalArchiveSummary, recommendFromProfessionalGames } from './engine/professionalDraftEngine'
 import { applyPick, emptyDraft, loadDraft, removePick, saveDraft } from './store/draftStore'
 import { banPickSteps } from './store/banPickSequence'
 import { lanes, type DraftState, type Lane, type Recommendation, type RecommendationEvidence, type Team } from './types'
@@ -90,8 +91,34 @@ function BanPickMode(){
   </>
 }
 
+function ProfessionalBpMode(){
+  const [history,setHistory]=useState<BanPickAction[]>(()=>{try{const saved=JSON.parse(localStorage.getItem('hok-professional-bp-sequence')||'[]');return Array.isArray(saved)?saved:[]}catch{return []}})
+  const [query,setQuery]=useState('')
+  const [laneFilter,setLaneFilter]=useState<Lane|'all'>('all')
+  useEffect(()=>localStorage.setItem('hok-professional-bp-sequence',JSON.stringify(history)),[history])
+  const current=banPickSteps[history.length],team=current?.team??'blue',used=new Set(history.map(action=>action.heroId))
+  const picks=(side:Team)=>history.filter(action=>action.team===side&&action.kind==='pick')
+  const bans=(side:Team)=>history.filter(action=>action.team===side&&action.kind==='ban')
+  const catalog=heroes.filter(hero=>!used.has(hero.id)&&(laneFilter==='all'||hero.lanes.includes(laneFilter))&&`${displayHeroName(hero.id,hero.name)} ${hero.name}`.toLowerCase().includes(query.toLowerCase())).sort((a,b)=>displayHeroName(a.id,a.name).localeCompare(displayHeroName(b.id,b.name),'zh-Hant'))
+  const recommendations=useMemo(()=>current?recommendFromProfessionalGames(history,team,current.kind,used).filter(item=>getHero(item.heroId)).slice(0,16):[],[history,team,current?.kind])
+  const summary=professionalArchiveSummary()
+  const choose=(heroId:string)=>{if(current&&!used.has(heroId))setHistory(actions=>[...actions,{...current,heroId}])}
+  const undo=()=>setHistory(actions=>actions.slice(0,-1))
+  const teamName=(side:Team)=>side==='blue'?'蒼穹隊':'暮光隊'
+  const renderPicks=(side:Team)=>Array.from({length:5},(_,index)=>{const action=picks(side)[index],hero=action?getHero(action.heroId):undefined;return <div className={`draft-slot bp-pick-slot ${hero?'filled':''}`} key={index}>{hero?<><Mark name={displayHeroName(hero.id,hero.name)} heroId={hero.id}/><span className="slot-copy"><strong>{displayHeroName(hero.id,hero.name)}</strong></span></>:<span className="slot-copy"><strong>選擇英雄</strong></span>}</div>})
+  const renderBans=(side:Team)=>Array.from({length:4},(_,index)=>{const action=bans(side)[index],hero=action?getHero(action.heroId):undefined;return <div className={`bp-ban-slot ${hero?'filled':''}`} key={index}>{hero?<><Mark name={displayHeroName(hero.id,hero.name)} heroId={hero.id}/><strong>{displayHeroName(hero.id,hero.name)}</strong></>:<span>禁用</span>}</div>})
+  return <>
+    <div className="hero-heading"><div><span className="eyebrow">純職業賽模型</span><h1>職業賽 BP</h1><p>只使用 2026 年職業比賽；手動 counter、協同與一般規則不會進入此模式。</p></div><div className="actions"><button className="ghost" onClick={undo} disabled={!history.length}>撤銷上一步</button><button className="ghost" onClick={()=>setHistory([])}>全部清除</button></div></div>
+    <section className="pro-weight-summary"><article><b>{summary.games}</b><span>完整 BP 地圖</span></article><article><b>{summary.series}</b><span>職業系列賽</span></article><article><b>{summary.regions}</b><span>已有比賽的賽區</span></article><div><strong>加權方式</strong><span>越接近決賽越重 · 4–3／3–2 高於 4–0／3–0 · 國際賽走得更遠的賽區獲得加成</span></div></section>
+    <div className={`bp-turn ${current?.kind??'complete'}`}><span>{current?`第 ${history.length+1}／${banPickSteps.length} 步`:'流程完成'}</span><strong>{current?`${teamName(team)} · ${current.kind==='ban'?'禁用':'選擇'}英雄`:'雙方選角完成'}</strong><div><i style={{width:`${history.length/banPickSteps.length*100}%`}}/></div></div>
+    <section className="draft-stage bp-sequence-board"><div className="team-head blue"><span>01</span><div><small>隊伍 A</small><h2>蒼穹隊</h2></div><b>{picks('blue').length}/5</b></div><div className="versus"><span>職業</span><small>BP</small></div><div className="team-head red"><b>{picks('red').length}/5</b><div><small>隊伍 B</small><h2>暮光隊</h2></div><span>02</span></div><div className="bp-ban-row blue-bans">{renderBans('blue')}</div><div className="bp-ban-row red-bans">{renderBans('red')}</div><div className="slots blue-slots">{renderPicks('blue')}</div><div className="center-rune">◇</div><div className="slots red-slots">{renderPicks('red')}</div></section>
+    <section className="pro-recommendations"><div className="section-heading"><div><span className="eyebrow">目前步驟</span><h2>{current?.kind==='ban'?'職業禁用建議':'職業選角建議'}</h2><p>分數由相似 BP、系列賽階段、賽果接近度與賽區國際表現共同計算。</p></div></div><div className="pro-rec-grid">{recommendations.map((item,index)=>{const hero=getHero(item.heroId)!;return <article className="pro-rec-card" key={item.heroId}><span className="rank">{String(index+1).padStart(2,'0')}</span><Mark name={displayHeroName(hero.id,hero.name)} heroId={hero.id}/><div><strong>{displayHeroName(hero.id,hero.name)}</strong><p>{item.explanationZhHant}</p><small>{item.weightDetails.join(' · ')} · {item.regions.join('、')}</small></div><b>{item.score.toFixed(1)}<small>/10</small></b><button onClick={()=>choose(hero.id)}>{current?.kind==='ban'?'禁用':'選擇'}</button></article>})}{!recommendations.length&&<p className="bp-none">目前沒有可用的職業賽建議。</p>}</div></section>
+    <section className="bp-picker"><div className="section-heading"><div><span className="eyebrow">手動操作</span><h3>所有英雄</h3></div></div><label className="search"><span>⌕</span><input value={query} onChange={event=>setQuery(event.target.value)} placeholder="搜尋英雄…" aria-label="搜尋英雄"/></label><div className="lane-tabs bp-lane-filter"><button className={laneFilter==='all'?'active':''} onClick={()=>setLaneFilter('all')}>全部</button>{lanes.map(lane=><button className={laneFilter===lane?'active':''} onClick={()=>setLaneFilter(lane)} key={lane}>{laneLabels[lane]}</button>)}</div><div className="bp-catalog">{catalog.map(hero=><button className="bp-hero" disabled={!current} key={hero.id} onClick={()=>choose(hero.id)}><Mark name={displayHeroName(hero.id,hero.name)} heroId={hero.id}/><strong>{displayHeroName(hero.id,hero.name)}</strong><b>{current?.kind==='ban'?'禁':'＋'}</b></button>)}</div></section>
+  </>
+}
+
 export default function App(){
-  const [mode,setMode]=useState<'free'|'bp'>('free')
+  const [mode,setMode]=useState<'free'|'bp'|'professional'>('free')
   const [draft,setDraft]=useState<DraftState>(()=>loadDraft())
   const [slot,setSlot]=useState<Slot>({team:'blue',lane:'farm'})
   const [query,setQuery]=useState('')
@@ -107,8 +134,8 @@ export default function App(){
   const save=()=>{saveDraft(draft);setToast('選角已儲存於此裝置。');setTimeout(()=>setToast(''),2200)}
   const reset=()=>{setDraft(emptyDraft());setToast('選角已清除。');setTimeout(()=>setToast(''),1800)}
   return <div className="app-shell">
-    <header><a className="brand" href="#"><span className="brand-glyph">BP</span><span><strong>BP 分析</strong><small>《王者榮耀》</small></span></a><nav><button className={mode==='free'?'active':''} onClick={()=>setMode('free')}>自由選角</button><button className={mode==='bp'?'active':''} onClick={()=>setMode('bp')}>禁選模式</button><a href="#future">系列賽</a><a href="#future">對戰紀錄</a></nav><div className="status"><span className={online?'online':'offline'}/>{online?'已連線':'離線'}<b>版本 {displayPatch(version.currentPatch)}</b></div></header>
-    <main>{mode==='bp'?<BanPickMode/>:<>
+    <header><a className="brand" href="#"><span className="brand-glyph">BP</span><span><strong>BP 分析</strong><small>《王者榮耀》</small></span></a><nav><button className={mode==='free'?'active':''} onClick={()=>setMode('free')}>自由選角</button><button className={mode==='bp'?'active':''} onClick={()=>setMode('bp')}>禁選模式</button><button className={mode==='professional'?'active':''} onClick={()=>setMode('professional')}>職業賽 BP</button><a href="#future">對戰紀錄</a></nav><div className="status"><span className={online?'online':'offline'}/>{online?'已連線':'離線'}<b>版本 {displayPatch(version.currentPatch)}</b></div></header>
+    <main>{mode==='professional'?<ProfessionalBpMode/>:mode==='bp'?<BanPickMode/>:<>
       <div className="hero-heading"><div><span className="eyebrow">陣容實驗室</span><h1>自由選角</h1><p>配置雙方陣容、找出戰術缺口，並取得附帶證據與風險說明的推薦，而不只是一個分數。</p></div><div className="actions"><button className="ghost" onClick={reset}>清除</button><button className="primary" onClick={save}>儲存選角</button></div></div>
       <section className="draft-stage" id="draft">
         <div className="team-head blue"><span>01</span><div><small>隊伍 A</small><h2>蒼穹</h2></div><b>{Object.keys(draft.blue).length}/5</b></div>

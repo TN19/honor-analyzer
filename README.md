@@ -6,7 +6,9 @@ O modo `禁選模式` conduz automaticamente a sequência competitiva de 18 aç�
 
 Partidas profissionais ficam preservadas em `src/data/matches` exclusivamente como registros. Fatos observados (região, série, lado, picks, bans, vencedor e objetivo final verificável) não são convertidos em regras, pesos, pontuações ou recomendações enquanto a amostra for insuficiente.
 
-O arquivo profissional de 2026 usa um coletor reproduzível sobre páginas públicas da Liquipedia. Cada mapa conserva a URL da fonte e do VOD, identifica região e série e distingue BP completo de registros incompletos. A cobertura e os critérios de entrada ficam documentados em `src/data/matches/2026`; atingir a quantidade mínima não autoriza uso automático na engine.
+O arquivo profissional de 2026 usa um coletor reproduzível sobre páginas públicas da Liquipedia. Cada mapa conserva a URL da fonte e do VOD, identifica região e série e distingue BP completo de registros incompletos. A cobertura e os critérios de entrada ficam documentados em `src/data/matches/2026`. Esses dados não entram na engine manual, mas podem ser consultados isoladamente pelo modo `職業賽 BP`, com redução de peso para regiões abaixo de 100 mapas.
+
+O modo profissional pondera exclusivamente observações competitivas: fases mais próximas da final recebem mais peso; séries equilibradas (`4–3`, `3–2`) pesam mais que varridas (`4–0`, `3–0`); composições vencedoras recebem bônus; e o desempenho internacional mais profundo de uma equipe aumenta o peso da sua região doméstica. As recomendações mostram amostra e multiplicadores, sem misturar counters ou sinergias manuais.
 
 Os lotes profissionais também registram a série e o jogo dentro da série. O conjunto adicional de nove partidas do EWC 2026 está agrupado em três séries de duas partidas e uma série de três partidas. O campo histórico de peso permanece apenas como metadado legado e não é consumido por nenhuma engine.
 

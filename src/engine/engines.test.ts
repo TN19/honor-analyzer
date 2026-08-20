@@ -4,6 +4,7 @@ import { getGloballyUnavailableHeroes, validateSeriesPick } from './availability
 import { calculateWinRate } from './statisticsEngine'
 import { recommendAllHeroes, recommendPicks } from './recommendationEngine'
 import { recommendBans } from './banRecommendationEngine'
+import { calculateProfessionalSeriesWeight, professionalArchiveSummary, recommendFromProfessionalGames } from './professionalDraftEngine'
 import type { Hero } from '../types'
 import { heroes, manualAnalysis, professionalMatches, professionalMatchDatasets, getHero, getHeroDisplayName, getHeroesByLane } from '../data'
 import { banPickSteps } from '../store/banPickSequence'
@@ -157,5 +158,26 @@ describe('ban recommendations',()=>{
     const first=recommendBans(heroes,{team:'blue',stepIndex:0,plannedPickId:'pei',usedHeroIds:new Set()})
     const last=recommendBans(heroes,{team:'blue',stepIndex:10,plannedPickId:'pei',usedHeroIds:new Set()})
     expect(first).toEqual(last)
+  })
+})
+describe('professional-only draft analysis',()=>{
+  it('loads the validated multiregional archive without manual rules',()=>{
+    expect(professionalArchiveSummary()).toMatchObject({games:611,series:161,regions:6})
+  })
+  it('weights close and late playoff series above early sweeps',()=>{
+    const closeFinal=calculateProfessionalSeriesWeight({playoffs:true,progress:1,winnerWins:4,loserWins:3,regionAchievement:1})
+    const earlySweep=calculateProfessionalSeriesWeight({playoffs:true,progress:.2,winnerWins:4,loserWins:0,regionAchievement:.3})
+    expect(closeFinal).toBeGreaterThan(earlySweep)
+  })
+  it('increases weight for regions that progressed farther internationally',()=>{
+    const finalist=calculateProfessionalSeriesWeight({playoffs:true,progress:.8,winnerWins:4,loserWins:2,regionAchievement:1})
+    const groupExit=calculateProfessionalSeriesWeight({playoffs:true,progress:.8,winnerWins:4,loserWins:2,regionAchievement:.2})
+    expect(finalist).toBeGreaterThan(groupExit)
+  })
+  it('recommends only unused heroes observed in professional games',()=>{
+    const result=recommendFromProfessionalGames([], 'blue', 'pick', new Set(['dharma']))
+    expect(result.length).toBeGreaterThan(0)
+    expect(result.some(item=>item.heroId==='dharma')).toBe(false)
+    expect(result.every(item=>item.appearances>0&&item.weightedEvidence>0)).toBe(true)
   })
 })

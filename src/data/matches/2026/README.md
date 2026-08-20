@@ -8,7 +8,7 @@ Os slots de picks da Liquipedia não são tratados como ordem cronológica sem u
 
 O catálogo `sources.json` identifica as regiões que devem ser cobertas. Antes de qualquer uso estatístico em BP, a região precisa atingir ao menos 100 mapas com BP completo e passar por revisão de nomes, patch e ordem.
 
-`coverage.json` mostra a cobertura atual por região. Alcançar o mínimo numérico não habilita a análise: a política permanece `record-only` até aprovação explícita do usuário e revisão metodológica.
+`coverage.json` mostra a cobertura atual por região. A política `record-only` impede que estes dados alterem a análise manual. O modo separado `職業賽 BP` pode consultá-los de forma isolada; regiões abaixo do mínimo recebem redução por insuficiência de amostra.
 
 Exemplo de coleta:
 
