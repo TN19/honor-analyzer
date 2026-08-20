@@ -1,0 +1,83 @@
+{
+  "year": 2026,
+  "policy": "record-only",
+  "minimumCompleteGamesBeforeReview": 100,
+  "totals": {
+    "regionsWithGames": 6,
+    "series": 161,
+    "completeGames": 611,
+    "skippedIncompleteGames": 24
+  },
+  "regions": [
+    {
+      "id": "china",
+      "labelZhHant": "中國賽區",
+      "tournaments": 1,
+      "series": 12,
+      "completeGames": 62,
+      "skippedIncompleteGames": 3,
+      "sampleThresholdReached": false,
+      "analysisEligible": false
+    },
+    {
+      "id": "indonesia",
+      "labelZhHant": "印尼賽區",
+      "tournaments": 1,
+      "series": 45,
+      "completeGames": 157,
+      "skippedIncompleteGames": 5,
+      "sampleThresholdReached": true,
+      "analysisEligible": false
+    },
+    {
+      "id": "malaysia",
+      "labelZhHant": "馬來西亞賽區",
+      "tournaments": 1,
+      "series": 45,
+      "completeGames": 155,
+      "skippedIncompleteGames": 11,
+      "sampleThresholdReached": true,
+      "analysisEligible": false
+    },
+    {
+      "id": "philippines",
+      "labelZhHant": "菲律賓賽區",
+      "tournaments": 1,
+      "series": 45,
+      "completeGames": 170,
+      "skippedIncompleteGames": 0,
+      "sampleThresholdReached": true,
+      "analysisEligible": false
+    },
+    {
+      "id": "brazil",
+      "labelZhHant": "巴西賽區",
+      "tournaments": 0,
+      "series": 0,
+      "completeGames": 0,
+      "skippedIncompleteGames": 0,
+      "sampleThresholdReached": false,
+      "analysisEligible": false
+    },
+    {
+      "id": "west",
+      "labelZhHant": "西方賽區",
+      "tournaments": 1,
+      "series": 6,
+      "completeGames": 32,
+      "skippedIncompleteGames": 4,
+      "sampleThresholdReached": false,
+      "analysisEligible": false
+    },
+    {
+      "id": "international",
+      "labelZhHant": "國際賽區",
+      "tournaments": 1,
+      "series": 8,
+      "completeGames": 35,
+      "skippedIncompleteGames": 1,
+      "sampleThresholdReached": false,
+      "analysisEligible": false
+    }
+  ]
+}

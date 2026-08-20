@@ -1,0 +1,1980 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-20",
+  "tournament": {
+    "id": "kwc-2026",
+    "name": "Honor of Kings World Cup 2026",
+    "year": 2026,
+    "stage": "Playoffs",
+    "region": "international"
+  },
+  "source": {
+    "provider": "Liquipedia",
+    "page": "Honor of Kings World Cup/2026/Playoffs",
+    "url": "https://liquipedia.net/honorofkings/Honor_of_Kings_World_Cup/2026/Playoffs"
+  },
+  "analysisPolicy": {
+    "eligible": false,
+    "reason": "歷史資料僅供記錄；未經使用者批准不得進入推薦引擎。"
+  },
+  "coverage": {
+    "series": 8,
+    "gamesWithCompleteBp": 35,
+    "skippedIncompleteGames": 1
+  },
+  "series": [
+    {
+      "id": "kwc-2026-s01",
+      "dateRaw": "August 6, 2026 - 14:10",
+      "teams": [
+        {
+          "name": "agal",
+          "region": "international"
+        },
+        {
+          "name": "aurora gaming",
+          "region": "international"
+        }
+      ],
+      "finalScore": {
+        "agal": 4,
+        "aurora gaming": 0
+      },
+      "winnerTeam": "agal",
+      "games": [
+        {
+          "id": "kwc-2026-s01-g1",
+          "gameInSeries": 1,
+          "duration": "13:00",
+          "winnerTeam": "agal",
+          "winnerSide": "blue",
+          "finalObjective": {
+            "winnerConfirmed": true,
+            "endingMethod": "unknown"
+          },
+          "draft": {
+            "blue": {
+              "team": "agal",
+              "picks": [
+                "charlotte",
+                "pei",
+                "garuda",
+                "consort-yu",
+                "lian-po"
+              ],
+              "bans": [
+                "liang",
+                "augran",
+                "lorion",
+                "mai-shiranui"
+              ]
+            },
+            "red": {
+              "team": "aurora gaming",
+              "picks": [
+                "florentino",
+                "ukyo-tachibana",
+                "nuwa",
+                "ao-yin",
+                "lapu-lapu"
+              ],
+              "bans": [
+                "arli",
+                "zhang-fei",
+                "yuhuan",
+                "haya"
+              ]
+            }
+          },
+          "bpMetadata": {
+            "complete": true,
+            "banOrderVerified": false,
+            "pickOrder": "source-slot-order"
+          },
+          "vod": "https://youtu.be/_MIkyUw_PAg?t=15167"
+        },
+        {
+          "id": "kwc-2026-s01-g2",
+          "gameInSeries": 2,
+          "duration": "17:50",
+          "winnerTeam": "agal",
+          "winnerSide": "red",
+          "finalObjective": {
+            "winnerConfirmed": true,
+            "endingMethod": "unknown"
+          },
+          "draft": {
+            "blue": {
+              "team": "aurora gaming",
+              "picks": [
+                "biron",
+                "luna",
+                "haya",
+                "chicha",
+                "lian-po"
+              ],
+              "bans": [
+                "ao-yin",
+                "dyadia",
+                "agudo",
+                "flowborn-tank"
+              ]
+            },
+            "red": {
+              "team": "agal",
+              "picks": [
+                "faith",
+                "ying",
+                "lorion",
+                "erin",
+                "lapu-lapu"
+              ],
+              "bans": [
+                "pei",
+                "zhang-fei",
+                "dolia",
+                "jing"
+              ]
+            }
+          },
+          "bpMetadata": {
+            "complete": true,
+            "banOrderVerified": false,
+            "pickOrder": "source-slot-order"
+          },
+          "vod": "https://youtu.be/_MIkyUw_PAg?t=16769"
+        },
+        {
+          "id": "kwc-2026-s01-g3",
+          "gameInSeries": 3,
+          "duration": "19:08",
+          "winnerTeam": "agal",
+          "winnerSide": "blue",
+          "finalObjective": {
+            "winnerConfirmed": true,
+            "endingMethod": "unknown"
+          },
+          "draft": {
+            "blue": {
+              "team": "agal",
+              "picks": [
+                "umbrosa",
+                "nezha",
+                "heino",
+                "arli",
+                "zhang-fei"
+              ],
+              "bans": [
+                "pei",
+                "chano",
+                "consort-yu",
+                "mozi"
+              ]
+            },
+            "red": {
+              "team": "aurora gaming",
+              "picks": [
+                "dharma",
+                "flowborn-tank",
+                "lorion",
+                "agudo",
+                "dolia"
+              ],
+              "bans": [
+                "chicha",
+                "dyadia",
+                "guan-yu",
+                "luna"
+              ]
+            }
+          },
+          "bpMetadata": {
+            "complete": true,
+            "banOrderVerified": false,
+            "pickOrder": "source-slot-order"
+          },
+          "vod": "https://youtu.be/_MIkyUw_PAg?t=18922"
+        },
+        {
+          "id": "kwc-2026-s01-g4",
+          "gameInSeries": 4,
+          "duration": "14:32",
+          "winnerTeam": "agal",
+          "winnerSide": "blue",
+          "finalObjective": {
+            "winnerConfirmed": true,
+            "endingMethod": "unknown"
+          },
+          "draft": {
+            "blue": {
+              "team": "agal",
+              "picks": [
+                "devara",
+                "augran",
+                "nuwa",
+                "ao-yin",
+                "dyadia"
+              ],
+              "bans": [
+                "pei",
+                "zhang-fei",
+                "charlotte",
+                "angela"
+              ]
+            },
+            "red": {
+              "team": "aurora gaming",
+              "picks": [
+                "faith",
+                "menki",
+                "ziya",
+                "chano",
+                "annette"
+              ],
+              "bans": [
+                "haya",
+                "chicha",
+                "guan-yu",
+                "biron"
+              ]
+            }
+          },
+          "bpMetadata": {
+            "complete": true,
+            "banOrderVerified": false,
+            "pickOrder": "source-slot-order"
+          },
+          "vod": "https://youtu.be/_MIkyUw_PAg?t=21244"
+        }
+      ]
+    },
+    {
+      "id": "kwc-2026-s02",
+      "dateRaw": "August 5, 2026 - 13:55",
+      "teams": [
+        {
+          "name": "roc",
+          "region": "international"
+        },
+        {
+          "name": "btr",
+          "region": "international"
+        }
+      ],
+      "finalScore": {
+        "roc": 4,
+        "btr": 1
+      },
+      "winnerTeam": "roc",
+      "games": [
+        {
+          "id": "kwc-2026-s02-g1",
+          "gameInSeries": 1,
+          "duration": "14:44",
+          "winnerTeam": "roc",
+          "winnerSide": "blue",
+          "finalObjective": {
+            "winnerConfirmed": true,
+            "endingMethod": "unknown"
+          },
+          "draft": {
+            "blue": {
+              "team": "roc",
+              "picks": [
+                "dharma",
+                "ukyo-tachibana",
+                "ziya",
+                "chicha",
+                "lapu-lapu"
+              ],
+              "bans": [
+                "annette",
+                "jing",
+                "luna",
+                "menki"
+              ]
+            },
+            "red": {
+              "team": "btr",
+              "picks": [
+                "florentino",
+                "kaizer",
+                "garuda",
+                "arli",
+                "dyadia"
+              ],
+              "bans": [
+                "pei",
+                "ao-yin",
+                "haya",
+                "xiao-qiao"
+              ]
+            }
+          },
+          "bpMetadata": {
+            "complete": true,
+            "banOrderVerified": false,
+            "pickOrder": "source-slot-order"
+          },
+          "vod": "https://youtu.be/q9gS9P_TyaY?t=13310"
+        },
+        {
+          "id": "kwc-2026-s02-g2",
+          "gameInSeries": 2,
+          "duration": "10:53",
+          "winnerTeam": "roc",
+          "winnerSide": "red",
+          "finalObjective": {
+            "winnerConfirmed": true,
+            "endingMethod": "unknown"
+          },
+          "draft": {
+            "blue": {
+              "team": "btr",
+              "picks": [
+                "charlotte",
+                "musashi",
+                "haya",
+                "chano",
+                "zhang-fei"
+              ],
+              "bans": [
+                "lorion",
+                "mozi",
+                "garuda",
+                "nuwa"
+              ]
+            },
+            "red": {
+              "team": "roc",
+              "picks": [
+                "biron",
+                "agudo",
+                "angela",
+                "ao-yin",
+                "lian-po"
+              ],
+              "bans": [
+                "pei",
+                "lapu-lapu",
+                "guan-yu",
+                "luna"
+              ]
+            }
+          },
+          "bpMetadata": {
+            "complete": true,
+            "banOrderVerified": false,
+            "pickOrder": "source-slot-order"
+          },
+          "vod": "https://youtu.be/q9gS9P_TyaY?t=15042"
+        },
+        {
+          "id": "kwc-2026-s02-g3",
+          "gameInSeries": 3,
+          "duration": "25:23",
+          "winnerTeam": "roc",
+          "winnerSide": "blue",
+          "finalObjective": {
+            "winnerConfirmed": true,
+            "endingMethod": "unknown"
+          },
+          "draft": {
+            "blue": {
+              "team": "roc",
+              "picks": [
+                "guan-yu",
+                "luna",
+                "yuhuan",
+                "chano",
+                "dyadia"
+              ],
+              "bans": [
+                "ao-yin",
+                "chicha",
+                "lorion",
+                "mai-shiranui"
+              ]
+            },
+            "red": {
+              "team": "btr",
+              "picks": [
+                "dharma",
+                "jing",
+                "xiao-qiao",
+                "erin",
+                "lapu-lapu"
+              ],
+              "bans": [
+                "pei",
+                "zhang-fei",
+                "ata",
+                "haya"
+              ]
+            }
+          },
+          "bpMetadata": {
+            "complete": true,
+            "banOrderVerified": false,
+            "pickOrder": "source-slot-order"
+          },
+          "vod": "https://youtu.be/q9gS9P_TyaY?t=16536"
+        },
+        {
+          "id": "kwc-2026-s02-g4",
+          "gameInSeries": 4,
+          "duration": "23:49",
+          "winnerTeam": "btr",
+          "winnerSide": "blue",
+          "finalObjective": {
+            "winnerConfirmed": true,
+            "endingMethod": "unknown"
+          },
+          "draft": {
+            "blue": {
+              "team": "btr",
+              "picks": [
+                "guan-yu",
+                "ying",
+                "ziya",
+                "chicha",
+                "annette"
+              ],
+              "bans": [
+                "zhang-fei",
+                "haya",
+                "charlotte",
+                "heino"
+              ]
+            },
+            "red": {
+              "team": "roc",
+              "picks": [
+                "umbrosa",
+                "flowborn-tank",
+                "lorion",
+                "erin",
+                "mozi"
+              ],
+              "bans": [
+                "ao-yin",
+                "pei",
+                "augran",
+                "menki"
+              ]
+            }
+          },
+          "bpMetadata": {
+            "complete": true,
+            "banOrderVerified": false,
+            "pickOrder": "source-slot-order"
+          },
+          "vod": "https://youtu.be/q9gS9P_TyaY?t=19271"
+        },
+        {
+          "id": "kwc-2026-s02-g5",
+          "gameInSeries": 5,
+          "duration": "16:39",
+          "winnerTeam": "roc",
+          "winnerSide": "red",
+          "finalObjective": {
+            "winnerConfirmed": true,
+            "endingMethod": "unknown"
+          },
+          "draft": {
+            "blue": {
+              "team": "btr",
+              "picks": [
+                "faith",
+                "ata",
+                "angela",
+                "di-renjie",
+                "mozi"
+              ],
+              "bans": [
+                "zhang-fei",
+                "mai-shiranui",
+                "bai-qi",
+                "menki"
+              ]
+            },
+            "red": {
+              "team": "roc",
+              "picks": [
+                "charlotte",
+                "augran",
+                "haya",
+                "arli",
+                "annette"
+              ],
+              "bans": [
+                "ao-yin",
+                "pei",
+                "flowborn-marksman",
+                "shouyue"
+              ]
+            }
+          },
+          "bpMetadata": {
+            "complete": true,
+            "banOrderVerified": false,
+            "pickOrder": "source-slot-order"
+          },
+          "vod": "https://youtu.be/q9gS9P_TyaY?t=21529"
+        }
+      ]
+    },
+    {
+      "id": "kwc-2026-s03",
+      "dateRaw": "August 6, 2026 - 11:00",
+      "teams": [
+        {
+          "name": "ksg",
+          "region": "international"
+        },
+        {
+          "name": "vp",
+          "region": "international"
+        }
+      ],
+      "finalScore": {
+        "ksg": 4,
+        "vp": 0
+      },
+      "winnerTeam": "ksg",
+      "games": [
+        {
+          "id": "kwc-2026-s03-g1",
+          "gameInSeries": 1,
+          "duration": "12:34",
+          "winnerTeam": "ksg",
+          "winnerSide": "blue",
+          "finalObjective": {
+            "winnerConfirmed": true,
+            "endingMethod": "unknown"
+          },
+          "draft": {
+            "blue": {
+              "team": "ksg",
+              "picks": [
+                "charlotte",
+                "kaizer",
+                "lorion",
+                "ao-yin",
+                "lapu-lapu"
+              ],
+              "bans": [
+                "jing",
+                "mai-shiranui",
+                "garuda",
+                "nuwa"
+              ]
+            },
+            "red": {
+              "team": "vp",
+              "picks": [
+                "biron",
+                "zilong",
+                "angela",
+                "chano",
+                "zhang-fei"
+              ],
+              "bans": [
+                "dyadia",
+                "pei",
+                "nezha",
+                "lu-bu-honor-of-kings"
+              ]
+            }
+          },
+          "bpMetadata": {
+            "complete": true,
+            "banOrderVerified": false,
+            "pickOrder": "source-slot-order"
+          },
+          "vod": "https://youtu.be/_MIkyUw_PAg?t=3577"
+        },
+        {
+          "id": "kwc-2026-s03-g2",
+          "gameInSeries": 2,
+          "duration": "11:01",
+          "winnerTeam": "ksg",
+          "winnerSide": "red",
+          "finalObjective": {
+            "winnerConfirmed": true,
+            "endingMethod": "unknown"
+          },
+          "draft": {
+            "blue": {
+              "team": "vp",
+              "picks": [
+                "guan-yu",
+                "augran",
+                "heino",
+                "arli",
+                "mozi"
+              ],
+              "bans": [
+                "liang",
+                "haya",
+                "annette",
+                "jing"
+              ]
+            },
+            "red": {
+              "team": "ksg",
+              "picks": [
+                "florentino",
+                "pei",
+                "mai-shiranui",
+                "chicha",
+                "lian-po"
+              ],
+              "bans": [
+                "lapu-lapu",
+                "dyadia",
+                "flowborn-tank",
+                "yuhuan"
+              ]
+            }
+          },
+          "bpMetadata": {
+            "complete": true,
+            "banOrderVerified": false,
+            "pickOrder": "source-slot-order"
+          },
+          "vod": "https://youtu.be/_MIkyUw_PAg?t=5277"
+        },
+        {
+          "id": "kwc-2026-s03-g3",
+          "gameInSeries": 3,
+          "duration": "11:27",
+          "winnerTeam": "ksg",
+          "winnerSide": "blue",
+          "finalObjective": {
+            "winnerConfirmed": true,
+            "endingMethod": "unknown"
+          },
+          "draft": {
+            "blue": {
+              "team": "ksg",
+              "picks": [
+                "devara",
+                "ukyo-tachibana",
+                "yuhuan",
+                "chano",
+                "zhang-fei"
+              ],
+              "bans": [
+                "jing",
+                "mai-shiranui",
+                "liu-bang",
+                "lorion"
+              ]
+            },
+            "red": {
+              "team": "vp",
+              "picks": [
+                "florentino",
+                "nezha",
+                "xiao-qiao",
+                "ao-yin",
+                "lapu-lapu"
+              ],
+              "bans": [
+                "dyadia",
+                "guan-yu",
+                "haya",
+                "biron"
+              ]
+            }
+          },
+          "bpMetadata": {
+            "complete": true,
+            "banOrderVerified": false,
+            "pickOrder": "source-slot-order"
+          },
+          "vod": "https://youtu.be/_MIkyUw_PAg?t=6773"
+        },
+        {
+          "id": "kwc-2026-s03-g4",
+          "gameInSeries": 4,
+          "duration": "13:02",
+          "winnerTeam": "ksg",
+          "winnerSide": "red",
+          "finalObjective": {
+            "winnerConfirmed": true,
+            "endingMethod": "unknown"
+          },
+          "draft": {
+            "blue": {
+              "team": "vp",
+              "picks": [
+                "bai-qi",
+                "jing",
+                "lorion",
+                "shouyue",
+                "annette"
+              ],
+              "bans": [
+                "liang",
+                "haya",
+                "guan-yu",
+                "da-qiao"
+              ]
+            },
+            "red": {
+              "team": "ksg",
+              "picks": [
+                "dharma",
+                "flowborn-tank",
+                "garuda",
+                "arli",
+                "mozi"
+              ],
+              "bans": [
+                "mai-shiranui",
+                "dyadia",
+                "liu-bang",
+                "faith"
+              ]
+            }
+          },
+          "bpMetadata": {
+            "complete": true,
+            "banOrderVerified": false,
+            "pickOrder": "source-slot-order"
+          },
+          "vod": "https://youtu.be/_MIkyUw_PAg?t=8584"
+        }
+      ]
+    },
+    {
+      "id": "kwc-2026-s04",
+      "dateRaw": "August 5, 2026 - 11:00",
+      "teams": [
+        {
+          "name": "geekay",
+          "region": "international"
+        },
+        {
+          "name": "dmt",
+          "region": "international"
+        }
+      ],
+      "finalScore": {
+        "geekay": 4,
+        "dmt": 1
+      },
+      "winnerTeam": "geekay",
+      "games": [
+        {
+          "id": "kwc-2026-s04-g1",
+          "gameInSeries": 1,
+          "duration": "12:52",
+          "winnerTeam": "geekay",
+          "winnerSide": "red",
+          "finalObjective": {
+            "winnerConfirmed": true,
+            "endingMethod": "unknown"
+          },
+          "draft": {
+            "blue": {
+              "team": "dmt",
+              "picks": [
+                "dharma",
+                "ukyo-tachibana",
+                "haya",
+                "ao-yin",
+                "lapu-lapu"
+              ],
+              "bans": [
+                "pei",
+                "jing",
+                "agudo",
+                "nuwa"
+              ]
+            },
+            "red": {
+              "team": "geekay",
+              "picks": [
+                "charlotte",
+                "menki",
+                "garuda",
+                "flowborn-marksman",
+                "zhang-fei"
+              ],
+              "bans": [
+                "lorion",
+                "dyadia",
+                "luna",
+                "guan-yu"
+              ]
+            }
+          },
+          "bpMetadata": {
+            "complete": true,
+            "banOrderVerified": false,
+            "pickOrder": "source-slot-order"
+          },
+          "vod": "https://youtu.be/q9gS9P_TyaY?t=3647"
+        },
+        {
+          "id": "kwc-2026-s04-g2",
+          "gameInSeries": 2,
+          "duration": "11:53",
+          "winnerTeam": "geekay",
+          "winnerSide": "blue",
+          "finalObjective": {
+            "winnerConfirmed": true,
+            "endingMethod": "unknown"
+          },
+          "draft": {
+            "blue": {
+              "team": "geekay",
+              "picks": [
+                "dharma",
+                "pei",
+                "lorion",
+                "chano",
+                "lian-po"
+              ],
+              "bans": [
+                "guan-yu",
+                "mai-shiranui",
+                "biron",
+                "liu-bang"
+              ]
+            },
+            "red": {
+              "team": "dmt",
+              "picks": [
+                "bai-qi",
+                "jing",
+                "angela",
+                "arli",
+                "dyadia"
+              ],
+              "bans": [
+                "ao-yin",
+                "liang",
+                "lapu-lapu",
+                "annette"
+              ]
+            }
+          },
+          "bpMetadata": {
+            "complete": true,
+            "banOrderVerified": false,
+            "pickOrder": "source-slot-order"
+          },
+          "vod": "https://youtu.be/q9gS9P_TyaY?t=5167"
+        },
+        {
+          "id": "kwc-2026-s04-g3",
+          "gameInSeries": 3,
+          "duration": "12:59",
+          "winnerTeam": "geekay",
+          "winnerSide": "red",
+          "finalObjective": {
+            "winnerConfirmed": true,
+            "endingMethod": "unknown"
+          },
+          "draft": {
+            "blue": {
+              "team": "dmt",
+              "picks": [
+                "biron",
+                "ying",
+                "heino",
+                "chicha",
+                "zhang-fei"
+              ],
+              "bans": [
+                "ao-yin",
+                "liang",
+                "faith",
+                "devara"
+              ]
+            },
+            "red": {
+              "team": "geekay",
+              "picks": [
+                "guan-yu",
+                "augran",
+                "ziya",
+                "arli",
+                "annette"
+              ],
+              "bans": [
+                "pei",
+                "lorion",
+                "agudo",
+                "luna"
+              ]
+            }
+          },
+          "bpMetadata": {
+            "complete": true,
+            "banOrderVerified": false,
+            "pickOrder": "source-slot-order"
+          },
+          "vod": "https://youtu.be/q9gS9P_TyaY?t=6729"
+        },
+        {
+          "id": "kwc-2026-s04-g4",
+          "gameInSeries": 4,
+          "duration": "14:42",
+          "winnerTeam": "dmt",
+          "winnerSide": "red",
+          "finalObjective": {
+            "winnerConfirmed": true,
+            "endingMethod": "unknown"
+          },
+          "draft": {
+            "blue": {
+              "team": "geekay",
+              "picks": [
+                "umbrosa",
+                "ata",
+                "yuhuan",
+                "ao-yin",
+                "lapu-lapu"
+              ],
+              "bans": [
+                "pei",
+                "luna",
+                "flowborn-marksman",
+                "chano"
+              ]
+            },
+            "red": {
+              "team": "dmt",
+              "picks": [
+                "guan-yu",
+                "dun",
+                "mai-shiranui",
+                "erin",
+                "annette"
+              ],
+              "bans": [
+                "haya",
+                "dolia",
+                "devara",
+                "nezha"
+              ]
+            }
+          },
+          "bpMetadata": {
+            "complete": true,
+            "banOrderVerified": false,
+            "pickOrder": "source-slot-order"
+          },
+          "vod": "https://youtu.be/q9gS9P_TyaY?t=8531"
+        },
+        {
+          "id": "kwc-2026-s04-g5",
+          "gameInSeries": 5,
+          "duration": "12:22",
+          "winnerTeam": "geekay",
+          "winnerSide": "red",
+          "finalObjective": {
+            "winnerConfirmed": true,
+            "endingMethod": "unknown"
+          },
+          "draft": {
+            "blue": {
+              "team": "dmt",
+              "picks": [
+                "sun-ce",
+                "luna",
+                "xiao-qiao",
+                "chano",
+                "kui"
+              ],
+              "bans": [
+                "mai-shiranui",
+                "chicha",
+                "bai-qi",
+                "liu-bang"
+              ]
+            },
+            "red": {
+              "team": "geekay",
+              "picks": [
+                "biron",
+                "jing",
+                "wang-zhaojun",
+                "erin",
+                "liang"
+              ],
+              "bans": [
+                "lorion",
+                "flowborn-marksman",
+                "umbrosa",
+                "kaizer"
+              ]
+            }
+          },
+          "bpMetadata": {
+            "complete": true,
+            "banOrderVerified": false,
+            "pickOrder": "source-slot-order"
+          },
+          "vod": "https://youtu.be/q9gS9P_TyaY?t=10245"
+        }
+      ]
+    },
+    {
+      "id": "kwc-2026-s05",
+      "dateRaw": "August 7, 2026 - 13:25",
+      "teams": [
+        {
+          "name": "agal",
+          "region": "international"
+        },
+        {
+          "name": "roc",
+          "region": "international"
+        }
+      ],
+      "finalScore": {
+        "agal": 4,
+        "roc": 0
+      },
+      "winnerTeam": "agal",
+      "games": [
+        {
+          "id": "kwc-2026-s05-g1",
+          "gameInSeries": 1,
+          "duration": "12:25",
+          "winnerTeam": "agal",
+          "winnerSide": "red",
+          "finalObjective": {
+            "winnerConfirmed": true,
+            "endingMethod": "unknown"
+          },
+          "draft": {
+            "blue": {
+              "team": "roc",
+              "picks": [
+                "dharma",
+                "menki",
+                "garuda",
+                "ao-yin",
+                "lapu-lapu"
+              ],
+              "bans": [
+                "annette",
+                "lorion",
+                "agudo",
+                "nuwa"
+              ]
+            },
+            "red": {
+              "team": "agal",
+              "picks": [
+                "faith",
+                "augran",
+                "angela",
+                "arli",
+                "zhang-fei"
+              ],
+              "bans": [
+                "pei",
+                "mozi",
+                "mai-shiranui",
+                "ukyo-tachibana"
+              ]
+            }
+          },
+          "bpMetadata": {
+            "complete": true,
+            "banOrderVerified": false,
+            "pickOrder": "source-slot-order"
+          },
+          "vod": "https://youtu.be/bhQa7dPLH6Y?t=12744"
+        },
+        {
+          "id": "kwc-2026-s05-g2",
+          "gameInSeries": 2,
+          "duration": "10:53",
+          "winnerTeam": "agal",
+          "winnerSide": "blue",
+          "finalObjective": {
+            "winnerConfirmed": true,
+            "endingMethod": "unknown"
+          },
+          "draft": {
+            "blue": {
+              "team": "agal",
+              "picks": [
+                "devara",
+                "kaizer",
+                "garuda",
+                "erin",
+                "dyadia"
+              ],
+              "bans": [
+                "augran",
+                "haya",
+                "guan-yu",
+                "luna"
+              ]
+            },
+            "red": {
+              "team": "roc",
+              "picks": [
+                "ata",
+                "ukyo-tachibana",
+                "lorion",
+                "chicha",
+                "lian-po"
+              ],
+              "bans": [
+                "pei",
+                "ao-yin",
+                "mai-shiranui",
+                "dharma"
+              ]
+            }
+          },
+          "bpMetadata": {
+            "complete": true,
+            "banOrderVerified": false,
+            "pickOrder": "source-slot-order"
+          },
+          "vod": "https://youtu.be/bhQa7dPLH6Y?t=14300"
+        },
+        {
+          "id": "kwc-2026-s05-g3",
+          "gameInSeries": 3,
+          "duration": "14:52",
+          "winnerTeam": "agal",
+          "winnerSide": "blue",
+          "finalObjective": {
+            "winnerConfirmed": true,
+            "endingMethod": "unknown"
+          },
+          "draft": {
+            "blue": {
+              "team": "agal",
+              "picks": [
+                "xiang-yu",
+                "ying",
+                "haya",
+                "chano",
+                "dolia"
+              ],
+              "bans": [
+                "zhang-fei",
+                "flowborn-tank",
+                "nuwa",
+                "charlotte"
+              ]
+            },
+            "red": {
+              "team": "roc",
+              "picks": [
+                "guan-yu",
+                "agudo",
+                "shi",
+                "arli",
+                "annette"
+              ],
+              "bans": [
+                "pei",
+                "ao-yin",
+                "yang-jian",
+                "dun"
+              ]
+            }
+          },
+          "bpMetadata": {
+            "complete": true,
+            "banOrderVerified": false,
+            "pickOrder": "source-slot-order"
+          },
+          "vod": "https://youtu.be/bhQa7dPLH6Y?t=15791"
+        },
+        {
+          "id": "kwc-2026-s05-g4",
+          "gameInSeries": 4,
+          "duration": "09:40",
+          "winnerTeam": "agal",
+          "winnerSide": "red",
+          "finalObjective": {
+            "winnerConfirmed": true,
+            "endingMethod": "unknown"
+          },
+          "draft": {
+            "blue": {
+              "team": "roc",
+              "picks": [
+                "biron",
+                "pei",
+                "yuhuan",
+                "chano",
+                "dyadia"
+              ],
+              "bans": [
+                "ao-yin",
+                "chicha",
+                "dharma",
+                "guan-yu"
+              ]
+            },
+            "red": {
+              "team": "agal",
+              "picks": [
+                "charlotte",
+                "ukyo-tachibana",
+                "mai-shiranui",
+                "alessio",
+                "lapu-lapu"
+              ],
+              "bans": [
+                "zhang-fei",
+                "haya",
+                "bai-qi",
+                "faith"
+              ]
+            }
+          },
+          "bpMetadata": {
+            "complete": true,
+            "banOrderVerified": false,
+            "pickOrder": "source-slot-order"
+          },
+          "vod": "https://youtu.be/bhQa7dPLH6Y?t=17733"
+        }
+      ]
+    },
+    {
+      "id": "kwc-2026-s06",
+      "dateRaw": "August 7, 2026 - 11:00",
+      "teams": [
+        {
+          "name": "ksg",
+          "region": "international"
+        },
+        {
+          "name": "geekay",
+          "region": "international"
+        }
+      ],
+      "finalScore": {
+        "ksg": 4,
+        "geekay": 0
+      },
+      "winnerTeam": "ksg",
+      "games": [
+        {
+          "id": "kwc-2026-s06-g1",
+          "gameInSeries": 1,
+          "duration": "13:05",
+          "winnerTeam": "ksg",
+          "winnerSide": "red",
+          "finalObjective": {
+            "winnerConfirmed": true,
+            "endingMethod": "unknown"
+          },
+          "draft": {
+            "blue": {
+              "team": "geekay",
+              "picks": [
+                "charlotte",
+                "pei",
+                "angela",
+                "ao-yin",
+                "lian-po"
+              ],
+              "bans": [
+                "guan-yu",
+                "lorion",
+                "chano",
+                "flowborn-marksman"
+              ]
+            },
+            "red": {
+              "team": "ksg",
+              "picks": [
+                "dharma",
+                "ukyo-tachibana",
+                "mai-shiranui",
+                "shouyue",
+                "lapu-lapu"
+              ],
+              "bans": [
+                "annette",
+                "liang",
+                "yuhuan",
+                "haya"
+              ]
+            }
+          },
+          "bpMetadata": {
+            "complete": true,
+            "banOrderVerified": false,
+            "pickOrder": "source-slot-order"
+          },
+          "vod": "https://youtu.be/bhQa7dPLH6Y?t=3584"
+        },
+        {
+          "id": "kwc-2026-s06-g2",
+          "gameInSeries": 2,
+          "duration": "12:52",
+          "winnerTeam": "ksg",
+          "winnerSide": "blue",
+          "finalObjective": {
+            "winnerConfirmed": true,
+            "endingMethod": "unknown"
+          },
+          "draft": {
+            "blue": {
+              "team": "ksg",
+              "picks": [
+                "charlotte",
+                "ying",
+                "xiao-qiao",
+                "chicha",
+                "dyadia"
+              ],
+              "bans": [
+                "mai-shiranui",
+                "haya",
+                "jing",
+                "musashi"
+              ]
+            },
+            "red": {
+              "team": "geekay",
+              "picks": [
+                "guan-yu",
+                "augran",
+                "nuwa",
+                "arli",
+                "annette"
+              ],
+              "bans": [
+                "lorion",
+                "pei",
+                "florentino",
+                "flowborn-tank"
+              ]
+            }
+          },
+          "bpMetadata": {
+            "complete": true,
+            "banOrderVerified": false,
+            "pickOrder": "source-slot-order"
+          },
+          "vod": "https://youtu.be/bhQa7dPLH6Y?t=5200"
+        },
+        {
+          "id": "kwc-2026-s06-g3",
+          "gameInSeries": 3,
+          "duration": "22:54",
+          "winnerTeam": "ksg",
+          "winnerSide": "blue",
+          "finalObjective": {
+            "winnerConfirmed": true,
+            "endingMethod": "unknown"
+          },
+          "draft": {
+            "blue": {
+              "team": "ksg",
+              "picks": [
+                "faith",
+                "augran",
+                "garuda",
+                "ao-yin",
+                "mozi"
+              ],
+              "bans": [
+                "mai-shiranui",
+                "jing",
+                "haya",
+                "agudo"
+              ]
+            },
+            "red": {
+              "team": "geekay",
+              "picks": [
+                "dharma",
+                "nezha",
+                "xiao-qiao",
+                "chano",
+                "zhang-fei"
+              ],
+              "bans": [
+                "lorion",
+                "guan-yu",
+                "pei",
+                "luna"
+              ]
+            }
+          },
+          "bpMetadata": {
+            "complete": true,
+            "banOrderVerified": false,
+            "pickOrder": "source-slot-order"
+          },
+          "vod": "https://youtu.be/bhQa7dPLH6Y?t=6859"
+        },
+        {
+          "id": "kwc-2026-s06-g4",
+          "gameInSeries": 4,
+          "duration": "14:43",
+          "winnerTeam": "ksg",
+          "winnerSide": "red",
+          "finalObjective": {
+            "winnerConfirmed": true,
+            "endingMethod": "unknown"
+          },
+          "draft": {
+            "blue": {
+              "team": "geekay",
+              "picks": [
+                "faith",
+                "yang-jian",
+                "wang-zhaojun",
+                "chicha",
+                "liang"
+              ],
+              "bans": [
+                "annette",
+                "pei",
+                "umbrosa",
+                "guan-yu"
+              ]
+            },
+            "red": {
+              "team": "ksg",
+              "picks": [
+                "florentino",
+                "kaizer",
+                "haya",
+                "erin",
+                "zhang-fei"
+              ],
+              "bans": [
+                "lorion",
+                "dyadia",
+                "lapu-lapu",
+                "garuda"
+              ]
+            }
+          },
+          "bpMetadata": {
+            "complete": true,
+            "banOrderVerified": false,
+            "pickOrder": "source-slot-order"
+          },
+          "vod": "https://youtu.be/bhQa7dPLH6Y?t=9277"
+        }
+      ]
+    },
+    {
+      "id": "kwc-2026-s07",
+      "dateRaw": "August 8, 2026 - 11:00",
+      "teams": [
+        {
+          "name": "roc",
+          "region": "international"
+        },
+        {
+          "name": "geekay",
+          "region": "international"
+        }
+      ],
+      "finalScore": {
+        "roc": 0,
+        "geekay": 3
+      },
+      "winnerTeam": "geekay",
+      "games": [
+        {
+          "id": "kwc-2026-s07-g1",
+          "gameInSeries": 1,
+          "duration": "19:09",
+          "winnerTeam": "geekay",
+          "winnerSide": "blue",
+          "finalObjective": {
+            "winnerConfirmed": true,
+            "endingMethod": "unknown"
+          },
+          "draft": {
+            "blue": {
+              "team": "geekay",
+              "picks": [
+                "dharma",
+                "dun",
+                "lorion",
+                "flowborn-marksman",
+                "lapu-lapu"
+              ],
+              "bans": [
+                "guan-yu",
+                "mai-shiranui",
+                "haya",
+                "shi"
+              ]
+            },
+            "red": {
+              "team": "roc",
+              "picks": [
+                "ata",
+                "luna",
+                "garuda",
+                "arli",
+                "zhang-fei"
+              ],
+              "bans": [
+                "pei",
+                "ao-yin",
+                "flowborn-tank",
+                "jing"
+              ]
+            }
+          },
+          "bpMetadata": {
+            "complete": true,
+            "banOrderVerified": false,
+            "pickOrder": "source-slot-order"
+          },
+          "vod": "https://youtu.be/J9FXqL_ZQ1M?t=3383"
+        },
+        {
+          "id": "kwc-2026-s07-g2",
+          "gameInSeries": 2,
+          "duration": "16:08",
+          "winnerTeam": "geekay",
+          "winnerSide": "red",
+          "finalObjective": {
+            "winnerConfirmed": true,
+            "endingMethod": "unknown"
+          },
+          "draft": {
+            "blue": {
+              "team": "roc",
+              "picks": [
+                "xiang-yu",
+                "pei",
+                "yuhuan",
+                "consort-yu",
+                "lian-po"
+              ],
+              "bans": [
+                "zhang-fei",
+                "mai-shiranui",
+                "dolia",
+                "dyadia"
+              ]
+            },
+            "red": {
+              "team": "geekay",
+              "picks": [
+                "guan-yu",
+                "augran",
+                "nuwa",
+                "ao-yin",
+                "mozi"
+              ],
+              "bans": [
+                "haya",
+                "lorion",
+                "florentino",
+                "charlotte"
+              ]
+            }
+          },
+          "bpMetadata": {
+            "complete": true,
+            "banOrderVerified": false,
+            "pickOrder": "source-slot-order"
+          },
+          "vod": "https://youtu.be/J9FXqL_ZQ1M?t=53536"
+        },
+        {
+          "id": "kwc-2026-s07-g3",
+          "gameInSeries": 3,
+          "duration": "11:59",
+          "winnerTeam": "geekay",
+          "winnerSide": "blue",
+          "finalObjective": {
+            "winnerConfirmed": true,
+            "endingMethod": "unknown"
+          },
+          "draft": {
+            "blue": {
+              "team": "geekay",
+              "picks": [
+                "charlotte",
+                "menki",
+                "haya",
+                "chano",
+                "dyadia"
+              ],
+              "bans": [
+                "guan-yu",
+                "lorion",
+                "heino",
+                "nuwa"
+              ]
+            },
+            "red": {
+              "team": "roc",
+              "picks": [
+                "biron",
+                "agudo",
+                "angela",
+                "ao-yin",
+                "lapu-lapu"
+              ],
+              "bans": [
+                "pei",
+                "annette",
+                "zhang-fei",
+                "dolia"
+              ]
+            }
+          },
+          "bpMetadata": {
+            "complete": true,
+            "banOrderVerified": false,
+            "pickOrder": "source-slot-order"
+          },
+          "vod": "https://youtu.be/J9FXqL_ZQ1M?t=7460"
+        }
+      ]
+    },
+    {
+      "id": "kwc-2026-s08",
+      "dateRaw": "August 8, 2026 - 14:30",
+      "teams": [
+        {
+          "name": "agal",
+          "region": "international"
+        },
+        {
+          "name": "ksg",
+          "region": "international"
+        }
+      ],
+      "finalScore": {
+        "agal": 3,
+        "ksg": 3
+      },
+      "winnerTeam": "ksg",
+      "games": [
+        {
+          "id": "kwc-2026-s08-g1",
+          "gameInSeries": 1,
+          "duration": "19:05",
+          "winnerTeam": "ksg",
+          "winnerSide": "red",
+          "finalObjective": {
+            "winnerConfirmed": true,
+            "endingMethod": "unknown"
+          },
+          "draft": {
+            "blue": {
+              "team": "agal",
+              "picks": [
+                "charlotte",
+                "pei",
+                "yuhuan",
+                "consort-yu",
+                "zhuangzi"
+              ],
+              "bans": [
+                "dyadia",
+                "ukyo-tachibana",
+                "haya",
+                "mai-shiranui"
+              ]
+            },
+            "red": {
+              "team": "ksg",
+              "picks": [
+                "florentino",
+                "ying",
+                "garuda",
+                "erin",
+                "lapu-lapu"
+              ],
+              "bans": [
+                "liang",
+                "zhang-fei",
+                "arli",
+                "chano"
+              ]
+            }
+          },
+          "bpMetadata": {
+            "complete": true,
+            "banOrderVerified": false,
+            "pickOrder": "source-slot-order"
+          },
+          "vod": "https://youtu.be/J9FXqL_ZQ1M?t=16072"
+        },
+        {
+          "id": "kwc-2026-s08-g2",
+          "gameInSeries": 2,
+          "duration": "22:41",
+          "winnerTeam": "agal",
+          "winnerSide": "red",
+          "finalObjective": {
+            "winnerConfirmed": true,
+            "endingMethod": "unknown"
+          },
+          "draft": {
+            "blue": {
+              "team": "ksg",
+              "picks": [
+                "guan-yu",
+                "augran",
+                "angela",
+                "chano",
+                "dyadia"
+              ],
+              "bans": [
+                "haya",
+                "liang",
+                "kaizer",
+                "lorion"
+              ]
+            },
+            "red": {
+              "team": "agal",
+              "picks": [
+                "dharma",
+                "musashi",
+                "nuwa",
+                "arli",
+                "zhang-fei"
+              ],
+              "bans": [
+                "pei",
+                "ao-yin",
+                "consort-yu",
+                "mai-shiranui"
+              ]
+            }
+          },
+          "bpMetadata": {
+            "complete": true,
+            "banOrderVerified": false,
+            "pickOrder": "source-slot-order"
+          },
+          "vod": "https://youtu.be/J9FXqL_ZQ1M?t=18111"
+        },
+        {
+          "id": "kwc-2026-s08-g3",
+          "gameInSeries": 3,
+          "duration": "13:26",
+          "winnerTeam": "ksg",
+          "winnerSide": "red",
+          "finalObjective": {
+            "winnerConfirmed": true,
+            "endingMethod": "unknown"
+          },
+          "draft": {
+            "blue": {
+              "team": "agal",
+              "picks": [
+                "faith",
+                "menki",
+                "ziya",
+                "ao-yin",
+                "dyadia"
+              ],
+              "bans": [
+                "pei",
+                "nuwa",
+                "devara",
+                "charlotte"
+              ]
+            },
+            "red": {
+              "team": "ksg",
+              "picks": [
+                "biron",
+                "luna",
+                "haya",
+                "arli",
+                "zhang-fei"
+              ],
+              "bans": [
+                "chano",
+                "liang",
+                "lorion",
+                "flowborn-tank"
+              ]
+            }
+          },
+          "bpMetadata": {
+            "complete": true,
+            "banOrderVerified": false,
+            "pickOrder": "source-slot-order"
+          },
+          "vod": "https://youtu.be/J9FXqL_ZQ1M?t=20379"
+        },
+        {
+          "id": "kwc-2026-s08-g4",
+          "gameInSeries": 4,
+          "duration": "15:37",
+          "winnerTeam": "agal",
+          "winnerSide": "red",
+          "finalObjective": {
+            "winnerConfirmed": true,
+            "endingMethod": "unknown"
+          },
+          "draft": {
+            "blue": {
+              "team": "ksg",
+              "picks": [
+                "dharma",
+                "agudo",
+                "yuhuan",
+                "chicha",
+                "mozi"
+              ],
+              "bans": [
+                "haya",
+                "jing",
+                "augran",
+                "yang-jian"
+              ]
+            },
+            "red": {
+              "team": "agal",
+              "picks": [
+                "umbrosa",
+                "kaizer",
+                "mai-shiranui",
+                "flowborn-marksman",
+                "annette"
+              ],
+              "bans": [
+                "pei",
+                "ao-yin",
+                "nezha",
+                "nuwa"
+              ]
+            }
+          },
+          "bpMetadata": {
+            "complete": true,
+            "banOrderVerified": false,
+            "pickOrder": "source-slot-order"
+          },
+          "vod": "https://youtu.be/J9FXqL_ZQ1M?t=22185"
+        },
+        {
+          "id": "kwc-2026-s08-g5",
+          "gameInSeries": 5,
+          "duration": "20:03",
+          "winnerTeam": "agal",
+          "winnerSide": "red",
+          "finalObjective": {
+            "winnerConfirmed": true,
+            "endingMethod": "unknown"
+          },
+          "draft": {
+            "blue": {
+              "team": "ksg",
+              "picks": [
+                "devara",
+                "yang-jian",
+                "lorion",
+                "flowborn-marksman",
+                "lian-po"
+              ],
+              "bans": [
+                "chano",
+                "garuda",
+                "haya",
+                "nezha"
+              ]
+            },
+            "red": {
+              "team": "agal",
+              "picks": [
+                "mi-yue",
+                "dun",
+                "gan-mo",
+                "shouyue",
+                "mozi"
+              ],
+              "bans": [
+                "pei",
+                "jing",
+                "musashi",
+                "ukyo-tachibana"
+              ]
+            }
+          },
+          "bpMetadata": {
+            "complete": true,
+            "banOrderVerified": false,
+            "pickOrder": "source-slot-order"
+          },
+          "vod": "https://youtu.be/J9FXqL_ZQ1M?t=23954"
+        },
+        {
+          "id": "kwc-2026-s08-g6",
+          "gameInSeries": 6,
+          "duration": "20:49",
+          "winnerTeam": "ksg",
+          "winnerSide": "blue",
+          "finalObjective": {
+            "winnerConfirmed": true,
+            "endingMethod": "unknown"
+          },
+          "draft": {
+            "blue": {
+              "team": "ksg",
+              "picks": [
+                "charlotte",
+                "kaizer",
+                "nuwa",
+                "ao-yin",
+                "kui"
+              ],
+              "bans": [
+                "guan-yu",
+                "chano",
+                "garuda",
+                "devara"
+              ]
+            },
+            "red": {
+              "team": "agal",
+              "picks": [
+                "biron",
+                "yang-jian",
+                "haya",
+                "erin",
+                "dolia"
+              ],
+              "bans": [
+                "pei",
+                "jing",
+                "annette",
+                "faith"
+              ]
+            }
+          },
+          "bpMetadata": {
+            "complete": true,
+            "banOrderVerified": false,
+            "pickOrder": "source-slot-order"
+          },
+          "vod": "https://youtu.be/J9FXqL_ZQ1M?t=25995"
+        }
+      ]
+    }
+  ]
+}

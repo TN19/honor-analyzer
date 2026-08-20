@@ -4,7 +4,9 @@ Aplicação estática e offline-first para análise explicável de drafts. Esta 
 
 O modo `禁選模式` conduz automaticamente a sequência competitiva de 18 ações: primeira rodada de bans iniciada pelo blue side, primeira rodada de picks, segunda rodada de bans iniciada pelo red side e rodada final de picks. Cada lado termina com quatro bans e cinco escolhas. Os slots não vinculam heróis a posições; o catálogo pode ser filtrado por rota sem exibir a rota nos cartões. As recomendações continuam agrupadas em listas verdes, amarelas e vermelhas.
 
-Partidas profissionais fornecidas pelo usuário ficam preservadas em `src/data/matches` exclusivamente como registros. Fatos observados (ordem, lado, picks, bans e vencedor) não são convertidos em regras, pesos, pontuações ou recomendações enquanto a amostra for insuficiente.
+Partidas profissionais ficam preservadas em `src/data/matches` exclusivamente como registros. Fatos observados (região, série, lado, picks, bans, vencedor e objetivo final verificável) não são convertidos em regras, pesos, pontuações ou recomendações enquanto a amostra for insuficiente.
+
+O arquivo profissional de 2026 usa um coletor reproduzível sobre páginas públicas da Liquipedia. Cada mapa conserva a URL da fonte e do VOD, identifica região e série e distingue BP completo de registros incompletos. A cobertura e os critérios de entrada ficam documentados em `src/data/matches/2026`; atingir a quantidade mínima não autoriza uso automático na engine.
 
 Os lotes profissionais também registram a série e o jogo dentro da série. O conjunto adicional de nove partidas do EWC 2026 está agrupado em três séries de duas partidas e uma série de três partidas. O campo histórico de peso permanece apenas como metadado legado e não é consumido por nenhuma engine.
 

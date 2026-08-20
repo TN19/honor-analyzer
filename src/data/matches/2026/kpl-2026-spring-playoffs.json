@@ -1,0 +1,3441 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-20",
+  "tournament": {
+    "id": "kpl-2026-spring-playoffs",
+    "name": "King Pro League Spring 2026",
+    "year": 2026,
+    "stage": "Playoffs",
+    "region": "china"
+  },
+  "source": {
+    "provider": "Liquipedia",
+    "page": "King Pro League/2026/Spring/Playoffs",
+    "url": "https://liquipedia.net/honorofkings/King_Pro_League/2026/Spring/Playoffs"
+  },
+  "analysisPolicy": {
+    "eligible": false,
+    "reason": "歷史資料僅供記錄；未經使用者批准不得進入推薦引擎。"
+  },
+  "coverage": {
+    "series": 12,
+    "gamesWithCompleteBp": 62,
+    "skippedIncompleteGames": 3
+  },
+  "series": [
+    {
+      "id": "kpl-2026-spring-playoffs-s01",
+      "dateRaw": "March 26, 2026 - 18:30",
+      "teams": [
+        {
+          "name": "lgd",
+          "region": "china"
+        },
+        {
+          "name": "q9",
+          "region": "china"
+        }
+      ],
+      "finalScore": {
+        "lgd": 3,
+        "q9": 3
+      },
+      "winnerTeam": "q9",
+      "games": [
+        {
+          "id": "kpl-2026-spring-playoffs-s01-g1",
+          "gameInSeries": 1,
+          "duration": "18:42",
+          "winnerTeam": "q9",
+          "winnerSide": "blue",
+          "finalObjective": {
+            "winnerConfirmed": true,
+            "endingMethod": "unknown"
+          },
+          "draft": {
+            "blue": {
+              "team": "q9",
+              "picks": [
+                "cao-cao",
+                "ukyo-tachibana",
+                "catboom",
+                "sun-quan",
+                "shieldun"
+              ],
+              "bans": [
+                "guan-yu",
+                "master-luban",
+                "mai-shiranui",
+                "haya"
+              ]
+            },
+            "red": {
+              "team": "lgd",
+              "picks": [
+                "sikong-zhen",
+                "augran",
+                "xiao-qiao",
+                "chicha",
+                "su-lie"
+              ],
+              "bans": [
+                "biron",
+                "erin",
+                "ao-yin",
+                "consort-yu"
+              ]
+            }
+          },
+          "bpMetadata": {
+            "complete": true,
+            "banOrderVerified": false,
+            "pickOrder": "source-slot-order"
+          },
+          "vod": "https://v.qq.com/x/page/l3197iqpcgc.html"
+        },
+        {
+          "id": "kpl-2026-spring-playoffs-s01-g2",
+          "gameInSeries": 2,
+          "duration": "11:53",
+          "winnerTeam": "q9",
+          "winnerSide": "blue",
+          "finalObjective": {
+            "winnerConfirmed": true,
+            "endingMethod": "unknown"
+          },
+          "draft": {
+            "blue": {
+              "team": "q9",
+              "picks": [
+                "bai-qi",
+                "agudo",
+                "mai-shiranui",
+                "ao-yin",
+                "dyadia"
+              ],
+              "bans": [
+                "shieldun",
+                "master-luban",
+                "biron",
+                "cao-cao"
+              ]
+            },
+            "red": {
+              "team": "lgd",
+              "picks": [
+                "umbrosa",
+                "dun",
+                "catboom",
+                "chano",
+                "da-yu"
+              ],
+              "bans": [
+                "chicha",
+                "su-lie",
+                "augran",
+                "guan-yu"
+              ]
+            }
+          },
+          "bpMetadata": {
+            "complete": true,
+            "banOrderVerified": false,
+            "pickOrder": "source-slot-order"
+          },
+          "vod": "https://v.qq.com/x/page/u3197els72p.html"
+        },
+        {
+          "id": "kpl-2026-spring-playoffs-s01-g3",
+          "gameInSeries": 3,
+          "duration": "16:12",
+          "winnerTeam": "lgd",
+          "winnerSide": "blue",
+          "finalObjective": {
+            "winnerConfirmed": true,
+            "endingMethod": "unknown"
+          },
+          "draft": {
+            "blue": {
+              "team": "lgd",
+              "picks": [
+                "biron",
+                "yang-jian",
+                "ziya",
+                "ge-ya",
+                "dyadia"
+              ],
+              "bans": [
+                "chicha",
+                "haya",
+                "erin",
+                "nuwa"
+              ]
+            },
+            "red": {
+              "team": "q9",
+              "picks": [
+                "charlotte",
+                "flowborn-tank",
+                "ying-zheng",
+                "chano",
+                "da-yu"
+              ],
+              "bans": [
+                "shieldun",
+                "master-luban",
+                "agudo",
+                "ying"
+              ]
+            }
+          },
+          "bpMetadata": {
+            "complete": true,
+            "banOrderVerified": false,
+            "pickOrder": "source-slot-order"
+          },
+          "vod": "https://v.qq.com/x/page/y3197kmy2v0.html"
+        },
+        {
+          "id": "kpl-2026-spring-playoffs-s01-g4",
+          "gameInSeries": 4,
+          "duration": "27:39",
+          "winnerTeam": "lgd",
+          "winnerSide": "red",
+          "finalObjective": {
+            "winnerConfirmed": true,
+            "endingMethod": "unknown"
+          },
+          "draft": {
+            "blue": {
+              "team": "q9",
+              "picks": [
+                "umbrosa",
+                "pei",
+                "xiao-qiao",
+                "chicha",
+                "su-lie"
+              ],
+              "bans": [
+                "shieldun",
+                "ao-yin",
+                "flowborn-tank",
+                "ying"
+              ]
+            },
+            "red": {
+              "team": "lgd",
+              "picks": [
+                "guan-yu",
+                "ukyo-tachibana",
+                "wu-ze-tian",
+                "arli",
+                "zhang-fei"
+              ],
+              "bans": [
+                "ge-ya",
+                "master-luban",
+                "augran",
+                "dun"
+              ]
+            }
+          },
+          "bpMetadata": {
+            "complete": true,
+            "banOrderVerified": false,
+            "pickOrder": "source-slot-order"
+          },
+          "vod": "https://v.qq.com/x/page/t3197l356xr.html"
+        },
+        {
+          "id": "kpl-2026-spring-playoffs-s01-g5",
+          "gameInSeries": 5,
+          "duration": "14:39",
+          "winnerTeam": "q9",
+          "winnerSide": "red",
+          "finalObjective": {
+            "winnerConfirmed": true,
+            "endingMethod": "unknown"
+          },
+          "draft": {
+            "blue": {
+              "team": "lgd",
+              "picks": [
+                "charlotte",
+                "ying",
+                "yuhuan",
+                "ao-yin",
+                "taiyi-zhenren"
+              ],
+              "bans": [
+                "ge-ya",
+                "arli",
+                "augran",
+                "kaizer"
+              ]
+            },
+            "red": {
+              "team": "q9",
+              "picks": [
+                "ma-chao",
+                "yang-jian",
+                "nuwa",
+                "consort-yu",
+                "zhang-fei"
+              ],
+              "bans": [
+                "shieldun",
+                "master-luban",
+                "mai-shiranui",
+                "ying-zheng"
+              ]
+            }
+          },
+          "bpMetadata": {
+            "complete": true,
+            "banOrderVerified": false,
+            "pickOrder": "source-slot-order"
+          },
+          "vod": "https://v.qq.com/x/page/s3197nvusu9.html"
+        },
+        {
+          "id": "kpl-2026-spring-playoffs-s01-g6",
+          "gameInSeries": 6,
+          "duration": "14:55",
+          "winnerTeam": "lgd",
+          "winnerSide": "red",
+          "finalObjective": {
+            "winnerConfirmed": true,
+            "endingMethod": "unknown"
+          },
+          "draft": {
+            "blue": {
+              "team": "q9",
+              "picks": [
+                "biron",
+                "augran",
+                "angela",
+                "arli",
+                "sun-bin"
+              ],
+              "bans": [
+                "shieldun",
+                "flowborn-support",
+                "agudo",
+                "flowborn-tank"
+              ]
+            },
+            "red": {
+              "team": "lgd",
+              "picks": [
+                "cao-cao",
+                "pei",
+                "haya",
+                "erin",
+                "lian-po"
+              ],
+              "bans": [
+                "ge-ya",
+                "master-luban",
+                "wu-ze-tian",
+                "taiyi-zhenren"
+              ]
+            }
+          },
+          "bpMetadata": {
+            "complete": true,
+            "banOrderVerified": false,
+            "pickOrder": "source-slot-order"
+          },
+          "vod": "https://v.qq.com/x/page/j31971qmxyf.html"
+        }
+      ]
+    },
+    {
+      "id": "kpl-2026-spring-playoffs-s02",
+      "dateRaw": "March 27, 2026 - 18:30",
+      "teams": [
+        {
+          "name": "hero",
+          "region": "china"
+        },
+        {
+          "name": "ttg",
+          "region": "china"
+        }
+      ],
+      "finalScore": {
+        "hero": 1,
+        "ttg": 4
+      },
+      "winnerTeam": "ttg",
+      "games": [
+        {
+          "id": "kpl-2026-spring-playoffs-s02-g1",
+          "gameInSeries": 1,
+          "duration": "15:12",
+          "winnerTeam": "ttg",
+          "winnerSide": "blue",
+          "finalObjective": {
+            "winnerConfirmed": true,
+            "endingMethod": "unknown"
+          },
+          "draft": {
+            "blue": {
+              "team": "ttg",
+              "picks": [
+                "biron",
+                "ukyo-tachibana",
+                "wu-ze-tian",
+                "consort-yu",
+                "master-luban"
+              ],
+              "bans": [
+                "flowborn-support",
+                "shieldun",
+                "huaizhen",
+                "dun"
+              ]
+            },
+            "red": {
+              "team": "hero",
+              "picks": [
+                "guan-yu",
+                "ying",
+                "catboom",
+                "ao-yin",
+                "lian-po"
+              ],
+              "bans": [
+                "erin",
+                "yang-jian",
+                "mai-shiranui",
+                "haya"
+              ]
+            }
+          },
+          "bpMetadata": {
+            "complete": true,
+            "banOrderVerified": false,
+            "pickOrder": "source-slot-order"
+          },
+          "vod": "https://v.qq.com/x/page/g31974iqouk.html"
+        },
+        {
+          "id": "kpl-2026-spring-playoffs-s02-g2",
+          "gameInSeries": 2,
+          "duration": "14:20",
+          "winnerTeam": "hero",
+          "winnerSide": "red",
+          "finalObjective": {
+            "winnerConfirmed": true,
+            "endingMethod": "unknown"
+          },
+          "draft": {
+            "blue": {
+              "team": "ttg",
+              "picks": [
+                "dharma",
+                "jing",
+                "nuwa",
+                "chicha",
+                "su-lie"
+              ],
+              "bans": [
+                "master-luban",
+                "cao-cao",
+                "biron",
+                "flowborn-tank"
+              ]
+            },
+            "red": {
+              "team": "hero",
+              "picks": [
+                "charlotte",
+                "dun",
+                "mai-shiranui",
+                "erin",
+                "shieldun"
+              ],
+              "bans": [
+                "ao-yin",
+                "catboom",
+                "ying",
+                "agudo"
+              ]
+            }
+          },
+          "bpMetadata": {
+            "complete": true,
+            "banOrderVerified": false,
+            "pickOrder": "source-slot-order"
+          },
+          "vod": "https://v.qq.com/x/page/u3197b3yxao.html"
+        },
+        {
+          "id": "kpl-2026-spring-playoffs-s02-g3",
+          "gameInSeries": 3,
+          "duration": "17:57",
+          "winnerTeam": "ttg",
+          "winnerSide": "red",
+          "finalObjective": {
+            "winnerConfirmed": true,
+            "endingMethod": "unknown"
+          },
+          "draft": {
+            "blue": {
+              "team": "hero",
+              "picks": [
+                "dharma",
+                "augran",
+                "wu-ze-tian",
+                "ge-ya",
+                "zhuangzi"
+              ],
+              "bans": [
+                "shieldun",
+                "guan-yu",
+                "ao-yin",
+                "sikong-zhen"
+              ]
+            },
+            "red": {
+              "team": "ttg",
+              "picks": [
+                "charlotte",
+                "dun",
+                "wang-zhaojun",
+                "chano",
+                "liang"
+              ],
+              "bans": [
+                "master-luban",
+                "biron",
+                "agudo",
+                "kaizer"
+              ]
+            }
+          },
+          "bpMetadata": {
+            "complete": true,
+            "banOrderVerified": false,
+            "pickOrder": "source-slot-order"
+          },
+          "vod": "https://v.qq.com/x/page/h3197lom1si.html"
+        },
+        {
+          "id": "kpl-2026-spring-playoffs-s02-g4",
+          "gameInSeries": 4,
+          "duration": "16:30",
+          "winnerTeam": "ttg",
+          "winnerSide": "blue",
+          "finalObjective": {
+            "winnerConfirmed": true,
+            "endingMethod": "unknown"
+          },
+          "draft": {
+            "blue": {
+              "team": "ttg",
+              "picks": [
+                "umbrosa",
+                "kaizer",
+                "xiao-qiao",
+                "ge-ya",
+                "zhuangzi"
+              ],
+              "bans": [
+                "master-luban",
+                "biron",
+                "ukyo-tachibana",
+                "jing"
+              ]
+            },
+            "red": {
+              "team": "hero",
+              "picks": [
+                "meng-tian",
+                "ma-chao",
+                "wang-zhaojun",
+                "chano",
+                "liang"
+              ],
+              "bans": [
+                "shieldun",
+                "guan-yu",
+                "zhang-fei",
+                "haya"
+              ]
+            }
+          },
+          "bpMetadata": {
+            "complete": true,
+            "banOrderVerified": false,
+            "pickOrder": "source-slot-order"
+          },
+          "vod": "https://v.qq.com/x/page/l3197srjq4u.html"
+        },
+        {
+          "id": "kpl-2026-spring-playoffs-s02-g5",
+          "gameInSeries": 5,
+          "duration": "12:03",
+          "winnerTeam": "ttg",
+          "winnerSide": "blue",
+          "finalObjective": {
+            "winnerConfirmed": true,
+            "endingMethod": "unknown"
+          },
+          "draft": {
+            "blue": {
+              "team": "ttg",
+              "picks": [
+                "fuzi",
+                "yang-jian",
+                "ying-zheng",
+                "arli",
+                "dyadia"
+              ],
+              "bans": [
+                "master-luban",
+                "biron",
+                "kaizer",
+                "ukyo-tachibana"
+              ]
+            },
+            "red": {
+              "team": "hero",
+              "picks": [
+                "sikong-zhen",
+                "feyd",
+                "nuwa",
+                "di-renjie",
+                "da-yu"
+              ],
+              "bans": [
+                "shieldun",
+                "flowborn-tank",
+                "catboom",
+                "mai-shiranui"
+              ]
+            }
+          },
+          "bpMetadata": {
+            "complete": true,
+            "banOrderVerified": false,
+            "pickOrder": "source-slot-order"
+          },
+          "vod": "https://v.qq.com/x/page/h319745mkhb.html"
+        }
+      ]
+    },
+    {
+      "id": "kpl-2026-spring-playoffs-s03",
+      "dateRaw": "March 28, 2026 - 18:30",
+      "teams": [
+        {
+          "name": "jdg",
+          "region": "china"
+        },
+        {
+          "name": "ag",
+          "region": "china"
+        }
+      ],
+      "finalScore": {
+        "jdg": 0,
+        "ag": 4
+      },
+      "winnerTeam": "ag",
+      "games": [
+        {
+          "id": "kpl-2026-spring-playoffs-s03-g1",
+          "gameInSeries": 1,
+          "duration": "13:57",
+          "winnerTeam": "ag",
+          "winnerSide": "blue",
+          "finalObjective": {
+            "winnerConfirmed": true,
+            "endingMethod": "unknown"
+          },
+          "draft": {
+            "blue": {
+              "team": "ag",
+              "picks": [
+                "dharma",
+                "pei",
+                "mai-shiranui",
+                "erin",
+                "shieldun"
+              ],
+              "bans": [
+                "su-lie",
+                "haya",
+                "flowborn-tank",
+                "guan-yu"
+              ]
+            },
+            "red": {
+              "team": "jdg",
+              "picks": [
+                "charlotte",
+                "dun",
+                "shi",
+                "lady-sun",
+                "taiyi-zhenren"
+              ],
+              "bans": [
+                "catboom",
+                "augran",
+                "jing",
+                "agudo"
+              ]
+            }
+          },
+          "bpMetadata": {
+            "complete": true,
+            "banOrderVerified": false,
+            "pickOrder": "source-slot-order"
+          },
+          "vod": "https://v.qq.com/x/page/x3197v8u206.html"
+        },
+        {
+          "id": "kpl-2026-spring-playoffs-s03-g2",
+          "gameInSeries": 2,
+          "duration": "26:19",
+          "winnerTeam": "ag",
+          "winnerSide": "blue",
+          "finalObjective": {
+            "winnerConfirmed": true,
+            "endingMethod": "unknown"
+          },
+          "draft": {
+            "blue": {
+              "team": "ag",
+              "picks": [
+                "sikong-zhen",
+                "yang-jian",
+                "wang-zhaojun",
+                "consort-yu",
+                "liang"
+              ],
+              "bans": [
+                "shieldun",
+                "haya",
+                "kaizer",
+                "agudo"
+              ]
+            },
+            "red": {
+              "team": "jdg",
+              "picks": [
+                "guan-yu",
+                "menki",
+                "xiao-qiao",
+                "ao-yin",
+                "dyadia"
+              ],
+              "bans": [
+                "master-luban",
+                "su-lie",
+                "jing",
+                "augran"
+              ]
+            }
+          },
+          "bpMetadata": {
+            "complete": true,
+            "banOrderVerified": false,
+            "pickOrder": "source-slot-order"
+          },
+          "vod": "https://v.qq.com/x/page/t3197u4z8kk.html"
+        },
+        {
+          "id": "kpl-2026-spring-playoffs-s03-g3",
+          "gameInSeries": 3,
+          "duration": "16:52",
+          "winnerTeam": "ag",
+          "winnerSide": "blue",
+          "finalObjective": {
+            "winnerConfirmed": true,
+            "endingMethod": "unknown"
+          },
+          "draft": {
+            "blue": {
+              "team": "ag",
+              "picks": [
+                "biron",
+                "augran",
+                "ying-zheng",
+                "ge-ya",
+                "zhang-fei"
+              ],
+              "bans": [
+                "shieldun",
+                "liang",
+                "agudo",
+                "ukyo-tachibana"
+              ]
+            },
+            "red": {
+              "team": "jdg",
+              "picks": [
+                "sikong-zhen",
+                "jing",
+                "wu-ze-tian",
+                "chicha",
+                "da-yu"
+              ],
+              "bans": [
+                "master-luban",
+                "catboom",
+                "nuwa",
+                "haya"
+              ]
+            }
+          },
+          "bpMetadata": {
+            "complete": true,
+            "banOrderVerified": false,
+            "pickOrder": "source-slot-order"
+          },
+          "vod": "https://v.qq.com/x/page/n3197ivns68.html"
+        },
+        {
+          "id": "kpl-2026-spring-playoffs-s03-g4",
+          "gameInSeries": 4,
+          "duration": "19:29",
+          "winnerTeam": "ag",
+          "winnerSide": "red",
+          "finalObjective": {
+            "winnerConfirmed": true,
+            "endingMethod": "unknown"
+          },
+          "draft": {
+            "blue": {
+              "team": "jdg",
+              "picks": [
+                "biron",
+                "pei",
+                "nuwa",
+                "chano",
+                "su-lie"
+              ],
+              "bans": [
+                "guan-yu",
+                "master-luban",
+                "jing",
+                "dun"
+              ]
+            },
+            "red": {
+              "team": "ag",
+              "picks": [
+                "charlotte",
+                "flowborn-tank",
+                "ziya",
+                "arli",
+                "da-yu"
+              ],
+              "bans": [
+                "shieldun",
+                "catboom",
+                "ge-ya",
+                "augran"
+              ]
+            }
+          },
+          "bpMetadata": {
+            "complete": true,
+            "banOrderVerified": false,
+            "pickOrder": "source-slot-order"
+          },
+          "vod": "https://v.qq.com/x/page/u3197rfblzb.html"
+        }
+      ]
+    },
+    {
+      "id": "kpl-2026-spring-playoffs-s04",
+      "dateRaw": "March 29, 2026 - 18:30",
+      "teams": [
+        {
+          "name": "wolves",
+          "region": "china"
+        },
+        {
+          "name": "ksg",
+          "region": "china"
+        }
+      ],
+      "finalScore": {
+        "wolves": 3,
+        "ksg": 3
+      },
+      "winnerTeam": "ksg",
+      "games": [
+        {
+          "id": "kpl-2026-spring-playoffs-s04-g1",
+          "gameInSeries": 1,
+          "duration": "18:53",
+          "winnerTeam": "ksg",
+          "winnerSide": "blue",
+          "finalObjective": {
+            "winnerConfirmed": true,
+            "endingMethod": "unknown"
+          },
+          "draft": {
+            "blue": {
+              "team": "ksg",
+              "picks": [
+                "guan-yu",
+                "augran",
+                "angela",
+                "ao-yin",
+                "dyadia"
+              ],
+              "bans": [
+                "haya",
+                "flowborn-tank",
+                "chano",
+                "ma-chao"
+              ]
+            },
+            "red": {
+              "team": "wolves",
+              "picks": [
+                "dharma",
+                "ying",
+                "catboom",
+                "erin",
+                "su-lie"
+              ],
+              "bans": [
+                "chicha",
+                "master-luban",
+                "zhang-fei",
+                "liang"
+              ]
+            }
+          },
+          "bpMetadata": {
+            "complete": true,
+            "banOrderVerified": false,
+            "pickOrder": "source-slot-order"
+          },
+          "vod": "https://v.qq.com/x/page/h31976bbhu4.html"
+        },
+        {
+          "id": "kpl-2026-spring-playoffs-s04-g2",
+          "gameInSeries": 2,
+          "duration": "10:55",
+          "winnerTeam": "ksg",
+          "winnerSide": "blue",
+          "finalObjective": {
+            "winnerConfirmed": true,
+            "endingMethod": "unknown"
+          },
+          "draft": {
+            "blue": {
+              "team": "ksg",
+              "picks": [
+                "biron",
+                "yang-jian",
+                "wu-ze-tian",
+                "luban-no-7",
+                "master-luban"
+              ],
+              "bans": [
+                "ao-yin",
+                "haya",
+                "shi",
+                "xiao-qiao"
+              ]
+            },
+            "red": {
+              "team": "wolves",
+              "picks": [
+                "sikong-zhen",
+                "dun",
+                "lady-zhen",
+                "di-renjie",
+                "shieldun"
+              ],
+              "bans": [
+                "su-lie",
+                "chicha",
+                "ge-ya",
+                "flowborn-marksman"
+              ]
+            }
+          },
+          "bpMetadata": {
+            "complete": true,
+            "banOrderVerified": false,
+            "pickOrder": "source-slot-order"
+          },
+          "vod": "https://v.qq.com/x/page/i3197qipkze.html"
+        },
+        {
+          "id": "kpl-2026-spring-playoffs-s04-g3",
+          "gameInSeries": 3,
+          "duration": "13:40",
+          "winnerTeam": "ksg",
+          "winnerSide": "blue",
+          "finalObjective": {
+            "winnerConfirmed": true,
+            "endingMethod": "unknown"
+          },
+          "draft": {
+            "blue": {
+              "team": "ksg",
+              "picks": [
+                "charlotte",
+                "luna",
+                "haya",
+                "sun-quan",
+                "zhang-fei"
+              ],
+              "bans": [
+                "master-luban",
+                "augran",
+                "biron",
+                "bai-qi"
+              ]
+            },
+            "red": {
+              "team": "wolves",
+              "picks": [
+                "cao-cao",
+                "agudo",
+                "xiao-qiao",
+                "chicha",
+                "da-yu"
+              ],
+              "bans": [
+                "su-lie",
+                "flowborn-tank",
+                "ying",
+                "jing"
+              ]
+            }
+          },
+          "bpMetadata": {
+            "complete": true,
+            "banOrderVerified": false,
+            "pickOrder": "source-slot-order"
+          },
+          "vod": "https://v.qq.com/x/page/y3197qkgurd.html"
+        },
+        {
+          "id": "kpl-2026-spring-playoffs-s04-g4",
+          "gameInSeries": 4,
+          "duration": "14:39",
+          "winnerTeam": "wolves",
+          "winnerSide": "red",
+          "finalObjective": {
+            "winnerConfirmed": true,
+            "endingMethod": "unknown"
+          },
+          "draft": {
+            "blue": {
+              "team": "ksg",
+              "picks": [
+                "dharma",
+                "ying",
+                "wang-zhaojun",
+                "chano",
+                "liang"
+              ],
+              "bans": [
+                "master-luban",
+                "guan-yu",
+                "bai-qi",
+                "sun-ce"
+              ]
+            },
+            "red": {
+              "team": "wolves",
+              "picks": [
+                "meng-tian",
+                "pei",
+                "haya",
+                "ao-yin",
+                "zhang-fei"
+              ],
+              "bans": [
+                "su-lie",
+                "shieldun",
+                "dun",
+                "flowborn-tank"
+              ]
+            }
+          },
+          "bpMetadata": {
+            "complete": true,
+            "banOrderVerified": false,
+            "pickOrder": "source-slot-order"
+          },
+          "vod": "https://v.qq.com/x/page/s3197qo7wyb.html"
+        },
+        {
+          "id": "kpl-2026-spring-playoffs-s04-g5",
+          "gameInSeries": 5,
+          "duration": "15:57",
+          "winnerTeam": "wolves",
+          "winnerSide": "blue",
+          "finalObjective": {
+            "winnerConfirmed": true,
+            "endingMethod": "unknown"
+          },
+          "draft": {
+            "blue": {
+              "team": "wolves",
+              "picks": [
+                "guan-yu",
+                "flowborn-tank",
+                "angela",
+                "chano",
+                "zhong-kui"
+              ],
+              "bans": [
+                "su-lie",
+                "chicha",
+                "nuwa",
+                "catboom"
+              ]
+            },
+            "red": {
+              "team": "ksg",
+              "picks": [
+                "ma-chao",
+                "dun",
+                "heino",
+                "ge-ya",
+                "huaizhen"
+              ],
+              "bans": [
+                "master-luban",
+                "augran",
+                "dyadia",
+                "liang"
+              ]
+            }
+          },
+          "bpMetadata": {
+            "complete": true,
+            "banOrderVerified": false,
+            "pickOrder": "source-slot-order"
+          },
+          "vod": "https://v.qq.com/x/page/c3197ej3l46.html"
+        },
+        {
+          "id": "kpl-2026-spring-playoffs-s04-g6",
+          "gameInSeries": 6,
+          "duration": "16:01",
+          "winnerTeam": "wolves",
+          "winnerSide": "blue",
+          "finalObjective": {
+            "winnerConfirmed": true,
+            "endingMethod": "unknown"
+          },
+          "draft": {
+            "blue": {
+              "team": "wolves",
+              "picks": [
+                "lu-bu-honor-of-kings",
+                "nezha",
+                "mai-shiranui",
+                "ge-ya",
+                "donghuang"
+              ],
+              "bans": [
+                "su-lie",
+                "shieldun",
+                "da-qiao",
+                "sikong-zhen"
+              ]
+            },
+            "red": {
+              "team": "ksg",
+              "picks": [
+                "umbrosa",
+                "flowborn-tank",
+                "nuwa",
+                "chicha",
+                "mozi"
+              ],
+              "bans": [
+                "master-luban",
+                "augran",
+                "biron",
+                "bai-qi"
+              ]
+            }
+          },
+          "bpMetadata": {
+            "complete": true,
+            "banOrderVerified": false,
+            "pickOrder": "source-slot-order"
+          },
+          "vod": "https://v.qq.com/x/page/w3197ywsxau.html"
+        }
+      ]
+    },
+    {
+      "id": "kpl-2026-spring-playoffs-s05",
+      "dateRaw": "March 30, 2026 - 18:30",
+      "teams": [
+        {
+          "name": "wb",
+          "region": "china"
+        },
+        {
+          "name": "lgd",
+          "region": "china"
+        }
+      ],
+      "finalScore": {
+        "wb": 3,
+        "lgd": 3
+      },
+      "winnerTeam": "lgd",
+      "games": [
+        {
+          "id": "kpl-2026-spring-playoffs-s05-g1",
+          "gameInSeries": 1,
+          "duration": "16:56",
+          "winnerTeam": "lgd",
+          "winnerSide": "blue",
+          "finalObjective": {
+            "winnerConfirmed": true,
+            "endingMethod": "unknown"
+          },
+          "draft": {
+            "blue": {
+              "team": "lgd",
+              "picks": [
+                "biron",
+                "yang-jian",
+                "xiao-qiao",
+                "ao-yin",
+                "dyadia"
+              ],
+              "bans": [
+                "haya",
+                "taiyi-zhenren",
+                "catboom",
+                "nuwa"
+              ]
+            },
+            "red": {
+              "team": "wb",
+              "picks": [
+                "bai-qi",
+                "musashi",
+                "angela",
+                "arli",
+                "da-yu"
+              ],
+              "bans": [
+                "master-luban",
+                "shieldun",
+                "guan-yu",
+                "cao-cao"
+              ]
+            }
+          },
+          "bpMetadata": {
+            "complete": true,
+            "banOrderVerified": false,
+            "pickOrder": "source-slot-order"
+          },
+          "vod": "https://v.qq.com/x/page/n3197rpsgwc.html"
+        },
+        {
+          "id": "kpl-2026-spring-playoffs-s05-g2",
+          "gameInSeries": 2,
+          "duration": "15:12",
+          "winnerTeam": "wb",
+          "winnerSide": "blue",
+          "finalObjective": {
+            "winnerConfirmed": true,
+            "endingMethod": "unknown"
+          },
+          "draft": {
+            "blue": {
+              "team": "wb",
+              "picks": [
+                "mayene",
+                "ukyo-tachibana",
+                "catboom",
+                "erin",
+                "shieldun"
+              ],
+              "bans": [
+                "da-yu",
+                "di-renjie",
+                "haya",
+                "mai-shiranui"
+              ]
+            },
+            "red": {
+              "team": "lgd",
+              "picks": [
+                "guan-yu",
+                "nezha",
+                "wu-ze-tian",
+                "chicha",
+                "su-lie"
+              ],
+              "bans": [
+                "ao-yin",
+                "master-luban",
+                "flowborn-tank",
+                "augran"
+              ]
+            }
+          },
+          "bpMetadata": {
+            "complete": true,
+            "banOrderVerified": false,
+            "pickOrder": "source-slot-order"
+          },
+          "vod": "https://v.qq.com/x/page/r3197e8lnmk.html"
+        },
+        {
+          "id": "kpl-2026-spring-playoffs-s05-g3",
+          "gameInSeries": 3,
+          "duration": "23:15",
+          "winnerTeam": "wb",
+          "winnerSide": "blue",
+          "finalObjective": {
+            "winnerConfirmed": true,
+            "endingMethod": "unknown"
+          },
+          "draft": {
+            "blue": {
+              "team": "wb",
+              "picks": [
+                "sikong-zhen",
+                "flowborn-tank",
+                "nuwa",
+                "chano",
+                "master-luban"
+              ],
+              "bans": [
+                "shieldun",
+                "flowborn-support",
+                "charlotte",
+                "cao-cao"
+              ]
+            },
+            "red": {
+              "team": "lgd",
+              "picks": [
+                "bai-qi",
+                "ying",
+                "catboom",
+                "di-renjie",
+                "zhang-fei"
+              ],
+              "bans": [
+                "ao-yin",
+                "ge-ya",
+                "chang-e",
+                "mai-shiranui"
+              ]
+            }
+          },
+          "bpMetadata": {
+            "complete": true,
+            "banOrderVerified": false,
+            "pickOrder": "source-slot-order"
+          },
+          "vod": "https://v.qq.com/x/page/a3197eahfzn.html"
+        },
+        {
+          "id": "kpl-2026-spring-playoffs-s05-g4",
+          "gameInSeries": 4,
+          "duration": "16:29",
+          "winnerTeam": "wb",
+          "winnerSide": "blue",
+          "finalObjective": {
+            "winnerConfirmed": true,
+            "endingMethod": "unknown"
+          },
+          "draft": {
+            "blue": {
+              "team": "wb",
+              "picks": [
+                "cao-cao",
+                "augran",
+                "xiao-qiao",
+                "ge-ya",
+                "liang"
+              ],
+              "bans": [
+                "shieldun",
+                "master-luban",
+                "haya",
+                "nuwa"
+              ]
+            },
+            "red": {
+              "team": "lgd",
+              "picks": [
+                "charlotte",
+                "kaizer",
+                "ziya",
+                "sun-quan",
+                "da-yu"
+              ],
+              "bans": [
+                "su-lie",
+                "zhang-fei",
+                "dyadia",
+                "mozi"
+              ]
+            }
+          },
+          "bpMetadata": {
+            "complete": true,
+            "banOrderVerified": false,
+            "pickOrder": "source-slot-order"
+          },
+          "vod": "https://v.qq.com/x/page/y31977l6l57.html"
+        },
+        {
+          "id": "kpl-2026-spring-playoffs-s05-g5",
+          "gameInSeries": 5,
+          "duration": "19:45",
+          "winnerTeam": "lgd",
+          "winnerSide": "red",
+          "finalObjective": {
+            "winnerConfirmed": true,
+            "endingMethod": "unknown"
+          },
+          "draft": {
+            "blue": {
+              "team": "wb",
+              "picks": [
+                "biron",
+                "nakoruru",
+                "chang-e",
+                "lady-sun",
+                "taiyi-zhenren"
+              ],
+              "bans": [
+                "master-luban",
+                "shieldun",
+                "liang",
+                "mozi"
+              ]
+            },
+            "red": {
+              "team": "lgd",
+              "picks": [
+                "cao-cao",
+                "augran",
+                "ying-zheng",
+                "ge-ya",
+                "lian-po"
+              ],
+              "bans": [
+                "ao-yin",
+                "chicha",
+                "agudo",
+                "haya"
+              ]
+            }
+          },
+          "bpMetadata": {
+            "complete": true,
+            "banOrderVerified": false,
+            "pickOrder": "source-slot-order"
+          },
+          "vod": "https://v.qq.com/x/page/l3197mz9qx4.html"
+        },
+        {
+          "id": "kpl-2026-spring-playoffs-s05-g6",
+          "gameInSeries": 6,
+          "duration": "17:39",
+          "winnerTeam": "lgd",
+          "winnerSide": "blue",
+          "finalObjective": {
+            "winnerConfirmed": true,
+            "endingMethod": "unknown"
+          },
+          "draft": {
+            "blue": {
+              "team": "lgd",
+              "picks": [
+                "lu-bu-honor-of-kings",
+                "pei",
+                "haya",
+                "arli",
+                "mozi"
+              ],
+              "bans": [
+                "ao-yin",
+                "agudo",
+                "hou-yi",
+                "consort-yu"
+              ]
+            },
+            "red": {
+              "team": "wb",
+              "picks": [
+                "charlotte",
+                "yao",
+                "wu-ze-tian",
+                "di-renjie",
+                "zhang-fei"
+              ],
+              "bans": [
+                "shieldun",
+                "master-luban",
+                "sikong-zhen",
+                "flowborn-tank"
+              ]
+            }
+          },
+          "bpMetadata": {
+            "complete": true,
+            "banOrderVerified": false,
+            "pickOrder": "source-slot-order"
+          },
+          "vod": "https://v.qq.com/x/page/h31975n15xh.html"
+        }
+      ]
+    },
+    {
+      "id": "kpl-2026-spring-playoffs-s06",
+      "dateRaw": "March 31, 2026 - 18:30",
+      "teams": [
+        {
+          "name": "dyg",
+          "region": "china"
+        },
+        {
+          "name": "ttg",
+          "region": "china"
+        }
+      ],
+      "finalScore": {
+        "dyg": 4,
+        "ttg": 2
+      },
+      "winnerTeam": "dyg",
+      "games": [
+        {
+          "id": "kpl-2026-spring-playoffs-s06-g1",
+          "gameInSeries": 1,
+          "duration": "19:42",
+          "winnerTeam": "ttg",
+          "winnerSide": "red",
+          "finalObjective": {
+            "winnerConfirmed": true,
+            "endingMethod": "unknown"
+          },
+          "draft": {
+            "blue": {
+              "team": "dyg",
+              "picks": [
+                "charlotte",
+                "ukyo-tachibana",
+                "angela",
+                "hou-yi",
+                "master-luban"
+              ],
+              "bans": [
+                "haya",
+                "jing",
+                "guan-yu",
+                "kaizer"
+              ]
+            },
+            "red": {
+              "team": "ttg",
+              "picks": [
+                "biron",
+                "agudo",
+                "catboom",
+                "ao-yin",
+                "zhuangzi"
+              ],
+              "bans": [
+                "shieldun",
+                "flowborn-marksman",
+                "flowborn-tank",
+                "yang-jian"
+              ]
+            }
+          },
+          "bpMetadata": {
+            "complete": true,
+            "banOrderVerified": false,
+            "pickOrder": "source-slot-order"
+          },
+          "vod": "https://v.qq.com/x/page/e3197y3a3sr.html"
+        },
+        {
+          "id": "kpl-2026-spring-playoffs-s06-g2",
+          "gameInSeries": 2,
+          "duration": "14:01",
+          "winnerTeam": "dyg",
+          "winnerSide": "red",
+          "finalObjective": {
+            "winnerConfirmed": true,
+            "endingMethod": "unknown"
+          },
+          "draft": {
+            "blue": {
+              "team": "ttg",
+              "picks": [
+                "sikong-zhen",
+                "ukyo-tachibana",
+                "heino",
+                "chicha",
+                "su-lie"
+              ],
+              "bans": [
+                "ao-yin",
+                "catboom",
+                "nakoruru",
+                "yang-jian"
+              ]
+            },
+            "red": {
+              "team": "dyg",
+              "picks": [
+                "miyue",
+                "ying",
+                "wu-ze-tian",
+                "ge-ya",
+                "zhang-fei"
+              ],
+              "bans": [
+                "master-luban",
+                "shieldun",
+                "nuwa",
+                "mai-shiranui"
+              ]
+            }
+          },
+          "bpMetadata": {
+            "complete": true,
+            "banOrderVerified": false,
+            "pickOrder": "source-slot-order"
+          },
+          "vod": "https://v.qq.com/x/page/m31977onegs.html"
+        },
+        {
+          "id": "kpl-2026-spring-playoffs-s06-g3",
+          "gameInSeries": 3,
+          "duration": "12:35",
+          "winnerTeam": "dyg",
+          "winnerSide": "red",
+          "finalObjective": {
+            "winnerConfirmed": true,
+            "endingMethod": "unknown"
+          },
+          "draft": {
+            "blue": {
+              "team": "ttg",
+              "picks": [
+                "bai-qi",
+                "nezha",
+                "xiao-qiao",
+                "chano",
+                "dyadia"
+              ],
+              "bans": [
+                "ao-yin",
+                "su-lie",
+                "zhuangzi",
+                "nakoruru"
+              ]
+            },
+            "red": {
+              "team": "dyg",
+              "picks": [
+                "cao-cao",
+                "dun",
+                "catboom",
+                "lady-sun",
+                "taiyi-zhenren"
+              ],
+              "bans": [
+                "master-luban",
+                "shieldun",
+                "wang-zhaojun",
+                "mai-shiranui"
+              ]
+            }
+          },
+          "bpMetadata": {
+            "complete": true,
+            "banOrderVerified": false,
+            "pickOrder": "source-slot-order"
+          },
+          "vod": "https://v.qq.com/x/page/s3197tkdgs7.html"
+        },
+        {
+          "id": "kpl-2026-spring-playoffs-s06-g4",
+          "gameInSeries": 4,
+          "duration": "21:52",
+          "winnerTeam": "ttg",
+          "winnerSide": "blue",
+          "finalObjective": {
+            "winnerConfirmed": true,
+            "endingMethod": "unknown"
+          },
+          "draft": {
+            "blue": {
+              "team": "ttg",
+              "picks": [
+                "guan-yu",
+                "flowborn-tank",
+                "nuwa",
+                "ge-ya",
+                "kong-kong-er"
+              ],
+              "bans": [
+                "ao-yin",
+                "augran",
+                "biron",
+                "dharma"
+              ]
+            },
+            "red": {
+              "team": "dyg",
+              "picks": [
+                "xiang-yu",
+                "nakoruru",
+                "ziya",
+                "chano",
+                "da-yu"
+              ],
+              "bans": [
+                "master-luban",
+                "shieldun",
+                "da-qiao",
+                "mozi"
+              ]
+            }
+          },
+          "bpMetadata": {
+            "complete": true,
+            "banOrderVerified": false,
+            "pickOrder": "source-slot-order"
+          },
+          "vod": "https://v.qq.com/x/page/m3197f8dytl.html"
+        },
+        {
+          "id": "kpl-2026-spring-playoffs-s06-g5",
+          "gameInSeries": 5,
+          "duration": "13:22",
+          "winnerTeam": "dyg",
+          "winnerSide": "blue",
+          "finalObjective": {
+            "winnerConfirmed": true,
+            "endingMethod": "unknown"
+          },
+          "draft": {
+            "blue": {
+              "team": "dyg",
+              "picks": [
+                "sun-ce",
+                "yang-jian",
+                "xiao-qiao",
+                "arli",
+                "zhuangzi"
+              ],
+              "bans": [
+                "master-luban",
+                "lady-sun",
+                "meng-tian",
+                "umbrosa"
+              ]
+            },
+            "red": {
+              "team": "ttg",
+              "picks": [
+                "charlotte",
+                "jing",
+                "wang-zhaojun",
+                "erin",
+                "liang"
+              ],
+              "bans": [
+                "ao-yin",
+                "shieldun",
+                "guan-yu",
+                "yuange"
+              ]
+            }
+          },
+          "bpMetadata": {
+            "complete": true,
+            "banOrderVerified": false,
+            "pickOrder": "source-slot-order"
+          },
+          "vod": "https://v.qq.com/x/page/w3197819qah.html"
+        },
+        {
+          "id": "kpl-2026-spring-playoffs-s06-g6",
+          "gameInSeries": 6,
+          "duration": "16:49",
+          "winnerTeam": "dyg",
+          "winnerSide": "red",
+          "finalObjective": {
+            "winnerConfirmed": true,
+            "endingMethod": "unknown"
+          },
+          "draft": {
+            "blue": {
+              "team": "ttg",
+              "picks": [
+                "dharma",
+                "kaizer",
+                "wu-ze-tian",
+                "lady-sun",
+                "taiyi-zhenren"
+              ],
+              "bans": [
+                "ao-yin",
+                "su-lie",
+                "guan-yu",
+                "jing"
+              ]
+            },
+            "red": {
+              "team": "dyg",
+              "picks": [
+                "liu-bang",
+                "musashi",
+                "mai-shiranui",
+                "di-renjie",
+                "flowborn-support"
+              ],
+              "bans": [
+                "master-luban",
+                "shieldun",
+                "haya",
+                "pei"
+              ]
+            }
+          },
+          "bpMetadata": {
+            "complete": true,
+            "banOrderVerified": false,
+            "pickOrder": "source-slot-order"
+          },
+          "vod": "https://v.qq.com/x/page/d3197mjzjsi.html"
+        }
+      ]
+    },
+    {
+      "id": "kpl-2026-spring-playoffs-s07",
+      "dateRaw": "April 1, 2026 - 18:30",
+      "teams": [
+        {
+          "name": "jdg",
+          "region": "china"
+        },
+        {
+          "name": "wb",
+          "region": "china"
+        }
+      ],
+      "finalScore": {
+        "jdg": 1,
+        "wb": 4
+      },
+      "winnerTeam": "wb",
+      "games": [
+        {
+          "id": "kpl-2026-spring-playoffs-s07-g1",
+          "gameInSeries": 1,
+          "duration": "13:15",
+          "winnerTeam": "wb",
+          "winnerSide": "blue",
+          "finalObjective": {
+            "winnerConfirmed": true,
+            "endingMethod": "unknown"
+          },
+          "draft": {
+            "blue": {
+              "team": "wb",
+              "picks": [
+                "sikong-zhen",
+                "flowborn-tank",
+                "catboom",
+                "chano",
+                "master-luban"
+              ],
+              "bans": [
+                "flowborn-support",
+                "haya",
+                "xiao-qiao",
+                "angela"
+              ]
+            },
+            "red": {
+              "team": "jdg",
+              "picks": [
+                "cao-cao",
+                "dun",
+                "chang-e",
+                "ao-yin",
+                "zhao-huaizhen"
+              ],
+              "bans": [
+                "shieldun",
+                "flowborn-marksman",
+                "ma-chao",
+                "luban-no-7"
+              ]
+            }
+          },
+          "bpMetadata": {
+            "complete": true,
+            "banOrderVerified": false,
+            "pickOrder": "source-slot-order"
+          },
+          "vod": "https://v.qq.com/x/page/o31975qlex0.html"
+        },
+        {
+          "id": "kpl-2026-spring-playoffs-s07-g2",
+          "gameInSeries": 2,
+          "duration": "11:16",
+          "winnerTeam": "jdg",
+          "winnerSide": "blue",
+          "finalObjective": {
+            "winnerConfirmed": true,
+            "endingMethod": "unknown"
+          },
+          "draft": {
+            "blue": {
+              "team": "jdg",
+              "picks": [
+                "biron",
+                "ying",
+                "heino",
+                "chano",
+                "dyadia"
+              ],
+              "bans": [
+                "ao-yin",
+                "liang",
+                "ukyo-tachibana",
+                "ge-ya"
+              ]
+            },
+            "red": {
+              "team": "wb",
+              "picks": [
+                "bai-qi",
+                "pei",
+                "xiao-qiao",
+                "erin",
+                "da-yu"
+              ],
+              "bans": [
+                "master-luban",
+                "shieldun",
+                "catboom",
+                "augran"
+              ]
+            }
+          },
+          "bpMetadata": {
+            "complete": true,
+            "banOrderVerified": false,
+            "pickOrder": "source-slot-order"
+          },
+          "vod": "https://v.qq.com/x/page/b31970kti4k.html"
+        },
+        {
+          "id": "kpl-2026-spring-playoffs-s07-g3",
+          "gameInSeries": 3,
+          "duration": "13:40",
+          "winnerTeam": "wb",
+          "winnerSide": "red",
+          "finalObjective": {
+            "winnerConfirmed": true,
+            "endingMethod": "unknown"
+          },
+          "draft": {
+            "blue": {
+              "team": "jdg",
+              "picks": [
+                "ma-chao",
+                "ukyo-tachibana",
+                "wang-zhaojun",
+                "ge-ya",
+                "liang"
+              ],
+              "bans": [
+                "ao-yin",
+                "guan-yu",
+                "haya",
+                "nuwa"
+              ]
+            },
+            "red": {
+              "team": "wb",
+              "picks": [
+                "charlotte",
+                "kaizer",
+                "mai-shiranui",
+                "sun-quan",
+                "zhuangzi"
+              ],
+              "bans": [
+                "master-luban",
+                "shieldun",
+                "sikong-zhen",
+                "jing"
+              ]
+            }
+          },
+          "bpMetadata": {
+            "complete": true,
+            "banOrderVerified": false,
+            "pickOrder": "source-slot-order"
+          },
+          "vod": "https://v.qq.com/x/page/p3197l35sto.html"
+        },
+        {
+          "id": "kpl-2026-spring-playoffs-s07-g4",
+          "gameInSeries": 4,
+          "duration": "11:48",
+          "winnerTeam": "wb",
+          "winnerSide": "blue",
+          "finalObjective": {
+            "winnerConfirmed": true,
+            "endingMethod": "unknown"
+          },
+          "draft": {
+            "blue": {
+              "team": "wb",
+              "picks": [
+                "mayene",
+                "ukyo-tachibana",
+                "nuwa",
+                "ge-ya",
+                "zhang-fei"
+              ],
+              "bans": [
+                "master-luban",
+                "catboom",
+                "nezha",
+                "bai-qi"
+              ]
+            },
+            "red": {
+              "team": "jdg",
+              "picks": [
+                "guan-yu",
+                "augran",
+                "ying-zheng",
+                "sun-quan",
+                "da-yu"
+              ],
+              "bans": [
+                "shieldun",
+                "dyadia",
+                "cao-cao",
+                "agudo"
+              ]
+            }
+          },
+          "bpMetadata": {
+            "complete": true,
+            "banOrderVerified": false,
+            "pickOrder": "source-slot-order"
+          },
+          "vod": "https://v.qq.com/x/page/j31970r1z6x.html"
+        },
+        {
+          "id": "kpl-2026-spring-playoffs-s07-g5",
+          "gameInSeries": 5,
+          "duration": "17:38",
+          "winnerTeam": "wb",
+          "winnerSide": "red",
+          "finalObjective": {
+            "winnerConfirmed": true,
+            "endingMethod": "unknown"
+          },
+          "draft": {
+            "blue": {
+              "team": "jdg",
+              "picks": [
+                "dharma",
+                "pei",
+                "catboom",
+                "chicha",
+                "su-lie"
+              ],
+              "bans": [
+                "ao-yin",
+                "liang",
+                "cao-cao",
+                "chang-e"
+              ]
+            },
+            "red": {
+              "team": "wb",
+              "picks": [
+                "biron",
+                "augran",
+                "angela",
+                "lady-sun",
+                "taiyi-zhenren"
+              ],
+              "bans": [
+                "master-luban",
+                "shieldun",
+                "agudo",
+                "nezha"
+              ]
+            }
+          },
+          "bpMetadata": {
+            "complete": true,
+            "banOrderVerified": false,
+            "pickOrder": "source-slot-order"
+          },
+          "vod": "https://v.qq.com/x/page/o31974w1cuj.html"
+        }
+      ]
+    },
+    {
+      "id": "kpl-2026-spring-playoffs-s08",
+      "dateRaw": "April 2, 2026 - 18:30",
+      "teams": [
+        {
+          "name": "ksg",
+          "region": "china"
+        },
+        {
+          "name": "dyg",
+          "region": "china"
+        }
+      ],
+      "finalScore": {
+        "ksg": 4,
+        "dyg": 1
+      },
+      "winnerTeam": "ksg",
+      "games": [
+        {
+          "id": "kpl-2026-spring-playoffs-s08-g1",
+          "gameInSeries": 1,
+          "duration": "14:11",
+          "winnerTeam": "dyg",
+          "winnerSide": "blue",
+          "finalObjective": {
+            "winnerConfirmed": true,
+            "endingMethod": "unknown"
+          },
+          "draft": {
+            "blue": {
+              "team": "dyg",
+              "picks": [
+                "cao-cao",
+                "flowborn-tank",
+                "yixing",
+                "luban-no-7",
+                "master-luban"
+              ],
+              "bans": [
+                "haya",
+                "su-lie",
+                "kui",
+                "zhuangzi"
+              ]
+            },
+            "red": {
+              "team": "ksg",
+              "picks": [
+                "charlotte",
+                "pei",
+                "nuwa",
+                "ao-yin",
+                "lian-po"
+              ],
+              "bans": [
+                "catboom",
+                "yang-jian",
+                "biron",
+                "mai-shiranui"
+              ]
+            }
+          },
+          "bpMetadata": {
+            "complete": true,
+            "banOrderVerified": false,
+            "pickOrder": "source-slot-order"
+          },
+          "vod": "https://v.qq.com/x/page/p3197701hee.html"
+        },
+        {
+          "id": "kpl-2026-spring-playoffs-s08-g2",
+          "gameInSeries": 2,
+          "duration": "15:09",
+          "winnerTeam": "ksg",
+          "winnerSide": "red",
+          "finalObjective": {
+            "winnerConfirmed": true,
+            "endingMethod": "unknown"
+          },
+          "draft": {
+            "blue": {
+              "team": "dyg",
+              "picks": [
+                "charlotte",
+                "dun",
+                "wu-ze-tian",
+                "erin",
+                "shieldun"
+              ],
+              "bans": [
+                "master-luban",
+                "su-lie",
+                "guan-yu",
+                "bai-qi"
+              ]
+            },
+            "red": {
+              "team": "ksg",
+              "picks": [
+                "biron",
+                "ying",
+                "xiao-qiao",
+                "chicha",
+                "mozi"
+              ],
+              "bans": [
+                "catboom",
+                "haya",
+                "nakoruru",
+                "augran"
+              ]
+            }
+          },
+          "bpMetadata": {
+            "complete": true,
+            "banOrderVerified": false,
+            "pickOrder": "source-slot-order"
+          },
+          "vod": "https://v.qq.com/x/page/z3197bwef4j.html"
+        },
+        {
+          "id": "kpl-2026-spring-playoffs-s08-g3",
+          "gameInSeries": 3,
+          "duration": "15:37",
+          "winnerTeam": "ksg",
+          "winnerSide": "red",
+          "finalObjective": {
+            "winnerConfirmed": true,
+            "endingMethod": "unknown"
+          },
+          "draft": {
+            "blue": {
+              "team": "dyg",
+              "picks": [
+                "liu-bang",
+                "musashi",
+                "catboom",
+                "ge-ya",
+                "zhang-fei"
+              ],
+              "bans": [
+                "shieldun",
+                "master-luban",
+                "flowborn-tank",
+                "jing"
+              ]
+            },
+            "red": {
+              "team": "ksg",
+              "picks": [
+                "dharma",
+                "augran",
+                "chang-e",
+                "chano",
+                "su-lie"
+              ],
+              "bans": [
+                "chicha",
+                "biron",
+                "agudo",
+                "nakoruru"
+              ]
+            }
+          },
+          "bpMetadata": {
+            "complete": true,
+            "banOrderVerified": false,
+            "pickOrder": "source-slot-order"
+          },
+          "vod": "https://v.qq.com/x/page/p3197m7wxza.html"
+        },
+        {
+          "id": "kpl-2026-spring-playoffs-s08-g4",
+          "gameInSeries": 4,
+          "duration": "14:36",
+          "winnerTeam": "ksg",
+          "winnerSide": "blue",
+          "finalObjective": {
+            "winnerConfirmed": true,
+            "endingMethod": "unknown"
+          },
+          "draft": {
+            "blue": {
+              "team": "ksg",
+              "picks": [
+                "yango",
+                "yang-jian",
+                "catboom",
+                "shouyue",
+                "dolia"
+              ],
+              "bans": [
+                "guan-yu",
+                "haya",
+                "nakoruru",
+                "hou-yi"
+              ]
+            },
+            "red": {
+              "team": "dyg",
+              "picks": [
+                "ma-chao",
+                "bai-qi",
+                "angela",
+                "arli",
+                "dyadia"
+              ],
+              "bans": [
+                "master-luban",
+                "shieldun",
+                "ge-ya",
+                "di-renjie"
+              ]
+            }
+          },
+          "bpMetadata": {
+            "complete": true,
+            "banOrderVerified": false,
+            "pickOrder": "source-slot-order"
+          },
+          "vod": "https://v.qq.com/x/page/t3197w66lhx.html"
+        },
+        {
+          "id": "kpl-2026-spring-playoffs-s08-g5",
+          "gameInSeries": 5,
+          "duration": "15:44",
+          "winnerTeam": "ksg",
+          "winnerSide": "blue",
+          "finalObjective": {
+            "winnerConfirmed": true,
+            "endingMethod": "unknown"
+          },
+          "draft": {
+            "blue": {
+              "team": "ksg",
+              "picks": [
+                "bai-qi",
+                "musashi",
+                "mai-shiranui",
+                "ge-ya",
+                "da-yu"
+              ],
+              "bans": [
+                "su-lie",
+                "guan-yu",
+                "biron",
+                "haya"
+              ]
+            },
+            "red": {
+              "team": "dyg",
+              "picks": [
+                "meng-tian",
+                "nezha",
+                "lady-zhen",
+                "lady-sun",
+                "taiyi-zhenren"
+              ],
+              "bans": [
+                "master-luban",
+                "shieldun",
+                "ukyo-tachibana",
+                "jing"
+              ]
+            }
+          },
+          "bpMetadata": {
+            "complete": true,
+            "banOrderVerified": false,
+            "pickOrder": "source-slot-order"
+          },
+          "vod": "https://v.qq.com/x/page/j3197k597a4.html"
+        }
+      ]
+    },
+    {
+      "id": "kpl-2026-spring-playoffs-s09",
+      "dateRaw": "April 3, 2026 - 18:30",
+      "teams": [
+        {
+          "name": "ag",
+          "region": "china"
+        },
+        {
+          "name": "wolves",
+          "region": "china"
+        }
+      ],
+      "finalScore": {
+        "ag": 0,
+        "wolves": 4
+      },
+      "winnerTeam": "wolves",
+      "games": [
+        {
+          "id": "kpl-2026-spring-playoffs-s09-g1",
+          "gameInSeries": 1,
+          "duration": "11:12",
+          "winnerTeam": "wolves",
+          "winnerSide": "red",
+          "finalObjective": {
+            "winnerConfirmed": true,
+            "endingMethod": "unknown"
+          },
+          "draft": {
+            "blue": {
+              "team": "ag",
+              "picks": [
+                "cao-cao",
+                "kaizer",
+                "jin-chan",
+                "erin",
+                "shieldun"
+              ],
+              "bans": [
+                "su-lie",
+                "master-luban",
+                "nezha",
+                "zhao-huaizhen"
+              ]
+            },
+            "red": {
+              "team": "wolves",
+              "picks": [
+                "guan-yu",
+                "augran",
+                "xiao-qiao",
+                "chicha",
+                "kui"
+              ],
+              "bans": [
+                "ao-yin",
+                "mai-shiranui",
+                "haya",
+                "wu-ze-tian"
+              ]
+            }
+          },
+          "bpMetadata": {
+            "complete": true,
+            "banOrderVerified": false,
+            "pickOrder": "source-slot-order"
+          },
+          "vod": "https://v.qq.com/x/page/h3197ow9dno.html"
+        },
+        {
+          "id": "kpl-2026-spring-playoffs-s09-g2",
+          "gameInSeries": 2,
+          "duration": "15:17",
+          "winnerTeam": "wolves",
+          "winnerSide": "red",
+          "finalObjective": {
+            "winnerConfirmed": true,
+            "endingMethod": "unknown"
+          },
+          "draft": {
+            "blue": {
+              "team": "ag",
+              "picks": [
+                "charlotte",
+                "flowborn-tank",
+                "ying-zheng",
+                "ge-ya",
+                "zhang-fei"
+              ],
+              "bans": [
+                "shieldun",
+                "master-luban",
+                "haya",
+                "nezha"
+              ]
+            },
+            "red": {
+              "team": "wolves",
+              "picks": [
+                "sikong-zhen",
+                "ying",
+                "angela",
+                "chano",
+                "su-lie"
+              ],
+              "bans": [
+                "augran",
+                "ao-yin",
+                "wu-ze-tian",
+                "mai-shiranui"
+              ]
+            }
+          },
+          "bpMetadata": {
+            "complete": true,
+            "banOrderVerified": false,
+            "pickOrder": "source-slot-order"
+          },
+          "vod": "https://v.qq.com/x/page/y3197ngxy9j.html"
+        },
+        {
+          "id": "kpl-2026-spring-playoffs-s09-g3",
+          "gameInSeries": 3,
+          "duration": "21:53",
+          "winnerTeam": "wolves",
+          "winnerSide": "red",
+          "finalObjective": {
+            "winnerConfirmed": true,
+            "endingMethod": "unknown"
+          },
+          "draft": {
+            "blue": {
+              "team": "ag",
+              "picks": [
+                "biron",
+                "ukyo-tachibana",
+                "haya",
+                "ao-yin",
+                "dolia"
+              ],
+              "bans": [
+                "shieldun",
+                "master-luban",
+                "shi",
+                "bai-qi"
+              ]
+            },
+            "red": {
+              "team": "wolves",
+              "picks": [
+                "lu-bu-honor-of-kings",
+                "flowborn-tank",
+                "wu-ze-tian",
+                "arli",
+                "dyadia"
+              ],
+              "bans": [
+                "su-lie",
+                "liang",
+                "dun",
+                "augran"
+              ]
+            }
+          },
+          "bpMetadata": {
+            "complete": true,
+            "banOrderVerified": false,
+            "pickOrder": "source-slot-order"
+          },
+          "vod": "https://v.qq.com/x/page/q3197beskmn.html"
+        },
+        {
+          "id": "kpl-2026-spring-playoffs-s09-g4",
+          "gameInSeries": 4,
+          "duration": "14:53",
+          "winnerTeam": "wolves",
+          "winnerSide": "blue",
+          "finalObjective": {
+            "winnerConfirmed": true,
+            "endingMethod": "unknown"
+          },
+          "draft": {
+            "blue": {
+              "team": "wolves",
+              "picks": [
+                "fuzi",
+                "jing",
+                "da-qiao",
+                "ge-ya",
+                "master-luban"
+              ],
+              "bans": [
+                "su-lie",
+                "augran",
+                "guan-yu",
+                "donghuang"
+              ]
+            },
+            "red": {
+              "team": "ag",
+              "picks": [
+                "xiang-yu",
+                "pei",
+                "mai-shiranui",
+                "di-renjie",
+                "lian-po"
+              ],
+              "bans": [
+                "shieldun",
+                "ao-yin",
+                "wang-zhaojun",
+                "haya"
+              ]
+            }
+          },
+          "bpMetadata": {
+            "complete": true,
+            "banOrderVerified": false,
+            "pickOrder": "source-slot-order"
+          },
+          "vod": "https://v.qq.com/x/page/c3197eoiuvt.html"
+        }
+      ]
+    },
+    {
+      "id": "kpl-2026-spring-playoffs-s10",
+      "dateRaw": "April 4, 2026 - 18:30",
+      "teams": [
+        {
+          "name": "wb",
+          "region": "china"
+        },
+        {
+          "name": "ksg",
+          "region": "china"
+        }
+      ],
+      "finalScore": {
+        "wb": 1,
+        "ksg": 4
+      },
+      "winnerTeam": "ksg",
+      "games": [
+        {
+          "id": "kpl-2026-spring-playoffs-s10-g1",
+          "gameInSeries": 1,
+          "duration": "20:56",
+          "winnerTeam": "ksg",
+          "winnerSide": "red",
+          "finalObjective": {
+            "winnerConfirmed": true,
+            "endingMethod": "unknown"
+          },
+          "draft": {
+            "blue": {
+              "team": "wb",
+              "picks": [
+                "sikong-zhen",
+                "augran",
+                "mai-shiranui",
+                "erin",
+                "shieldun"
+              ],
+              "bans": [
+                "haya",
+                "ao-yin",
+                "zhong-kui",
+                "su-lie"
+              ]
+            },
+            "red": {
+              "team": "ksg",
+              "picks": [
+                "biron",
+                "ying",
+                "xiao-qiao",
+                "chicha",
+                "huaizhen"
+              ],
+              "bans": [
+                "catboom",
+                "master-luban",
+                "lu-bu-honor-of-kings",
+                "guan-yu"
+              ]
+            }
+          },
+          "bpMetadata": {
+            "complete": true,
+            "banOrderVerified": false,
+            "pickOrder": "source-slot-order"
+          },
+          "vod": "https://v.qq.com/x/page/s3198wu5lmv.html"
+        },
+        {
+          "id": "kpl-2026-spring-playoffs-s10-g2",
+          "gameInSeries": 2,
+          "duration": "13:22",
+          "winnerTeam": "ksg",
+          "winnerSide": "red",
+          "finalObjective": {
+            "winnerConfirmed": true,
+            "endingMethod": "unknown"
+          },
+          "draft": {
+            "blue": {
+              "team": "wb",
+              "picks": [
+                "charlotte",
+                "ying",
+                "xiao-qiao",
+                "ao-yin",
+                "zhang-fei"
+              ],
+              "bans": [
+                "shieldun",
+                "augran",
+                "agudo",
+                "cao-cao"
+              ]
+            },
+            "red": {
+              "team": "ksg",
+              "picks": [
+                "dharma",
+                "pei",
+                "catboom",
+                "chano",
+                "su-lie"
+              ],
+              "bans": [
+                "master-luban",
+                "biron",
+                "chang-e",
+                "haya"
+              ]
+            }
+          },
+          "bpMetadata": {
+            "complete": true,
+            "banOrderVerified": false,
+            "pickOrder": "source-slot-order"
+          },
+          "vod": "https://v.qq.com/x/page/w31983aoemp.html"
+        },
+        {
+          "id": "kpl-2026-spring-playoffs-s10-g3",
+          "gameInSeries": 3,
+          "duration": "18:38",
+          "winnerTeam": "wb",
+          "winnerSide": "red",
+          "finalObjective": {
+            "winnerConfirmed": true,
+            "endingMethod": "unknown"
+          },
+          "draft": {
+            "blue": {
+              "team": "ksg",
+              "picks": [
+                "charlotte",
+                "ukyo-tachibana",
+                "lady-zhen",
+                "ao-yin",
+                "zhang-fei"
+              ],
+              "bans": [
+                "su-lie",
+                "haya",
+                "catboom",
+                "nuwa"
+              ]
+            },
+            "red": {
+              "team": "wb",
+              "picks": [
+                "biron",
+                "musashi",
+                "angela",
+                "chano",
+                "taiyi-zhenren"
+              ],
+              "bans": [
+                "shieldun",
+                "master-luban",
+                "nezha",
+                "mai-shiranui"
+              ]
+            }
+          },
+          "bpMetadata": {
+            "complete": true,
+            "banOrderVerified": false,
+            "pickOrder": "source-slot-order"
+          },
+          "vod": "https://v.qq.com/x/page/b319814fn5f.html"
+        },
+        {
+          "id": "kpl-2026-spring-playoffs-s10-g4",
+          "gameInSeries": 4,
+          "duration": "09:13",
+          "winnerTeam": "ksg",
+          "winnerSide": "red",
+          "finalObjective": {
+            "winnerConfirmed": true,
+            "endingMethod": "unknown"
+          },
+          "draft": {
+            "blue": {
+              "team": "wb",
+              "picks": [
+                "ma-chao",
+                "flowborn-tank",
+                "chang-e",
+                "ge-ya",
+                "dyadia"
+              ],
+              "bans": [
+                "shieldun",
+                "augran",
+                "angela",
+                "ziya"
+              ]
+            },
+            "red": {
+              "team": "ksg",
+              "picks": [
+                "cao-cao",
+                "dun",
+                "wu-ze-tian",
+                "arli",
+                "da-yu"
+              ],
+              "bans": [
+                "master-luban",
+                "nuwa",
+                "guan-yu",
+                "catboom"
+              ]
+            }
+          },
+          "bpMetadata": {
+            "complete": true,
+            "banOrderVerified": false,
+            "pickOrder": "source-slot-order"
+          },
+          "vod": "https://v.qq.com/x/page/z3198toa4ha.html"
+        },
+        {
+          "id": "kpl-2026-spring-playoffs-s10-g5",
+          "gameInSeries": 5,
+          "duration": "15:51",
+          "winnerTeam": "ksg",
+          "winnerSide": "blue",
+          "finalObjective": {
+            "winnerConfirmed": true,
+            "endingMethod": "unknown"
+          },
+          "draft": {
+            "blue": {
+              "team": "ksg",
+              "picks": [
+                "guan-yu",
+                "flowborn-tank",
+                "nuwa",
+                "ge-ya",
+                "donghuang"
+              ],
+              "bans": [
+                "haya",
+                "chicha",
+                "catboom",
+                "ukyo-tachibana"
+              ]
+            },
+            "red": {
+              "team": "wb",
+              "picks": [
+                "mayene",
+                "nakoruru",
+                "ying-zheng",
+                "arli",
+                "liang"
+              ],
+              "bans": [
+                "shieldun",
+                "master-luban",
+                "taiyi-zhenren",
+                "zhong-kui"
+              ]
+            }
+          },
+          "bpMetadata": {
+            "complete": true,
+            "banOrderVerified": false,
+            "pickOrder": "source-slot-order"
+          },
+          "vod": "https://v.qq.com/x/page/r3198yzoz7w.html"
+        }
+      ]
+    },
+    {
+      "id": "kpl-2026-spring-playoffs-s11",
+      "dateRaw": "April 5, 2026 - 18:30",
+      "teams": [
+        {
+          "name": "ag",
+          "region": "china"
+        },
+        {
+          "name": "ksg",
+          "region": "china"
+        }
+      ],
+      "finalScore": {
+        "ag": 2,
+        "ksg": 4
+      },
+      "winnerTeam": "ksg",
+      "games": [
+        {
+          "id": "kpl-2026-spring-playoffs-s11-g1",
+          "gameInSeries": 1,
+          "duration": "13:00",
+          "winnerTeam": "ag",
+          "winnerSide": "blue",
+          "finalObjective": {
+            "winnerConfirmed": true,
+            "endingMethod": "unknown"
+          },
+          "draft": {
+            "blue": {
+              "team": "ag",
+              "picks": [
+                "meng-tian",
+                "jing",
+                "catboom",
+                "di-renjie",
+                "flowborn-support"
+              ],
+              "bans": [
+                "guan-yu",
+                "chicha",
+                "fuzi",
+                "ge-ya"
+              ]
+            },
+            "red": {
+              "team": "ksg",
+              "picks": [
+                "umbrosa",
+                "yang-jian",
+                "mai-shiranui",
+                "luban-no-7",
+                "master-luban"
+              ],
+              "bans": [
+                "flowborn-tank",
+                "ao-yin",
+                "dun",
+                "augran"
+              ]
+            }
+          },
+          "bpMetadata": {
+            "complete": true,
+            "banOrderVerified": false,
+            "pickOrder": "source-slot-order"
+          },
+          "vod": "https://v.qq.com/x/page/w3198p45nzz.html"
+        },
+        {
+          "id": "kpl-2026-spring-playoffs-s11-g2",
+          "gameInSeries": 2,
+          "duration": "13:46",
+          "winnerTeam": "ksg",
+          "winnerSide": "red",
+          "finalObjective": {
+            "winnerConfirmed": true,
+            "endingMethod": "unknown"
+          },
+          "draft": {
+            "blue": {
+              "team": "ag",
+              "picks": [
+                "biron",
+                "agudo",
+                "haya",
+                "ao-yin",
+                "zhang-fei"
+              ],
+              "bans": [
+                "chicha",
+                "su-lie",
+                "catboom",
+                "wu-ze-tian"
+              ]
+            },
+            "red": {
+              "team": "ksg",
+              "picks": [
+                "lu-bu-honor-of-kings",
+                "ma-chao",
+                "shi",
+                "chano",
+                "da-yu"
+              ],
+              "bans": [
+                "master-luban",
+                "shieldun",
+                "pei",
+                "mai-shiranui"
+              ]
+            }
+          },
+          "bpMetadata": {
+            "complete": true,
+            "banOrderVerified": false,
+            "pickOrder": "source-slot-order"
+          },
+          "vod": "https://v.qq.com/x/page/r3198yp6yep.html"
+        },
+        {
+          "id": "kpl-2026-spring-playoffs-s11-g3",
+          "gameInSeries": 3,
+          "duration": "14:57",
+          "winnerTeam": "ksg",
+          "winnerSide": "blue",
+          "finalObjective": {
+            "winnerConfirmed": true,
+            "endingMethod": "unknown"
+          },
+          "draft": {
+            "blue": {
+              "team": "ksg",
+              "picks": [
+                "meng-tian",
+                "ma-chao",
+                "wang-zhaojun",
+                "di-renjie",
+                "liang"
+              ],
+              "bans": [
+                "master-luban",
+                "ao-yin",
+                "agudo",
+                "dharma"
+              ]
+            },
+            "red": {
+              "team": "ag",
+              "picks": [
+                "bai-qi",
+                "augran",
+                "wu-ze-tian",
+                "lady-sun",
+                "taiyi-zhenren"
+              ],
+              "bans": [
+                "shieldun",
+                "haya",
+                "ge-ya",
+                "arli"
+              ]
+            }
+          },
+          "bpMetadata": {
+            "complete": true,
+            "banOrderVerified": false,
+            "pickOrder": "source-slot-order"
+          },
+          "vod": "https://v.qq.com/x/page/v3198dt2dye.html"
+        },
+        {
+          "id": "kpl-2026-spring-playoffs-s11-g4",
+          "gameInSeries": 4,
+          "duration": "12:15",
+          "winnerTeam": "ksg",
+          "winnerSide": "red",
+          "finalObjective": {
+            "winnerConfirmed": true,
+            "endingMethod": "unknown"
+          },
+          "draft": {
+            "blue": {
+              "team": "ag",
+              "picks": [
+                "cao-cao",
+                "ukyo-tachibana",
+                "wang-zhaojun",
+                "chicha",
+                "liang"
+              ],
+              "bans": [
+                "su-lie",
+                "ao-yin",
+                "wu-ze-tian",
+                "nuwa"
+              ]
+            },
+            "red": {
+              "team": "ksg",
+              "picks": [
+                "charlotte",
+                "augran",
+                "angela",
+                "hou-yi",
+                "zhuangzi"
+              ],
+              "bans": [
+                "master-luban",
+                "shieldun",
+                "pei",
+                "nakoruru"
+              ]
+            }
+          },
+          "bpMetadata": {
+            "complete": true,
+            "banOrderVerified": false,
+            "pickOrder": "source-slot-order"
+          },
+          "vod": "https://v.qq.com/x/page/i3198mzfk2c.html"
+        },
+        {
+          "id": "kpl-2026-spring-playoffs-s11-g5",
+          "gameInSeries": 5,
+          "duration": "23:48",
+          "winnerTeam": "ag",
+          "winnerSide": "blue",
+          "finalObjective": {
+            "winnerConfirmed": true,
+            "endingMethod": "unknown"
+          },
+          "draft": {
+            "blue": {
+              "team": "ag",
+              "picks": [
+                "umbrosa",
+                "augran",
+                "lady-zhen",
+                "chano",
+                "dyadia"
+              ],
+              "bans": [
+                "su-lie",
+                "liang",
+                "pei",
+                "dolia"
+              ]
+            },
+            "red": {
+              "team": "ksg",
+              "picks": [
+                "biron",
+                "nakoruru",
+                "haya",
+                "ao-yin",
+                "kui"
+              ],
+              "bans": [
+                "master-luban",
+                "shieldun",
+                "lu-bu-honor-of-kings",
+                "charlotte"
+              ]
+            }
+          },
+          "bpMetadata": {
+            "complete": true,
+            "banOrderVerified": false,
+            "pickOrder": "source-slot-order"
+          },
+          "vod": "https://v.qq.com/x/page/p31988u8pn9.html"
+        },
+        {
+          "id": "kpl-2026-spring-playoffs-s11-g6",
+          "gameInSeries": 6,
+          "duration": "22:46",
+          "winnerTeam": "ksg",
+          "winnerSide": "red",
+          "finalObjective": {
+            "winnerConfirmed": true,
+            "endingMethod": "unknown"
+          },
+          "draft": {
+            "blue": {
+              "team": "ag",
+              "picks": [
+                "charlotte",
+                "dun",
+                "ziya",
+                "ge-ya",
+                "dolia"
+              ],
+              "bans": [
+                "catboom",
+                "su-lie",
+                "sikong-zhen",
+                "luna"
+              ]
+            },
+            "red": {
+              "team": "ksg",
+              "picks": [
+                "meng-tian",
+                "pei",
+                "wu-ze-tian",
+                "arli",
+                "dyadia"
+              ],
+              "bans": [
+                "master-luban",
+                "shieldun",
+                "xiao-qiao",
+                "mai-shiranui"
+              ]
+            }
+          },
+          "bpMetadata": {
+            "complete": true,
+            "banOrderVerified": false,
+            "pickOrder": "source-slot-order"
+          },
+          "vod": "https://v.qq.com/x/page/t319803dr4w.html"
+        }
+      ]
+    },
+    {
+      "id": "kpl-2026-spring-playoffs-s12",
+      "dateRaw": "April 11, 2026 - 18:12",
+      "teams": [
+        {
+          "name": "wolves",
+          "region": "china"
+        },
+        {
+          "name": "ksg",
+          "region": "china"
+        }
+      ],
+      "finalScore": {
+        "wolves": 0,
+        "ksg": 4
+      },
+      "winnerTeam": "ksg",
+      "games": [
+        {
+          "id": "kpl-2026-spring-playoffs-s12-g1",
+          "gameInSeries": 1,
+          "duration": "12:16",
+          "winnerTeam": "ksg",
+          "winnerSide": "blue",
+          "finalObjective": {
+            "winnerConfirmed": true,
+            "endingMethod": "unknown"
+          },
+          "draft": {
+            "blue": {
+              "team": "ksg",
+              "picks": [
+                "sikong-zhen",
+                "bajie",
+                "catboom",
+                "di-renjie",
+                "zhong-kui"
+              ],
+              "bans": [
+                "guan-yu",
+                "augran",
+                "mai-shiranui",
+                "wu-ze-tian"
+              ]
+            },
+            "red": {
+              "team": "wolves",
+              "picks": [
+                "fuzi",
+                "flowborn-tank",
+                "da-qiao",
+                "ge-ya",
+                "master-luban"
+              ],
+              "bans": [
+                "haya",
+                "charlotte",
+                "dun",
+                "meng-tian"
+              ]
+            }
+          },
+          "bpMetadata": {
+            "complete": true,
+            "banOrderVerified": false,
+            "pickOrder": "source-slot-order"
+          },
+          "vod": "https://v.qq.com/x/page/b3198p88v1a.html"
+        },
+        {
+          "id": "kpl-2026-spring-playoffs-s12-g2",
+          "gameInSeries": 2,
+          "duration": "15:35",
+          "winnerTeam": "ksg",
+          "winnerSide": "red",
+          "finalObjective": {
+            "winnerConfirmed": true,
+            "endingMethod": "unknown"
+          },
+          "draft": {
+            "blue": {
+              "team": "wolves",
+              "picks": [
+                "dharma",
+                "ying",
+                "xiao-qiao",
+                "ao-yin",
+                "dyadia"
+              ],
+              "bans": [
+                "master-luban",
+                "zhang-fei",
+                "wu-ze-tian",
+                "shi"
+              ]
+            },
+            "red": {
+              "team": "ksg",
+              "picks": [
+                "ma-chao",
+                "augran",
+                "haya",
+                "chano",
+                "da-yu"
+              ],
+              "bans": [
+                "catboom",
+                "su-lie",
+                "guan-yu",
+                "biron"
+              ]
+            }
+          },
+          "bpMetadata": {
+            "complete": true,
+            "banOrderVerified": false,
+            "pickOrder": "source-slot-order"
+          },
+          "vod": "https://v.qq.com/x/page/y3198kkbcfm.html"
+        },
+        {
+          "id": "kpl-2026-spring-playoffs-s12-g3",
+          "gameInSeries": 3,
+          "duration": "19:48",
+          "winnerTeam": "ksg",
+          "winnerSide": "blue",
+          "finalObjective": {
+            "winnerConfirmed": true,
+            "endingMethod": "unknown"
+          },
+          "draft": {
+            "blue": {
+              "team": "ksg",
+              "picks": [
+                "charlotte",
+                "yang-jian",
+                "angela",
+                "sun-quan",
+                "su-lie"
+              ],
+              "bans": [
+                "augran",
+                "haya",
+                "catboom",
+                "shi"
+              ]
+            },
+            "red": {
+              "team": "wolves",
+              "picks": [
+                "guan-yu",
+                "kaizer",
+                "wu-ze-tian",
+                "chicha",
+                "zhang-fei"
+              ],
+              "bans": [
+                "master-luban",
+                "ao-yin",
+                "flowborn-tank",
+                "ying"
+              ]
+            }
+          },
+          "bpMetadata": {
+            "complete": true,
+            "banOrderVerified": false,
+            "pickOrder": "source-slot-order"
+          },
+          "vod": "https://v.qq.com/x/page/b3198obh2lw.html"
+        },
+        {
+          "id": "kpl-2026-spring-playoffs-s12-g4",
+          "gameInSeries": 4,
+          "duration": "18:50",
+          "winnerTeam": "ksg",
+          "winnerSide": "blue",
+          "finalObjective": {
+            "winnerConfirmed": true,
+            "endingMethod": "unknown"
+          },
+          "draft": {
+            "blue": {
+              "team": "ksg",
+              "picks": [
+                "biron",
+                "agudo",
+                "wu-ze-tian",
+                "ao-yin",
+                "taiyi-zhenren"
+              ],
+              "bans": [
+                "su-lie",
+                "haya",
+                "lu-bu-honor-of-kings",
+                "chano"
+              ]
+            },
+            "red": {
+              "team": "wolves",
+              "picks": [
+                "charlotte",
+                "augran",
+                "wang-zhaojun",
+                "arli",
+                "liang"
+              ],
+              "bans": [
+                "master-luban",
+                "guan-yu",
+                "zhuangzi",
+                "kong-kong-er"
+              ]
+            }
+          },
+          "bpMetadata": {
+            "complete": true,
+            "banOrderVerified": false,
+            "pickOrder": "source-slot-order"
+          },
+          "vod": "https://v.qq.com/x/page/d3198gy2mgv.html"
+        }
+      ]
+    }
+  ]
+}

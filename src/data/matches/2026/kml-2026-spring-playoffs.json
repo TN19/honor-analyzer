@@ -1,0 +1,1785 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-20",
+  "tournament": {
+    "id": "kml-2026-spring",
+    "name": "Honor of Kings Major League Spring 2026",
+    "year": 2026,
+    "stage": "Playoffs",
+    "region": "west"
+  },
+  "source": {
+    "provider": "Liquipedia",
+    "page": "Honor of Kings Major League/2026/Spring/Playoffs",
+    "url": "https://liquipedia.net/honorofkings/Honor_of_Kings_Major_League/2026/Spring/Playoffs"
+  },
+  "analysisPolicy": {
+    "eligible": false,
+    "reason": "歷史資料僅供記錄；未經使用者批准不得進入推薦引擎。"
+  },
+  "coverage": {
+    "series": 6,
+    "gamesWithCompleteBp": 32,
+    "skippedIncompleteGames": 4
+  },
+  "series": [
+    {
+      "id": "kml-2026-spring-s01",
+      "dateRaw": "March 20, 2026 - 11:00",
+      "teams": [
+        {
+          "name": "vp",
+          "region": "west"
+        },
+        {
+          "name": "stmn",
+          "region": "west"
+        }
+      ],
+      "finalScore": {
+        "vp": 4,
+        "stmn": 0
+      },
+      "winnerTeam": "vp",
+      "games": [
+        {
+          "id": "kml-2026-spring-s01-g1",
+          "gameInSeries": 1,
+          "duration": "06:35",
+          "winnerTeam": "vp",
+          "winnerSide": "red",
+          "finalObjective": {
+            "winnerConfirmed": true,
+            "endingMethod": "unknown"
+          },
+          "draft": {
+            "blue": {
+              "team": "stmn",
+              "picks": [
+                "mayene",
+                "pei",
+                "xiao-qiao",
+                "chano",
+                "lapu-lapu"
+              ],
+              "bans": [
+                "haya",
+                "dolia",
+                "lu-bu-honor-of-kings",
+                "garuda"
+              ]
+            },
+            "red": {
+              "team": "vp",
+              "picks": [
+                "biron",
+                "augran",
+                "garuda",
+                "arli",
+                "yuhuan"
+              ],
+              "bans": [
+                "luna",
+                "guan-yu",
+                "shi",
+                "mai-shiranui"
+              ]
+            }
+          },
+          "bpMetadata": {
+            "complete": true,
+            "banOrderVerified": false,
+            "pickOrder": "source-slot-order"
+          },
+          "vod": "https://youtu.be/Eex-bDezs6E?t=2630"
+        },
+        {
+          "id": "kml-2026-spring-s01-g2",
+          "gameInSeries": 2,
+          "duration": "14:51",
+          "winnerTeam": "vp",
+          "winnerSide": "blue",
+          "finalObjective": {
+            "winnerConfirmed": true,
+            "endingMethod": "unknown"
+          },
+          "draft": {
+            "blue": {
+              "team": "vp",
+              "picks": [
+                "guan-yu",
+                "nezha",
+                "garuda",
+                "arli",
+                "zhang-fei"
+              ],
+              "bans": [
+                "pei",
+                "mai",
+                "yang-jian",
+                "dun"
+              ]
+            },
+            "red": {
+              "team": "stmn",
+              "picks": [
+                "dharma",
+                "ata",
+                "gan-mo",
+                "di-renjie",
+                "dolia"
+              ],
+              "bans": [
+                "haya",
+                "luna",
+                "feyd",
+                "lady-zhen"
+              ]
+            }
+          },
+          "bpMetadata": {
+            "complete": true,
+            "banOrderVerified": false,
+            "pickOrder": "source-slot-order"
+          },
+          "vod": "https://youtu.be/Eex-bDezs6E?t=3710"
+        },
+        {
+          "id": "kml-2026-spring-s01-g3",
+          "gameInSeries": 3,
+          "duration": "13:55",
+          "winnerTeam": "vp",
+          "winnerSide": "red",
+          "finalObjective": {
+            "winnerConfirmed": true,
+            "endingMethod": "unknown"
+          },
+          "draft": {
+            "blue": {
+              "team": "stmn",
+              "picks": [
+                "fuzi",
+                "yang-jian",
+                "nuwa",
+                "lady-sun",
+                "dyadia"
+              ],
+              "bans": [
+                "haya",
+                "luna",
+                "faith",
+                "umbrosa"
+              ]
+            },
+            "red": {
+              "team": "vp",
+              "picks": [
+                "charlotte",
+                "dun",
+                "heino",
+                "ao-yin",
+                "dolia"
+              ],
+              "bans": [
+                "pei",
+                "guan-yu",
+                "flowborn-marksman",
+                "hou-yi"
+              ]
+            }
+          },
+          "bpMetadata": {
+            "complete": true,
+            "banOrderVerified": false,
+            "pickOrder": "source-slot-order"
+          },
+          "vod": "https://youtu.be/Eex-bDezs6E?t=5240"
+        },
+        {
+          "id": "kml-2026-spring-s01-g4",
+          "gameInSeries": 4,
+          "duration": "11:08",
+          "winnerTeam": "vp",
+          "winnerSide": "red",
+          "finalObjective": {
+            "winnerConfirmed": true,
+            "endingMethod": "unknown"
+          },
+          "draft": {
+            "blue": {
+              "team": "stmn",
+              "picks": [
+                "faith",
+                "kaizer",
+                "yixing",
+                "di-renjie",
+                "yuhuan"
+              ],
+              "bans": [
+                "haya",
+                "luna",
+                "ata",
+                "lian-po"
+              ]
+            },
+            "red": {
+              "team": "vp",
+              "picks": [
+                "mulan",
+                "feyd",
+                "shi",
+                "chicha",
+                "lapu-lapu"
+              ],
+              "bans": [
+                "pei",
+                "guan-yu",
+                "charlotte",
+                "flowborn-marksman"
+              ]
+            }
+          },
+          "bpMetadata": {
+            "complete": true,
+            "banOrderVerified": false,
+            "pickOrder": "source-slot-order"
+          },
+          "vod": "https://youtu.be/Eex-bDezs6E?t=6922"
+        }
+      ]
+    },
+    {
+      "id": "kml-2026-spring-s02",
+      "dateRaw": "March 20, 2026 - 13:00",
+      "teams": [
+        {
+          "name": "ns",
+          "region": "west"
+        },
+        {
+          "name": "vc",
+          "region": "west"
+        }
+      ],
+      "finalScore": {
+        "ns": 4,
+        "vc": 1
+      },
+      "winnerTeam": "ns",
+      "games": [
+        {
+          "id": "kml-2026-spring-s02-g1",
+          "gameInSeries": 1,
+          "duration": "15:10",
+          "winnerTeam": "ns",
+          "winnerSide": "blue",
+          "finalObjective": {
+            "winnerConfirmed": true,
+            "endingMethod": "unknown"
+          },
+          "draft": {
+            "blue": {
+              "team": "ns",
+              "picks": [
+                "faith",
+                "dun",
+                "lady-zhen",
+                "flowborn-marksman",
+                "dolia"
+              ],
+              "bans": [
+                "luna",
+                "guan-yu",
+                "garuda",
+                "nuwa"
+              ]
+            },
+            "red": {
+              "team": "vc",
+              "picks": [
+                "yang-jian",
+                "pei",
+                "gan-mo",
+                "chicha",
+                "zhang-fei"
+              ],
+              "bans": [
+                "haya",
+                "ao-yin",
+                "luara",
+                "charlotte"
+              ]
+            }
+          },
+          "bpMetadata": {
+            "complete": true,
+            "banOrderVerified": false,
+            "pickOrder": "source-slot-order"
+          },
+          "vod": "https://youtu.be/Eex-bDezs6E?t=9387"
+        },
+        {
+          "id": "kml-2026-spring-s02-g2",
+          "gameInSeries": 2,
+          "duration": "23:18",
+          "winnerTeam": "ns",
+          "winnerSide": "red",
+          "finalObjective": {
+            "winnerConfirmed": true,
+            "endingMethod": "unknown"
+          },
+          "draft": {
+            "blue": {
+              "team": "vc",
+              "picks": [
+                "faith",
+                "jing",
+                "mai",
+                "ao-yin",
+                "yuhuan"
+              ],
+              "bans": [
+                "haya",
+                "chicha",
+                "umbrosa",
+                "garuda"
+              ]
+            },
+            "red": {
+              "team": "ns",
+              "picks": [
+                "dharma",
+                "menki",
+                "yixing",
+                "arli",
+                "zhang-fei"
+              ],
+              "bans": [
+                "lapu-lapu",
+                "mozi",
+                "luna",
+                "feyd"
+              ]
+            }
+          },
+          "bpMetadata": {
+            "complete": true,
+            "banOrderVerified": false,
+            "pickOrder": "source-slot-order"
+          },
+          "vod": "https://youtu.be/Eex-bDezs6E?t=10947"
+        },
+        {
+          "id": "kml-2026-spring-s02-g3",
+          "gameInSeries": 3,
+          "duration": "11:43",
+          "winnerTeam": "ns",
+          "winnerSide": "blue",
+          "finalObjective": {
+            "winnerConfirmed": true,
+            "endingMethod": "unknown"
+          },
+          "draft": {
+            "blue": {
+              "team": "ns",
+              "picks": [
+                "ata",
+                "luna",
+                "mai",
+                "chano",
+                "lapu-lapu"
+              ],
+              "bans": [
+                "agudo",
+                "mozi",
+                "nakoruru",
+                "ukyo"
+              ]
+            },
+            "red": {
+              "team": "vc",
+              "picks": [
+                "dharma",
+                "feyd",
+                "yixing",
+                "erin",
+                "lian-po"
+              ],
+              "bans": [
+                "haya",
+                "ao-yin",
+                "umbrosa",
+                "chicha"
+              ]
+            }
+          },
+          "bpMetadata": {
+            "complete": true,
+            "banOrderVerified": false,
+            "pickOrder": "source-slot-order"
+          },
+          "vod": "https://youtu.be/Eex-bDezs6E?t=13053"
+        },
+        {
+          "id": "kml-2026-spring-s02-g4",
+          "gameInSeries": 4,
+          "duration": "14:29",
+          "winnerTeam": "vc",
+          "winnerSide": "red",
+          "finalObjective": {
+            "winnerConfirmed": true,
+            "endingMethod": "unknown"
+          },
+          "draft": {
+            "blue": {
+              "team": "ns",
+              "picks": [
+                "charlotte",
+                "yang-jian",
+                "shi",
+                "chicha",
+                "dyadia"
+              ],
+              "bans": [
+                "arli",
+                "luna",
+                "lapu-lapu",
+                "mozi"
+              ]
+            },
+            "red": {
+              "team": "vc",
+              "picks": [
+                "guan-yu",
+                "ying",
+                "xiao-qiao",
+                "chano",
+                "gui-guzi"
+              ],
+              "bans": [
+                "haya",
+                "ao-yin",
+                "nezha",
+                "musashi"
+              ]
+            }
+          },
+          "bpMetadata": {
+            "complete": true,
+            "banOrderVerified": false,
+            "pickOrder": "source-slot-order"
+          },
+          "vod": "https://youtu.be/Eex-bDezs6E?t=14620"
+        },
+        {
+          "id": "kml-2026-spring-s02-g5",
+          "gameInSeries": 5,
+          "duration": "15:59",
+          "winnerTeam": "ns",
+          "winnerSide": "red",
+          "finalObjective": {
+            "winnerConfirmed": true,
+            "endingMethod": "unknown"
+          },
+          "draft": {
+            "blue": {
+              "team": "vc",
+              "picks": [
+                "lubu-hok",
+                "nezha",
+                "haya",
+                "flowborn-marksman",
+                "mozi"
+              ],
+              "bans": [
+                "ao-yin",
+                "pei",
+                "garuda",
+                "xiao-qiao"
+              ]
+            },
+            "red": {
+              "team": "ns",
+              "picks": [
+                "biron",
+                "agudo",
+                "nuwa",
+                "di-renjie",
+                "kui"
+              ],
+              "bans": [
+                "lapu-lapu",
+                "charlotte",
+                "luna",
+                "lam"
+              ]
+            }
+          },
+          "bpMetadata": {
+            "complete": true,
+            "banOrderVerified": false,
+            "pickOrder": "source-slot-order"
+          },
+          "vod": "https://youtu.be/Eex-bDezs6E?t=16169"
+        }
+      ]
+    },
+    {
+      "id": "kml-2026-spring-s03",
+      "dateRaw": "March 21, 2026 - 13:00",
+      "teams": [
+        {
+          "name": "vp",
+          "region": "west"
+        },
+        {
+          "name": "ns",
+          "region": "west"
+        }
+      ],
+      "finalScore": {
+        "vp": 3,
+        "ns": 3
+      },
+      "winnerTeam": "ns",
+      "games": [
+        {
+          "id": "kml-2026-spring-s03-g1",
+          "gameInSeries": 1,
+          "duration": "18:16",
+          "winnerTeam": "ns",
+          "winnerSide": "blue",
+          "finalObjective": {
+            "winnerConfirmed": true,
+            "endingMethod": "unknown"
+          },
+          "draft": {
+            "blue": {
+              "team": "ns",
+              "picks": [
+                "faith",
+                "dun",
+                "zhenji",
+                "loong",
+                "mozi"
+              ],
+              "bans": [
+                "biron",
+                "arli",
+                "flw-mm",
+                "chano"
+              ]
+            },
+            "red": {
+              "team": "vp",
+              "picks": [
+                "dharma",
+                "yj",
+                "nuwa",
+                "di-renjie",
+                "dolia"
+              ],
+              "bans": [
+                "haya",
+                "luna",
+                "guan-yu",
+                "charlotte"
+              ]
+            }
+          },
+          "bpMetadata": {
+            "complete": true,
+            "banOrderVerified": false,
+            "pickOrder": "source-slot-order"
+          },
+          "vod": "https://youtu.be/Nu3WHSi_99k?t=2547"
+        },
+        {
+          "id": "kml-2026-spring-s03-g2",
+          "gameInSeries": 2,
+          "duration": "18:32",
+          "winnerTeam": "vp",
+          "winnerSide": "red",
+          "finalObjective": {
+            "winnerConfirmed": true,
+            "endingMethod": "unknown"
+          },
+          "draft": {
+            "blue": {
+              "team": "ns",
+              "picks": [
+                "charlotte",
+                "feyd",
+                "ziya",
+                "chano",
+                "lplp"
+              ],
+              "bans": [
+                "luna",
+                "pei",
+                "nezha",
+                "nakoruru"
+              ]
+            },
+            "red": {
+              "team": "vp",
+              "picks": [
+                "faith",
+                "jing",
+                "yx",
+                "arli",
+                "zf"
+              ],
+              "bans": [
+                "dolia",
+                "dharma",
+                "xq",
+                "haya"
+              ]
+            }
+          },
+          "bpMetadata": {
+            "complete": true,
+            "banOrderVerified": false,
+            "pickOrder": "source-slot-order"
+          },
+          "vod": "https://youtu.be/Nu3WHSi_99k?t=4317"
+        },
+        {
+          "id": "kml-2026-spring-s03-g3",
+          "gameInSeries": 3,
+          "duration": "13:27",
+          "winnerTeam": "vp",
+          "winnerSide": "blue",
+          "finalObjective": {
+            "winnerConfirmed": true,
+            "endingMethod": "unknown"
+          },
+          "draft": {
+            "blue": {
+              "team": "vp",
+              "picks": [
+                "biron",
+                "pei",
+                "garuda",
+                "ao-yin",
+                "lian-po"
+              ],
+              "bans": [
+                "mai",
+                "guan-yu",
+                "menki",
+                "augran"
+              ]
+            },
+            "red": {
+              "team": "ns",
+              "picks": [
+                "ata",
+                "luna",
+                "nuwa",
+                "flw-mm",
+                "zf"
+              ],
+              "bans": [
+                "lplp",
+                "yyh",
+                "nezha",
+                "han-xin"
+              ]
+            }
+          },
+          "bpMetadata": {
+            "complete": true,
+            "banOrderVerified": false,
+            "pickOrder": "source-slot-order"
+          },
+          "vod": "https://youtu.be/Nu3WHSi_99k?t=6228"
+        },
+        {
+          "id": "kml-2026-spring-s03-g4",
+          "gameInSeries": 4,
+          "duration": "11:36",
+          "winnerTeam": "ns",
+          "winnerSide": "blue",
+          "finalObjective": {
+            "winnerConfirmed": true,
+            "endingMethod": "unknown"
+          },
+          "draft": {
+            "blue": {
+              "team": "ns",
+              "picks": [
+                "dharma",
+                "yj",
+                "garuda",
+                "arli",
+                "dolia"
+              ],
+              "bans": [
+                "lplp",
+                "agudo",
+                "guan-yu",
+                "umbrosa"
+              ]
+            },
+            "red": {
+              "team": "vp",
+              "picks": [
+                "jixm",
+                "dun",
+                "zhenji",
+                "chicha",
+                "yyh"
+              ],
+              "bans": [
+                "biron",
+                "haya",
+                "mai",
+                "gjmy"
+              ]
+            }
+          },
+          "bpMetadata": {
+            "complete": true,
+            "banOrderVerified": false,
+            "pickOrder": "source-slot-order"
+          },
+          "vod": "https://youtu.be/Nu3WHSi_99k?t=7930"
+        },
+        {
+          "id": "kml-2026-spring-s03-g5",
+          "gameInSeries": 5,
+          "duration": "14:24",
+          "winnerTeam": "vp",
+          "winnerSide": "blue",
+          "finalObjective": {
+            "winnerConfirmed": true,
+            "endingMethod": "unknown"
+          },
+          "draft": {
+            "blue": {
+              "team": "vp",
+              "picks": [
+                "guan-yu",
+                "kaizer",
+                "mai",
+                "chano",
+                "mozi"
+              ],
+              "bans": [
+                "biron",
+                "agudo",
+                "yx",
+                "umbrosa"
+              ]
+            },
+            "red": {
+              "team": "ns",
+              "picks": [
+                "jixm",
+                "augran",
+                "shi",
+                "luara",
+                "dyadia"
+              ],
+              "bans": [
+                "lplp",
+                "haya",
+                "nakoruru",
+                "musashi"
+              ]
+            }
+          },
+          "bpMetadata": {
+            "complete": true,
+            "banOrderVerified": false,
+            "pickOrder": "source-slot-order"
+          },
+          "vod": "https://youtu.be/Nu3WHSi_99k?t=9309"
+        },
+        {
+          "id": "kml-2026-spring-s03-g6",
+          "gameInSeries": 6,
+          "duration": "19:15",
+          "winnerTeam": "ns",
+          "winnerSide": "blue",
+          "finalObjective": {
+            "winnerConfirmed": true,
+            "endingMethod": "unknown"
+          },
+          "draft": {
+            "blue": {
+              "team": "ns",
+              "picks": [
+                "chicha",
+                "pei",
+                "haya",
+                "fang",
+                "lian-po"
+              ],
+              "bans": [
+                "charlotte",
+                "lplp",
+                "xq",
+                "heino"
+              ]
+            },
+            "red": {
+              "team": "vp",
+              "picks": [
+                "umbrosa",
+                "agudo",
+                "gjmy",
+                "flw-mm",
+                "donghuang"
+              ],
+              "bans": [
+                "mai",
+                "biron",
+                "guan-yu",
+                "fuzi"
+              ]
+            }
+          },
+          "bpMetadata": {
+            "complete": true,
+            "banOrderVerified": false,
+            "pickOrder": "source-slot-order"
+          },
+          "vod": "https://youtu.be/Nu3WHSi_99k?t=10949"
+        }
+      ]
+    },
+    {
+      "id": "kml-2026-spring-s05",
+      "dateRaw": "March 21, 2026 - 17:30",
+      "teams": [
+        {
+          "name": "ns",
+          "region": "west"
+        },
+        {
+          "name": "vc",
+          "region": "west"
+        }
+      ],
+      "finalScore": {
+        "ns": 4,
+        "vc": 2
+      },
+      "winnerTeam": "ns",
+      "games": [
+        {
+          "id": "kml-2026-spring-s05-g1",
+          "gameInSeries": 1,
+          "duration": "14:52",
+          "winnerTeam": "vc",
+          "winnerSide": "blue",
+          "finalObjective": {
+            "winnerConfirmed": true,
+            "endingMethod": "unknown"
+          },
+          "draft": {
+            "blue": {
+              "team": "vc",
+              "picks": [
+                "jixm",
+                "luna",
+                "yyh",
+                "ao-yin",
+                "lian-po"
+              ],
+              "bans": [
+                "dolia",
+                "haya",
+                "feyd",
+                "flw-tank"
+              ]
+            },
+            "red": {
+              "team": "ns",
+              "picks": [
+                "dharma",
+                "nakoruru",
+                "mai",
+                "chano",
+                "lplp"
+              ],
+              "bans": [
+                "ukyo",
+                "arli",
+                "biron",
+                "ata"
+              ]
+            }
+          },
+          "bpMetadata": {
+            "complete": true,
+            "banOrderVerified": false,
+            "pickOrder": "source-slot-order"
+          },
+          "vod": "https://youtu.be/Nu3WHSi_99k?t=18582"
+        },
+        {
+          "id": "kml-2026-spring-s05-g2",
+          "gameInSeries": 2,
+          "duration": "18:52",
+          "winnerTeam": "ns",
+          "winnerSide": "red",
+          "finalObjective": {
+            "winnerConfirmed": true,
+            "endingMethod": "unknown"
+          },
+          "draft": {
+            "blue": {
+              "team": "vc",
+              "picks": [
+                "guan-yu",
+                "jing",
+                "haya",
+                "chicha",
+                "dyadia"
+              ],
+              "bans": [
+                "dolia",
+                "ao-yin",
+                "agudo",
+                "pei"
+              ]
+            },
+            "red": {
+              "team": "ns",
+              "picks": [
+                "biron",
+                "yao",
+                "xiao-qiao",
+                "flw-mm",
+                "zf"
+              ],
+              "bans": [
+                "mai",
+                "lplp",
+                "mozi",
+                "chicha"
+              ]
+            }
+          },
+          "bpMetadata": {
+            "complete": true,
+            "banOrderVerified": false,
+            "pickOrder": "source-slot-order"
+          },
+          "vod": "https://youtu.be/Nu3WHSi_99k?t=20182"
+        },
+        {
+          "id": "kml-2026-spring-s05-g3",
+          "gameInSeries": 3,
+          "duration": "16:32",
+          "winnerTeam": "ns",
+          "winnerSide": "blue",
+          "finalObjective": {
+            "winnerConfirmed": true,
+            "endingMethod": "unknown"
+          },
+          "draft": {
+            "blue": {
+              "team": "ns",
+              "picks": [
+                "charlotte",
+                "musashi",
+                "nuwa",
+                "chicha",
+                "dyadia"
+              ],
+              "bans": [
+                "mai",
+                "pei",
+                "gui",
+                "lplp"
+              ]
+            },
+            "red": {
+              "team": "vc",
+              "picks": [
+                "faith",
+                "ying",
+                "xq",
+                "chano",
+                "mozi"
+              ],
+              "bans": [
+                "haya",
+                "dolia",
+                "ata",
+                "menki"
+              ]
+            }
+          },
+          "bpMetadata": {
+            "complete": true,
+            "banOrderVerified": false,
+            "pickOrder": "source-slot-order"
+          },
+          "vod": "https://youtu.be/Nu3WHSi_99k?t=22053"
+        },
+        {
+          "id": "kml-2026-spring-s05-g4",
+          "gameInSeries": 4,
+          "duration": "14:12",
+          "winnerTeam": "vc",
+          "winnerSide": "red",
+          "finalObjective": {
+            "winnerConfirmed": true,
+            "endingMethod": "unknown"
+          },
+          "draft": {
+            "blue": {
+              "team": "ns",
+              "picks": [
+                "faith",
+                "agudo",
+                "garuda",
+                "di-renjie",
+                "mozi"
+              ],
+              "bans": [
+                "mai",
+                "pei",
+                "yx",
+                "nakoruru"
+              ]
+            },
+            "red": {
+              "team": "vc",
+              "picks": [
+                "fuzi",
+                "musashi",
+                "shi",
+                "arli",
+                "zf"
+              ],
+              "bans": [
+                "haya",
+                "dolia",
+                "ata",
+                "luara"
+              ]
+            }
+          },
+          "bpMetadata": {
+            "complete": true,
+            "banOrderVerified": false,
+            "pickOrder": "source-slot-order"
+          },
+          "vod": "https://youtu.be/Nu3WHSi_99k?t=23960"
+        },
+        {
+          "id": "kml-2026-spring-s05-g5",
+          "gameInSeries": 5,
+          "duration": "10:17",
+          "winnerTeam": "ns",
+          "winnerSide": "red",
+          "finalObjective": {
+            "winnerConfirmed": true,
+            "endingMethod": "unknown"
+          },
+          "draft": {
+            "blue": {
+              "team": "vc",
+              "picks": [
+                "ata",
+                "feyd",
+                "garuda",
+                "erin",
+                "sakeer"
+              ],
+              "bans": [
+                "dolia",
+                "haya",
+                "umbrosa",
+                "jixm"
+              ]
+            },
+            "red": {
+              "team": "ns",
+              "picks": [
+                "nezha",
+                "pei",
+                "zhenji",
+                "loong",
+                "lian-po"
+              ],
+              "bans": [
+                "mai",
+                "biron",
+                "lplp",
+                "sun-bin"
+              ]
+            }
+          },
+          "bpMetadata": {
+            "complete": true,
+            "banOrderVerified": false,
+            "pickOrder": "source-slot-order"
+          },
+          "vod": "https://youtu.be/Nu3WHSi_99k?t=25606"
+        },
+        {
+          "id": "kml-2026-spring-s05-g6",
+          "gameInSeries": 6,
+          "duration": "14:01",
+          "winnerTeam": "ns",
+          "winnerSide": "blue",
+          "finalObjective": {
+            "winnerConfirmed": true,
+            "endingMethod": "unknown"
+          },
+          "draft": {
+            "blue": {
+              "team": "ns",
+              "picks": [
+                "umbrosa",
+                "ata",
+                "yx",
+                "arli",
+                "yyh"
+              ],
+              "bans": [
+                "pei",
+                "mai",
+                "lplp",
+                "liang"
+              ]
+            },
+            "red": {
+              "team": "vc",
+              "picks": [
+                "biron",
+                "agudo",
+                "gjmy",
+                "di-renjie",
+                "da-qiao"
+              ],
+              "bans": [
+                "dolia",
+                "haya",
+                "heino",
+                "luna"
+              ]
+            }
+          },
+          "bpMetadata": {
+            "complete": true,
+            "banOrderVerified": false,
+            "pickOrder": "source-slot-order"
+          },
+          "vod": "https://youtu.be/Nu3WHSi_99k?t=26958"
+        }
+      ]
+    },
+    {
+      "id": "kml-2026-spring-s06",
+      "dateRaw": "March 22, 2026 - 13:00",
+      "teams": [
+        {
+          "name": "vp",
+          "region": "west"
+        },
+        {
+          "name": "ns",
+          "region": "west"
+        }
+      ],
+      "finalScore": {
+        "vp": 2,
+        "ns": 4
+      },
+      "winnerTeam": "ns",
+      "games": [
+        {
+          "id": "kml-2026-spring-s06-g1",
+          "gameInSeries": 1,
+          "duration": "13:38",
+          "winnerTeam": "vp",
+          "winnerSide": "red",
+          "finalObjective": {
+            "winnerConfirmed": true,
+            "endingMethod": "unknown"
+          },
+          "draft": {
+            "blue": {
+              "team": "ns",
+              "picks": [
+                "umbrosa",
+                "musashi",
+                "haya",
+                "chicha",
+                "mozi"
+              ],
+              "bans": [
+                "biron",
+                "arli",
+                "xq",
+                "charlotte"
+              ]
+            },
+            "red": {
+              "team": "vp",
+              "picks": [
+                "faith",
+                "agudo",
+                "yx",
+                "erin",
+                "lplp"
+              ],
+              "bans": [
+                "dolia",
+                "ao-yin",
+                "luna",
+                "guan-yu"
+              ]
+            }
+          },
+          "bpMetadata": {
+            "complete": true,
+            "banOrderVerified": false,
+            "pickOrder": "source-slot-order"
+          },
+          "vod": "https://youtu.be/_Zh9-k8GgVI?t=2575"
+        },
+        {
+          "id": "kml-2026-spring-s06-g2",
+          "gameInSeries": 2,
+          "duration": "11:35",
+          "winnerTeam": "ns",
+          "winnerSide": "red",
+          "finalObjective": {
+            "winnerConfirmed": true,
+            "endingMethod": "unknown"
+          },
+          "draft": {
+            "blue": {
+              "team": "vp",
+              "picks": [
+                "biron",
+                "kong-ming",
+                "zhaojun",
+                "flw-mm",
+                "zf"
+              ],
+              "bans": [
+                "mai",
+                "faith",
+                "yj",
+                "lplp"
+              ]
+            },
+            "red": {
+              "team": "ns",
+              "picks": [
+                "dharma",
+                "nezha",
+                "zhenji",
+                "di-renjie",
+                "kui"
+              ],
+              "bans": [
+                "haya",
+                "pei",
+                "garuda",
+                "nuwa"
+              ]
+            }
+          },
+          "bpMetadata": {
+            "complete": true,
+            "banOrderVerified": false,
+            "pickOrder": "source-slot-order"
+          },
+          "vod": "https://youtu.be/_Zh9-k8GgVI?t=4133"
+        },
+        {
+          "id": "kml-2026-spring-s06-g3",
+          "gameInSeries": 3,
+          "duration": "15:55",
+          "winnerTeam": "ns",
+          "winnerSide": "blue",
+          "finalObjective": {
+            "winnerConfirmed": true,
+            "endingMethod": "unknown"
+          },
+          "draft": {
+            "blue": {
+              "team": "ns",
+              "picks": [
+                "ata",
+                "nakoruru",
+                "mai",
+                "flw-mm",
+                "lian-po"
+              ],
+              "bans": [
+                "haya",
+                "ukyo",
+                "loong",
+                "arli"
+              ]
+            },
+            "red": {
+              "team": "vp",
+              "picks": [
+                "charlotte",
+                "yj",
+                "xq",
+                "chano",
+                "dyadia"
+              ],
+              "bans": [
+                "biron",
+                "dolia",
+                "faith",
+                "guan-yu"
+              ]
+            }
+          },
+          "bpMetadata": {
+            "complete": true,
+            "banOrderVerified": false,
+            "pickOrder": "source-slot-order"
+          },
+          "vod": "https://youtu.be/_Zh9-k8GgVI?t=5560"
+        },
+        {
+          "id": "kml-2026-spring-s06-g4",
+          "gameInSeries": 4,
+          "duration": "12:53",
+          "winnerTeam": "ns",
+          "winnerSide": "blue",
+          "finalObjective": {
+            "winnerConfirmed": true,
+            "endingMethod": "unknown"
+          },
+          "draft": {
+            "blue": {
+              "team": "ns",
+              "picks": [
+                "biron",
+                "ying",
+                "xiao-qiao",
+                "meng-ya",
+                "lplp"
+              ],
+              "bans": [
+                "ukyo",
+                "mai",
+                "guan-yu",
+                "lubu-hok"
+              ]
+            },
+            "red": {
+              "team": "vp",
+              "picks": [
+                "miyue",
+                "pei",
+                "shi",
+                "di-renjie",
+                "yyh"
+              ],
+              "bans": [
+                "faith",
+                "charlotte",
+                "ao-yin",
+                "arli"
+              ]
+            }
+          },
+          "bpMetadata": {
+            "complete": true,
+            "banOrderVerified": false,
+            "pickOrder": "source-slot-order"
+          },
+          "vod": "https://youtu.be/_Zh9-k8GgVI?t=7475"
+        },
+        {
+          "id": "kml-2026-spring-s06-g5",
+          "gameInSeries": 5,
+          "duration": "17:22",
+          "winnerTeam": "vp",
+          "winnerSide": "blue",
+          "finalObjective": {
+            "winnerConfirmed": true,
+            "endingMethod": "unknown"
+          },
+          "draft": {
+            "blue": {
+              "team": "vp",
+              "picks": [
+                "guan-yu",
+                "kaizer",
+                "mai",
+                "chicha",
+                "sun-bin"
+              ],
+              "bans": [
+                "ao-yin",
+                "arli",
+                "menki",
+                "dun"
+              ]
+            },
+            "red": {
+              "team": "ns",
+              "picks": [
+                "charlotte",
+                "pei",
+                "heino",
+                "lady-sun",
+                "zhang-fei"
+              ],
+              "bans": [
+                "jing",
+                "luna",
+                "mozi",
+                "dolia"
+              ]
+            }
+          },
+          "bpMetadata": {
+            "complete": true,
+            "banOrderVerified": false,
+            "pickOrder": "source-slot-order"
+          },
+          "vod": "https://youtu.be/_Zh9-k8GgVI?t=8988"
+        },
+        {
+          "id": "kml-2026-spring-s06-g6",
+          "gameInSeries": 6,
+          "duration": "19:46",
+          "winnerTeam": "ns",
+          "winnerSide": "red",
+          "finalObjective": {
+            "winnerConfirmed": true,
+            "endingMethod": "unknown"
+          },
+          "draft": {
+            "blue": {
+              "team": "vp",
+              "picks": [
+                "liu-bang",
+                "luna",
+                "nuwa",
+                "arli",
+                "lian-po"
+              ],
+              "bans": [
+                "faith",
+                "guan-yu",
+                "feyd",
+                "ukyo"
+              ]
+            },
+            "red": {
+              "team": "ns",
+              "picks": [
+                "bai-qi",
+                "han-xin",
+                "garuda",
+                "shouyue",
+                "yyh"
+              ],
+              "bans": [
+                "jing",
+                "umbrosa",
+                "nezha",
+                "mayene"
+              ]
+            }
+          },
+          "bpMetadata": {
+            "complete": true,
+            "banOrderVerified": false,
+            "pickOrder": "source-slot-order"
+          },
+          "vod": "https://youtu.be/_Zh9-k8GgVI?t=10805"
+        }
+      ]
+    },
+    {
+      "id": "kml-2026-spring-s07",
+      "dateRaw": "March 22, 2026 - 17:00",
+      "teams": [
+        {
+          "name": "vp",
+          "region": "west"
+        },
+        {
+          "name": "ns",
+          "region": "west"
+        }
+      ],
+      "finalScore": {
+        "vp": 2,
+        "ns": 3
+      },
+      "winnerTeam": "ns",
+      "games": [
+        {
+          "id": "kml-2026-spring-s07-g1",
+          "gameInSeries": 1,
+          "duration": "12:03",
+          "winnerTeam": "vp",
+          "winnerSide": "red",
+          "finalObjective": {
+            "winnerConfirmed": true,
+            "endingMethod": "unknown"
+          },
+          "draft": {
+            "blue": {
+              "team": "ns",
+              "picks": [
+                "faith",
+                "ukyo",
+                "xq",
+                "loong",
+                "mozi"
+              ],
+              "bans": [
+                "arli",
+                "agudo",
+                "pei",
+                "musashi"
+              ]
+            },
+            "red": {
+              "team": "vp",
+              "picks": [
+                "biron",
+                "nakoruru",
+                "haya",
+                "chano",
+                "lplp"
+              ],
+              "bans": [
+                "dolia",
+                "chicha",
+                "shi",
+                "nuwa"
+              ]
+            }
+          },
+          "bpMetadata": {
+            "complete": true,
+            "banOrderVerified": false,
+            "pickOrder": "source-slot-order"
+          },
+          "vod": "https://youtu.be/_Zh9-k8GgVI?t=16524"
+        },
+        {
+          "id": "kml-2026-spring-s07-g2",
+          "gameInSeries": 2,
+          "duration": "14:06",
+          "winnerTeam": "ns",
+          "winnerSide": "red",
+          "finalObjective": {
+            "winnerConfirmed": true,
+            "endingMethod": "unknown"
+          },
+          "draft": {
+            "blue": {
+              "team": "vp",
+              "picks": [
+                "charlotte",
+                "luna",
+                "yx",
+                "arli",
+                "zf"
+              ],
+              "bans": [
+                "haya",
+                "mai",
+                "bai-qi",
+                "dharma"
+              ]
+            },
+            "red": {
+              "team": "ns",
+              "picks": [
+                "guan-yu",
+                "yj",
+                "nuwa",
+                "chano",
+                "dolia"
+              ],
+              "bans": [
+                "faith",
+                "loong",
+                "ata",
+                "jixm"
+              ]
+            }
+          },
+          "bpMetadata": {
+            "complete": true,
+            "banOrderVerified": false,
+            "pickOrder": "source-slot-order"
+          },
+          "vod": "https://youtu.be/_Zh9-k8GgVI?t=17977"
+        },
+        {
+          "id": "kml-2026-spring-s07-g3",
+          "gameInSeries": 3,
+          "duration": "15:41",
+          "winnerTeam": "vp",
+          "winnerSide": "red",
+          "finalObjective": {
+            "winnerConfirmed": true,
+            "endingMethod": "unknown"
+          },
+          "draft": {
+            "blue": {
+              "team": "ns",
+              "picks": [
+                "dharma",
+                "dun",
+                "shi",
+                "arli",
+                "dyadia"
+              ],
+              "bans": [
+                "mozi",
+                "lian-po",
+                "xq",
+                "agudo"
+              ]
+            },
+            "red": {
+              "team": "vp",
+              "picks": [
+                "faith",
+                "flw-tank",
+                "gjmy",
+                "loong",
+                "yyh"
+              ],
+              "bans": [
+                "biron",
+                "charlotte",
+                "menki",
+                "dasm"
+              ]
+            }
+          },
+          "bpMetadata": {
+            "complete": true,
+            "banOrderVerified": false,
+            "pickOrder": "source-slot-order"
+          },
+          "vod": "https://youtu.be/_Zh9-k8GgVI?t=19531"
+        },
+        {
+          "id": "kml-2026-spring-s07-g5",
+          "gameInSeries": 5,
+          "duration": "12:05",
+          "winnerTeam": "ns",
+          "winnerSide": "red",
+          "finalObjective": {
+            "winnerConfirmed": true,
+            "endingMethod": "unknown"
+          },
+          "draft": {
+            "blue": {
+              "team": "vp",
+              "picks": [
+                "bai-qi",
+                "jing",
+                "garuda",
+                "chicha",
+                "mozi"
+              ],
+              "bans": [
+                "haya",
+                "charlotte",
+                "zf",
+                "yyh"
+              ]
+            },
+            "red": {
+              "team": "ns",
+              "picks": [
+                "biron",
+                "pei",
+                "yx",
+                "flw-mm",
+                "lian-po"
+              ],
+              "bans": [
+                "mai",
+                "guan-yu",
+                "shi",
+                "xq"
+              ]
+            }
+          },
+          "bpMetadata": {
+            "complete": true,
+            "banOrderVerified": false,
+            "pickOrder": "source-slot-order"
+          },
+          "vod": "https://youtu.be/_Zh9-k8GgVI?t=22807"
+        },
+        {
+          "id": "kml-2026-spring-s07-g6",
+          "gameInSeries": 6,
+          "duration": "13:28",
+          "winnerTeam": "ns",
+          "winnerSide": "red",
+          "finalObjective": {
+            "winnerConfirmed": true,
+            "endingMethod": "unknown"
+          },
+          "draft": {
+            "blue": {
+              "team": "vp",
+              "picks": [
+                "umbrosa",
+                "kaizer",
+                "milady",
+                "hou-yi",
+                "dolia"
+              ],
+              "bans": [
+                "haya",
+                "charlotte",
+                "zf",
+                "yyh"
+              ]
+            },
+            "red": {
+              "team": "ns",
+              "picks": [
+                "nezha",
+                "luna",
+                "zhenji",
+                "di-renjie",
+                "kui"
+              ],
+              "bans": [
+                "mai",
+                "guan-yu",
+                "meng-ya",
+                "heino"
+              ]
+            }
+          },
+          "bpMetadata": {
+            "complete": true,
+            "banOrderVerified": false,
+            "pickOrder": "source-slot-order"
+          },
+          "vod": "https://youtu.be/_Zh9-k8GgVI?t=24240"
+        }
+      ]
+    }
+  ]
+}

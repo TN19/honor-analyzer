@@ -1,0 +1,15 @@
+{
+  "year": 2026,
+  "policy": "record-only",
+  "minimumCompleteGamesBeforeBpAnalysis": 100,
+  "regions": [
+    {"id":"china","labelZhHant":"中國賽區","tournaments":["King Pro League 2026"]},
+    {"id":"indonesia","labelZhHant":"印尼賽區","tournaments":["Indonesia Kings Laga 2026"]},
+    {"id":"malaysia","labelZhHant":"馬來西亞賽區","tournaments":["Malaysia Kings League 2026"]},
+    {"id":"philippines","labelZhHant":"菲律賓賽區","tournaments":["Philippines Kings League 2026"]},
+    {"id":"brazil","labelZhHant":"巴西賽區","tournaments":["Honor of Kings Brazil Championship 2026"]},
+    {"id":"west","labelZhHant":"西方賽區","tournaments":["Honor of Kings Major West League 2026"]},
+    {"id":"international","labelZhHant":"國際賽區","tournaments":["Honor of Kings Invitational 2026","Honor of Kings World Cup 2026","Honor of Kings International Championship 2026"]}
+  ],
+  "requiredGameFields":["region","series","gameInSeries","blueDraft","redDraft","winner","finalObjective","source"]
+}
