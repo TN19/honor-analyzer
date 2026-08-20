@@ -193,8 +193,8 @@
   },
   {
     "id":"ewc-2026-blue-first-ban-haya","confidence":0.4,
-    "when":{"ownSide":"blue","action":"ban","stepIndex":0},"recommendHeroIds":["haya"],"scoreBoost":0.7,"tone":"reasonable",
-    "explanationZhHant":"EWC 2026 決賽六局中，藍方有四局禁用海月；這是保守的歷史趨勢，不代表固定必禁。"
+    "when":{"ownSide":"blue","action":"ban","stepIndex":0},"recommendHeroIds":["haya"],"scoreBoost":0.5,"tone":"reasonable",
+    "explanationZhHant":"EWC 2026 決賽六局中，藍方有四局禁用海月，其中兩局是第一禁用；這是保守的歷史趨勢，不代表固定必禁。"
   },
   {
     "id":"ewc-2026-red-first-ban-pei","confidence":0.4,
