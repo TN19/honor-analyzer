@@ -6,7 +6,7 @@
     "lam":{"name":"Lam","displayNameZhHant":"瀾","displayNameStatus":"confirmed","lanes":["jungle"],"roles":["assassin"]},
     "heino":{"name":"Heino","displayNameZhHant":"海諾","displayNameStatus":"confirmed","lanes":["mid"],"roles":["mage"]},
     "lu-bu":{"name":"Lu Bu","displayNameZhHant":"呂布","displayNameStatus":"confirmed","lanes":["clash"],"roles":["fighter"]},
-    "ukyo-tachibana":{"name":"Ukyo Tachibana","displayNameZhHant":"橘右京","displayNameStatus":"confirmed","lanes":["jungle","clash"],"roles":["assassin","fighter"]},
+    "ukyo-tachibana":{"name":"Ukyo Tachibana","displayNameZhHant":"橘右京","displayNameStatus":"confirmed","lanes":["jungle"],"roles":["assassin","fighter"]},
     "agudo":{"name":"Agudo","displayNameZhHant":"阿古朵","displayNameStatus":"confirmed","lanes":["jungle"],"roles":["tank"]},
     "consort-yu":{"name":"Consort Yu","displayNameZhHant":"虞姬","displayNameStatus":"confirmed","lanes":["farm"],"roles":["marksman"]},
     "shi":{"name":"Shi","displayNameZhHant":"西施","displayNameStatus":"confirmed","lanes":["mid"],"roles":["mage"]},
@@ -15,7 +15,7 @@
     "sakeer":{"name":"Sakeer","displayNameZhHant":"桑啟","displayNameStatus":"confirmed","lanes":["roamer"],"roles":["support"]},
     "devara":{"name":"Devara","displayNameZhHant":"德瓦拉","displayNameStatus":"transliteration","lanes":["clash"],"roles":["fighter"]},
     "bai-qi":{"name":"Bai Qi","displayNameZhHant":"白起","displayNameStatus":"confirmed","lanes":["clash"],"roles":["tank"]},
-    "chicha":{"name":"Chicha","displayNameZhHant":"奇恰","displayNameStatus":"transliteration","lanes":["clash"],"roles":["fighter"]},
+    "chicha":{"name":"Chicha","displayNameZhHant":"叱吒","displayNameStatus":"confirmed","lanes":["farm"],"roles":["marksman"]},
     "mi-yue":{"name":"Mi Yue","displayNameZhHant":"羋月","displayNameStatus":"confirmed","lanes":["clash"],"roles":["mage"]},
     "allain":{"name":"Allain","displayNameZhHant":"亞連","displayNameStatus":"confirmed","lanes":["clash"],"roles":["fighter"]},
     "xiang-yu":{"name":"Xiang Yu","displayNameZhHant":"項羽","displayNameStatus":"confirmed","lanes":["clash","roamer"],"roles":["tank"]},
@@ -60,7 +60,7 @@
     ["bai-qi","haya",7,"白起適合應對海月。"],
     ["jing","agudo",7,"鏡適合應對阿古朵。"],
     ["zhuangzi","bai-qi",7,"莊周適合應對白起。"],
-    ["chicha","chano",7,"奇恰適合應對蒼。"],
+    ["chicha","chano",7,"叱吒適合應對蒼。"],
     ["mi-yue","allain",7,"羋月適合應對亞連。"],
     ["nakoruru","dun",7,"娜可露露適合應對夏侯惇。"],
     ["lu-bu","fuzi",7,"呂布適合應對老夫子。"],
@@ -100,6 +100,6 @@
     ["enemy-no-front-second-ban",["敵方目前沒有前排","進入第二輪禁用"],["禁用三個仍可補足敵方前排的英雄"],["壓縮敵方補前排的選擇"]],
     ["lady-sun-shi-lane-swap",["己方選擇孫尚香與西施"],["西施在發育路停留約四分鐘並控線","孫尚香與輔助轉中，嘗試取得中路與發育路兵線"],["利用工具型中路協助射手加速發育"]],
     ["chano-general-safe-pick",["發育路需要泛用安全選擇"],["沒有綠色優先選擇時，可考慮蒼"],["蒼能面對多數射手，但不等於逐一形成強勢反制"]],
-    ["first-pick-chicha-augran",["需要優先選擇"],["可考慮奇恰或大司命"],["兩者是已登記的優先選擇"]]
+    ["first-pick-chicha-augran",["需要優先選擇"],["可考慮叱吒或大司命"],["兩者是已登記的優先選擇"]]
   ]
 }

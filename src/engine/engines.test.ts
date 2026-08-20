@@ -55,13 +55,19 @@ describe('manual draft knowledge',()=>{
   it('keeps multi-lane heroes available in both registered positions',()=>{
     expect(manualAnalysis.heroes.ata.lanes).toEqual(['clash','jungle'])
     expect(manualAnalysis.heroes['da-qiao'].lanes).toEqual(['mid','roamer'])
-    expect(manualAnalysis.heroes.umbrosa.lanes).toEqual(['clash','jungle'])
+    expect(manualAnalysis.heroes.umbrosa.lanes).toEqual(['clash'])
   })
   it('uses confirmed Traditional Chinese hero names',()=>{
     expect(getHeroDisplayName('umbrosa')).toBe('影')
     expect(getHeroDisplayName('faith')).toBe('曹操')
   })
   it('registers Yuhuan for mid and roamer',()=>expect(manualAnalysis.heroes.yuhuan.lanes).toEqual(['mid','roamer']))
+  it('keeps corrected heroes exclusively in their registered lanes',()=>{
+    expect(manualAnalysis.heroes.chicha.lanes).toEqual(['farm'])
+    expect(getHeroDisplayName('chicha')).toBe('叱吒')
+    expect(manualAnalysis.heroes['ukyo-tachibana'].lanes).toEqual(['jungle'])
+    expect(manualAnalysis.heroes.liang.lanes).toEqual(['roamer'])
+  })
   it('returns only heroes registered for the requested lane',()=>{
     expect(getHeroesByLane('mid').every(hero=>hero.lanes.includes('mid'))).toBe(true)
     expect(getHeroesByLane('roamer').some(hero=>hero.id==='yuhuan')).toBe(true)
