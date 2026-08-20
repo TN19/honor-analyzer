@@ -63,10 +63,10 @@ describe('contextual recommendations',()=>{
     const result=recommendAllHeroes(heroes,[],[getHero('hou-yi')!],{team:'blue',draft:{blue:{},red:{}}})
     expect(result.find(item=>item.heroId==='arli')?.countering.map(item=>item.heroId)).toContain('hou-yi')
   })
-  it('uses EWC first-ban history conservatively and excludes pick-only rules',()=>{
+  it('does not convert professional match history into recommendations',()=>{
     const result=recommendAllHeroes(heroes,[],[],{team:'blue',draft:{blue:{},red:{}},action:'ban',stepIndex:0})
-    expect(result.find(item=>item.heroId==='haya')?.reasonable.length).toBeGreaterThan(0)
-    expect(result.find(item=>item.heroId==='ao-yin')?.ruleRecommendations).toHaveLength(0)
+    expect(result.flatMap(item=>item.matchedRules).some(id=>id.startsWith('ewc-'))).toBe(false)
+    expect(result.find(item=>item.heroId==='haya')?.reasonable).toHaveLength(0)
   })
 })
 describe('manual draft knowledge',()=>{
@@ -140,11 +140,9 @@ describe('professional match history',()=>{
   })
 })
 describe('ban recommendations',()=>{
-  it('ranks historically frequent bans and explains their relevance',()=>{
+  it('does not suggest bans from match frequency without a planned pick',()=>{
     const result=recommendBans(heroes,{team:'red',stepIndex:1,usedHeroIds:new Set()})
-    expect(result[0].historicalWeight).toBeGreaterThan(0)
-    expect(result.some(item=>item.heroId==='pei')).toBe(true)
-    expect(result.every(item=>item.reasons.length>0)).toBe(true)
+    expect(result).toHaveLength(0)
   })
   it('protects a planned Pei first pick from registered counters',()=>{
     const result=recommendBans(heroes,{team:'blue',stepIndex:0,plannedPickId:'pei',usedHeroIds:new Set()})
@@ -155,13 +153,9 @@ describe('ban recommendations',()=>{
     const result=recommendBans(heroes,{team:'blue',stepIndex:0,plannedPickId:'pei',usedHeroIds:new Set(['haya','mai-shiranui'])})
     expect(result.some(item=>item.heroId==='haya'||item.heroId==='mai-shiranui')).toBe(false)
   })
-  it('weights the first two and last two bans as separate phases',()=>{
-    const first=recommendBans(heroes,{team:'blue',stepIndex:0,usedHeroIds:new Set()})
-    const last=recommendBans(heroes,{team:'blue',stepIndex:10,usedHeroIds:new Set()})
-    expect(first.every(item=>item.banPhase==='first-two')).toBe(true)
-    expect(last.every(item=>item.banPhase==='last-two')).toBe(true)
-    expect(first.find(item=>item.heroId==='haya')?.phaseHistoricalWeight).not.toBe(last.find(item=>item.heroId==='haya')?.phaseHistoricalWeight)
-    expect(first.flatMap(item=>item.reasons).some(reason=>reason.includes('前兩個 ban'))).toBe(true)
-    expect(last.flatMap(item=>item.reasons).some(reason=>reason.includes('後兩個 ban'))).toBe(true)
+  it('keeps recommendations independent from historical ban phases',()=>{
+    const first=recommendBans(heroes,{team:'blue',stepIndex:0,plannedPickId:'pei',usedHeroIds:new Set()})
+    const last=recommendBans(heroes,{team:'blue',stepIndex:10,plannedPickId:'pei',usedHeroIds:new Set()})
+    expect(first).toEqual(last)
   })
 })
