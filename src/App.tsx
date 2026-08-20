@@ -52,7 +52,7 @@ function BanPickRecommendationList({title,tone,items,onChoose}:{title:string;ton
 
 function BanSuggestionList({items,onChoose}:{items:BanRecommendation[];onChoose:(id:string)=>void}){
   const labels={high:'高關聯',medium:'中關聯',low:'低關聯'}
-  return <div className="ban-suggestion-list">{items.map(item=>{const hero=getHero(item.heroId)!;return <article className={`ban-suggestion ${item.relevance}`} key={item.heroId}><Mark name={displayHeroName(hero.id,hero.name)} heroId={hero.id}/><div><strong>{displayHeroName(hero.id,hero.name)}</strong><span>{item.reasons[0]}</span><small>{item.protectsPlannedPick?'保護預定選角 · ':''}歷史禁用權重 {item.historicalWeight.toFixed(1)}</small></div><b>{labels[item.relevance]}<em>{item.score.toFixed(1)}</em></b><button onClick={()=>onChoose(hero.id)}>禁用</button></article>})}</div>
+  return <div className="ban-suggestion-list">{items.map(item=>{const hero=getHero(item.heroId)!;return <article className={`ban-suggestion ${item.relevance}`} key={item.heroId}><Mark name={displayHeroName(hero.id,hero.name)} heroId={hero.id}/><div><strong>{displayHeroName(hero.id,hero.name)}</strong><span>{item.reasons[0]}</span><small>{item.protectsPlannedPick?'保護預定選角 · ':''}{item.banPhase==='first-two'?'前兩 ban':'後兩 ban'} {item.phaseHistoricalWeight.toFixed(1)} · 整體 {item.historicalWeight.toFixed(1)}</small></div><b>{labels[item.relevance]}<em>{item.score.toFixed(1)}</em></b><button onClick={()=>onChoose(hero.id)}>禁用</button></article>})}</div>
 }
 
 function BanPickMode(){

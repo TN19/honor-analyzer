@@ -155,4 +155,13 @@ describe('ban recommendations',()=>{
     const result=recommendBans(heroes,{team:'blue',stepIndex:0,plannedPickId:'pei',usedHeroIds:new Set(['haya','mai-shiranui'])})
     expect(result.some(item=>item.heroId==='haya'||item.heroId==='mai-shiranui')).toBe(false)
   })
+  it('weights the first two and last two bans as separate phases',()=>{
+    const first=recommendBans(heroes,{team:'blue',stepIndex:0,usedHeroIds:new Set()})
+    const last=recommendBans(heroes,{team:'blue',stepIndex:10,usedHeroIds:new Set()})
+    expect(first.every(item=>item.banPhase==='first-two')).toBe(true)
+    expect(last.every(item=>item.banPhase==='last-two')).toBe(true)
+    expect(first.find(item=>item.heroId==='haya')?.phaseHistoricalWeight).not.toBe(last.find(item=>item.heroId==='haya')?.phaseHistoricalWeight)
+    expect(first.flatMap(item=>item.reasons).some(reason=>reason.includes('前兩個 ban'))).toBe(true)
+    expect(last.flatMap(item=>item.reasons).some(reason=>reason.includes('後兩個 ban'))).toBe(true)
+  })
 })

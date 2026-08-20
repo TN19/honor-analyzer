@@ -8,7 +8,7 @@ Partidas profissionais fornecidas pelo usuário ficam preservadas em `src/data/m
 
 Os lotes profissionais também registram a série e o jogo dentro da série. O conjunto adicional de nove partidas do EWC 2026 está agrupado em três séries de duas partidas e uma série de três partidas; seu peso histórico é `0.6`, inferior ao conjunto da final, e suas tendências recebem bônus menores no motor.
 
-Durante uma etapa de ban, o modo `禁選模式` exibe um consultor próprio. Ele ordena sugestões pela frequência histórica ponderada, recorrência do lado atual e posição de first ban. O usuário também pode indicar o próximo pick planejado; nesse caso, o consultor eleva heróis registrados como ameaças desse plano e explica a relação, sem confundir frequência profissional com counter comprovado.
+Durante uma etapa de ban, o modo `禁選模式` exibe um consultor próprio. Ele separa os dois primeiros bans dos dois últimos bans de cada lado e dá prioridade à frequência histórica da fase atual; a frequência geral fica como sinal secundário. O usuário também pode indicar o próximo pick planejado; nesse caso, o consultor eleva heróis registrados como ameaças desse plano e explica a relação, sem confundir frequência profissional com counter comprovado.
 
 ## Desenvolvimento
 
