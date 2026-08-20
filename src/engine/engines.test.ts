@@ -2,7 +2,7 @@ import { describe,expect,it } from 'vitest'
 import { analyzeComposition } from './compositionEngine'
 import { getGloballyUnavailableHeroes, validateSeriesPick } from './availabilityEngine'
 import { calculateWinRate } from './statisticsEngine'
-import { recommendPicks } from './recommendationEngine'
+import { recommendAllHeroes, recommendPicks } from './recommendationEngine'
 import type { Hero } from '../types'
 import { heroes, manualAnalysis, getHero, getHeroDisplayName, getHeroesByLane } from '../data'
 const hero=(tags:string[]):Hero=>({id:'test',name:'Test',aliases:[],image:'',roles:[],lanes:['farm'],primaryLane:'farm',damage:{primary:'unknown',secondary:null},tags,strengths:[],weaknesses:[],gamePhases:{early:'',mid:'',late:''},skills:{},patch:'unknown',updatedAt:'2026-08-19',sources:[]})
@@ -56,6 +56,10 @@ describe('contextual recommendations',()=>{
   it('recommends Agudo reasonably against jungle Pei',()=>{
     const result=recommendPicks(getHeroesByLane('jungle'),[],[getHero('pei')!],'jungle',{team:'blue',draft:{blue:{},red:{jungle:'pei'}}})
     expect(result.find(item=>item.heroId==='agudo')?.reasonable.length).toBeGreaterThan(0)
+  })
+  it('recommends heroes without requiring a lane in ban-pick mode',()=>{
+    const result=recommendAllHeroes(heroes,[],[getHero('hou-yi')!],{team:'blue',draft:{blue:{},red:{}}})
+    expect(result.find(item=>item.heroId==='arli')?.countering.map(item=>item.heroId)).toContain('hou-yi')
   })
 })
 describe('manual draft knowledge',()=>{

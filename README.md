@@ -2,6 +2,8 @@
 
 Aplicação estática e offline-first para análise explicável de drafts. Esta primeira versão implementa o Draft Livre, validação de dados, análise de composição, recomendações, salvamento local e a fundação para Ban & Pick, Global Ban e histórico.
 
+O modo `禁選模式` permite registrar escolhas e bans sem vincular heróis a posições. A alternância de ban controla a ação do catálogo, e as recomendações são agrupadas em listas verdes, amarelas e vermelhas conforme as relações cadastradas.
+
 ## Desenvolvimento
 
 ```bash

@@ -74,3 +74,12 @@ export function recommendPicks(candidates:Hero[], allies:Hero[], enemies:Hero[],
     return b.finalScore-a.finalScore
   })
 }
+
+export function recommendAllHeroes(candidates:Hero[],allies:Hero[],enemies:Hero[],context:RecommendationContext):Recommendation[]{
+  return candidates.flatMap(hero=>hero.lanes.map(lane=>recommendPicks([hero],allies,enemies,lane,context)[0]).filter(Boolean)).reduce<Recommendation[]>((best,item)=>{
+    const index=best.findIndex(current=>current.heroId===item.heroId)
+    if(index<0) best.push(item)
+    else if(item.finalScore>best[index].finalScore) best[index]=item
+    return best
+  },[]).sort((a,b)=>b.finalScore-a.finalScore)
+}
