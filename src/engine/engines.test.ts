@@ -104,7 +104,7 @@ describe('manual draft knowledge',()=>{
 })
 describe('ban-pick sequence',()=>{
   it('follows the approved 18-step competitive order',()=>{
-    expect(banPickSteps.map(step=>`${step.team[0]}-${step.kind[0]}`).join(' ')).toBe('b-b r-b b-b r-b b-p r-p r-p b-p b-p r-p b-b r-b b-b r-b r-p b-p b-p r-p')
+    expect(banPickSteps.map(step=>`${step.team[0]}-${step.kind[0]}`).join(' ')).toBe('b-b r-b b-b r-b b-p r-p r-p b-p b-p r-p r-b b-b r-b b-b r-p b-p b-p r-p')
     expect(banPickSteps.filter(step=>step.team==='blue'&&step.kind==='pick')).toHaveLength(5)
     expect(banPickSteps.filter(step=>step.team==='red'&&step.kind==='ban')).toHaveLength(4)
   })

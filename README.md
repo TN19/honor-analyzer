@@ -2,7 +2,7 @@
 
 Aplicação estática e offline-first para análise explicável de drafts. Esta primeira versão implementa o Draft Livre, validação de dados, análise de composição, recomendações, salvamento local e a fundação para Ban & Pick, Global Ban e histórico.
 
-O modo `禁選模式` conduz automaticamente a sequência competitiva de 18 ações: quatro bans iniciais, primeira rodada de picks, quatro bans adicionais e rodada final de picks. Cada lado termina com quatro bans e cinco escolhas. Os slots não vinculam heróis a posições; o catálogo pode ser filtrado por rota sem exibir a rota nos cartões. As recomendações continuam agrupadas em listas verdes, amarelas e vermelhas.
+O modo `禁選模式` conduz automaticamente a sequência competitiva de 18 ações: primeira rodada de bans iniciada pelo blue side, primeira rodada de picks, segunda rodada de bans iniciada pelo red side e rodada final de picks. Cada lado termina com quatro bans e cinco escolhas. Os slots não vinculam heróis a posições; o catálogo pode ser filtrado por rota sem exibir a rota nos cartões. As recomendações continuam agrupadas em listas verdes, amarelas e vermelhas.
 
 Partidas profissionais fornecidas pelo usuário ficam preservadas em `src/data/matches`, separadas das regras gerais. Fatos observados (ordem, lado, picks, bans e vencedor) não são misturados com interpretações estratégicas. Padrões com amostra pequena entram no motor somente como recomendações amarelas de baixo peso, com torneio, tamanho da amostra e incerteza explícitos.
 
